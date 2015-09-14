@@ -1,0 +1,5 @@
+version: "Apple Swift version 1.2 (swiftlang-602.0.53.1 clang-602.0.53)"
+options: "595a68907c6a1f042e8045268bfe8ff2"
+inputs: 
+- "/Users/cktalex/Documents/bProject/ExchangeRate/SampleKeyboard/TodayViewController.swift"
+- "/Users/cktalex/Documents/bProject/ExchangeRate/SampleKeyboard/SwiftyJSON.swift"

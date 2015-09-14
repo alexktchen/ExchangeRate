@@ -1,0 +1,5 @@
+version: "Apple Swift version 1.2 (swiftlang-602.0.53.1 clang-602.0.53)"
+options: "6d690e5794f02d0e36f80b1ea23d7ff1"
+inputs: 
+- "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/ViewController.swift"
+- "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/AppDelegate.swift"
