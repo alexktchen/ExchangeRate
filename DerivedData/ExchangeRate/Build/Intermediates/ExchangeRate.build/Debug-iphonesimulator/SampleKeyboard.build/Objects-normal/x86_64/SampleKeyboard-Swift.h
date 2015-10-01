@@ -88,7 +88,6 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
 @import CoreGraphics;
-@import Foundation;
 @import NotificationCenter;
 #endif
 
@@ -107,11 +106,8 @@ SWIFT_CLASS("_TtC14SampleKeyboard27BackgroundHighlightedButton")
 - (void)drawRect:(CGRect)rect;
 @end
 
-
-@interface NSNumber (SWIFT_EXTENSION(SampleKeyboard))
-@property (nonatomic, readonly) BOOL isBool;
-@end
-
+@class Currency;
+@class NSData;
 @class UILabel;
 @class UIImageView;
 @class NSBundle;
@@ -123,10 +119,14 @@ SWIFT_CLASS("_TtC14SampleKeyboard19TodayViewController")
 @property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified topImage;
 @property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified bottomImage;
 @property (nonatomic, copy) NSString * __nonnull numberString;
+@property (nonatomic, copy) NSArray<Currency *> * __nonnull currencys;
 - (void)viewDidLoad;
+- (void)loadData;
 - (void)getStatus;
+- (void)parseCurrency:(NSArray<Currency *> * __nonnull)currencys data:(NSData * __nonnull)data;
 - (void)didReceiveMemoryWarning;
 - (void)widgetPerformUpdateWithCompletionHandler:(void (^ __nonnull)(NCUpdateResult))completionHandler;
+- (UIEdgeInsets)widgetMarginInsetsForProposedMarginInsets:(UIEdgeInsets)defaultMarginInsets;
 - (IBAction)refresh:(id __nonnull)sender;
 - (void)getCurrency;
 - (void)updatePreferredContentSize;

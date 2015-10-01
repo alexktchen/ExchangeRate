@@ -8,6 +8,8 @@
 
 import Foundation
 import UIKit
+import Core
+
 class MainTableViewCell: UITableViewCell {
     
     @IBOutlet weak var displayNameLabel: UILabel!
@@ -18,8 +20,6 @@ class MainTableViewCell: UITableViewCell {
     
     internal required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
-        
-        
 
     }
     

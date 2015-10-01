@@ -7,7 +7,7 @@
 //
 
 import Foundation
-extension NSLocale {
+public extension NSLocale {
 
     struct Locale {
         let countryCode: String

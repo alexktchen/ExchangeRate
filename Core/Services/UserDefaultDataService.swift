@@ -15,7 +15,7 @@ public class UserDefaultDataService {
     let queryCurrencysDate = "queryCurrencysDate"
 
     init() {
-        aDefaults = NSUserDefaults(suiteName: "group.com.seligmanventures.LightAlarmFree")  
+        aDefaults = NSUserDefaults(suiteName: "group.com.AlexChen.extrmeCurrencyShareData")  
     }
 
     public func setQueryCurrencysDate(aData: NSData) {

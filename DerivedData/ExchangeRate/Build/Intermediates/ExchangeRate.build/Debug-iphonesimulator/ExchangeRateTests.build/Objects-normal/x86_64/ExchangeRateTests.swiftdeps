@@ -7,13 +7,13 @@ provides-member:
 - ["C17ExchangeRateTests17ExchangeRateTests", ""]
 provides-dynamic-lookup:
 - "tearDown"
+- "testPerformanceExample"
 - "testExample"
 - "setUp"
-- "testPerformanceExample"
 depends-top-level:
+- !private "XCTAssert"
 - "ExchangeRateTests"
 - !private "BooleanLiteralType"
-- !private "XCTAssert"
 - !private "StringLiteralType"
 - "XCTestCase"
 depends-member:

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class CurrencyRequest: NSObject, NSXMLParserDelegate {
+public class CurrencyRequest: NSObject, NSXMLParserDelegate {
     
     //var currenyAPI = "http://query.yahooapis.com/v1/public/yql?q="
     /*
@@ -19,7 +19,7 @@ class CurrencyRequest: NSObject, NSXMLParserDelegate {
     http://query.yahooapis.com/v1/public/yql?q=select * from yahoo.finance.xchange where pair in ('USDEUR','USDJPY')&env=store://datatables.org/alltableswithkeys
     */
     
-    func getCurrency(majorCode: String, currencys : [Currency], completionHandler: ([Currency]?) -> Void) {
+    public func getCurrency(majorCode: String, currencys : [Currency], completionHandler: ([Currency]?) -> Void) {
         
         var currencysString = ""
         var filerCurrencyCode: [String] = []
@@ -52,7 +52,7 @@ class CurrencyRequest: NSObject, NSXMLParserDelegate {
         }
     }
 
-    func parseCurrency(currencys : [Currency], data: NSData) {
+    public func parseCurrency(currencys : [Currency], data: NSData) {
         
         do {
             let xmlDoc = try AEXMLDocument(xmlData: data)

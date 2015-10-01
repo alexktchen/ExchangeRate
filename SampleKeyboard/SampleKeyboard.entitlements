@@ -4,8 +4,7 @@
 <dict>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.extremeCurrencySharedDefault</string>
-		<string>group.com.seligmanventures.LightAlarmFree</string>
+		<string>group.com.AlexChen.extrmeCurrencyShareData</string>
 	</array>
 </dict>
 </plist>

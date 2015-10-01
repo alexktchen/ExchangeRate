@@ -1,19 +1,8 @@
 version: "Apple Swift version 2.0 (swiftlang-700.0.59 clang-700.0.72)"
-options: "08ed1ec36efbe9bb0e5d5a01ac64b490"
-build_time: [496948713, 979729000]
+options: "e11e9a1c46be878b5d6021179fa78cc9"
+build_time: [497035354, 984118000]
 inputs: 
-	"/Users/cktalex/Documents/bProject/test4/ExchangeRate/ExchangeRate/StringExtension.swift": [496858575, 0]
-	"/Users/cktalex/Documents/bProject/test4/ExchangeRate/ExchangeRate/ViewController.swift": [496944580, 0]
-	"/Users/cktalex/Documents/bProject/test4/ExchangeRate/ExchangeRate/AppDelegate.swift": [496836123, 0]
-	"/Users/cktalex/Documents/bProject/test4/ExchangeRate/ExchangeRate/UIColorExtension.swift": [496427235, 0]
-	"/Users/cktalex/Documents/bProject/test4/ExchangeRate/ExchangeRate/BaseRequest.swift": [496858879, 0]
-	"/Users/cktalex/Documents/bProject/test4/ExchangeRate/ExchangeRate/MainTableViewCell.swift": [496941340, 0]
-	"/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/CurrencyMap.swift": [496941340, 0]
-	"/Users/cktalex/Documents/bProject/test4/ExchangeRate/ExchangeRate/CurrencyRequest.swift": [496942964, 0]
-	"/Users/cktalex/Documents/bProject/test4/ExchangeRate/ExchangeRate/Currency.swift": [496861873, 0]
-	"/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/CustomColors.swift": [496941372, 0]
+	"/Users/cktalex/Documents/bProject/test4/ExchangeRate/ExchangeRate/ViewController.swift": [497034589, 0]
+	"/Users/cktalex/Documents/bProject/test4/ExchangeRate/ExchangeRate/MainTableViewCell.swift": [497035354, 0]
+	"/Users/cktalex/Documents/bProject/test4/ExchangeRate/ExchangeRate/AppDelegate.swift": [497035354, 0]
 	"/Users/cktalex/Documents/bProject/test4/ExchangeRate/ExchangeRate/BackgroundHighlightedButton.swift": [496251196, 0]
-	"/Users/cktalex/Documents/bProject/test4/ExchangeRate/ExchangeRate/DoubleExtension.swift": [496419851, 0]
-	"/Users/cktalex/Documents/bProject/test4/ExchangeRate/ExchangeRate/LocaleExtension.swift": [496830599, 0]
-	"/Users/cktalex/Documents/bProject/test4/ExchangeRate/ExchangeRate/AEXML.swift": [496227366, 0]
-	"/Users/cktalex/Documents/bProject/test4/ExchangeRate/ExchangeRate/UserDefaultDataService.swift": [496948712, 0]

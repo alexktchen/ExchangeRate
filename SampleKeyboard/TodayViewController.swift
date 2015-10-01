@@ -8,6 +8,7 @@
 
 import UIKit
 import NotificationCenter
+import Core
 
 class TodayViewController: UIViewController, NCWidgetProviding {
     
@@ -17,25 +18,131 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     @IBOutlet weak var bottomImage: UIImageView!
     
     var numberString: String = ""
+    var currencys: [Currency] = [Currency]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         updatePreferredContentSize()
+        loadData()
         getStatus()
     }
     
+    
+    func loadData() {
+        
+        for country in CurrencyMap.country {
+            
+            let isoCode = country.0
+            let countryName = country.1
+            
+            let imageName = ("\(isoCode)_\(countryName)")
+            let currency = Currency()
+            
+            currency.flagImage = UIImage(named: imageName)
+            
+            if let symbol = NSLocale.localesCurrencySymbol(country.0) {
+                currency.symbol = symbol
+            }
+            
+            if let currencyCode = NSLocale.localesCurrencyCode(country.0) {
+                currency.currencyCode = currencyCode
+            }
+            
+            if let displayName = NSLocale.locales(country.0) {
+                currency.displayName = displayName
+            }
+            
+            if isoCode == "TW" {
+                currency.isMajor = true
+            } else {
+                currency.isMajor = false
+            }
+            
+            currencys.append(currency)
+        }
+        
+        // reorder items
+        self.currencys.sortInPlace({ $0.displayName < $1.displayName })
+        
+        if let item = self.currencys.filter({m in m.isMajor}).first {
+            
+            if let i = self.currencys.indexOf({m in m.isMajor}) {
+                self.currencys.removeAtIndex(i)
+            }
+            
+            let currencyRequest = CurrencyRequest()
+            
+            if let data = UserDefaultDataService.sharedInstance.getQueryCurrencysDate() {
+                currencyRequest.parseCurrency(self.currencys, data: data)
+            } else {
+                currencyRequest.getCurrency(item.currencyCode, currencys: self.currencys) { (currency) -> Void in
+                    dispatch_async(dispatch_get_main_queue()) {
+                        
+                    }
+                }
+            }
+        }
+    }
+
     func getStatus(){
         
-        let defaults = NSUserDefaults(suiteName: "group.com.seligmanventures.LightAlarmFree")
-        defaults!.synchronize()
         
-        if let test: NSDate = defaults!.objectForKey("queryCurrencysDate") as? NSDate{
+        
+        let defaults = NSUserDefaults(suiteName: "group.com.AlexChen.extrmeCurrencyShareData")
+       
+        let data = defaults!.objectForKey("queryCurrencysDate") as! NSData
+        
+        let currencyRequest = CurrencyRequest()
+        
+        currencyRequest.parseCurrency(currencys, data: data)
+        
+        for currency in currencys {
+            print(currency)
+        }
+        
+        /*
+        if let test: NSDate = defaults!.objectForKey("queryCurrencysDate"){
             
             ntLabel.text = String(test)
           print(test)
         } else {
              print("No")
             ntLabel.text = "No"
+        }*/
+    }
+    
+    func parseCurrency(currencys : [Currency], data: NSData) {
+        
+        do {
+            let xmlDoc = try AEXMLDocument(xmlData: data)
+            print(xmlDoc.xmlString)
+            
+            if let rates = xmlDoc.root["results"]["rate"].all {
+                
+                for rate in rates {
+                    
+                    if let id = rate.attributes["id"] {
+                        
+                        let currency = currencys.filter({m in id.rangeOfString(m.currencyCode) != nil })
+                        
+                        for c in currency {
+                            
+                            c.dollarsName = rate["Name"].stringValue
+                            
+                            c.rate = rate["Rate"].doubleValue
+                            
+                            c.ask = rate["Ask"].doubleValue
+                            
+                            c.bid = rate["Bid"].doubleValue
+                            
+                            c.dateTime = NSDate()
+                        }
+                    }
+                }
+            }
+        }
+        catch {
+            print("\(error)")
         }
     }
     
@@ -50,8 +157,12 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         // If an error is encountered, use NCUpdateResult.Failed
         // If there's no update required, use NCUpdateResult.NoData
         // If there's an update, use NCUpdateResult.NewData
-        
+        getStatus()
         completionHandler(NCUpdateResult.NewData)
+    }
+    
+    func widgetMarginInsetsForProposedMarginInsets(defaultMarginInsets: UIEdgeInsets) -> (UIEdgeInsets) {
+            return UIEdgeInsetsZero
     }
     
     @IBAction func refresh(sender: AnyObject) {

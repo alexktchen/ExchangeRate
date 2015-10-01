@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Core.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>ExchangeRate.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -17,6 +22,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>72A0C1EA1BBD9E780007B0E2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>72A0C1F31BBD9E790007B0E2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>72C515171BA5E588003A2A97</key>
 		<dict>
 			<key>primary</key>

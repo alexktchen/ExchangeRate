@@ -6,56 +6,56 @@ provides-nominal:
 provides-member:
 - ["C12ExchangeRate14ViewController", ""]
 provides-dynamic-lookup:
-- "loadData"
-- "titleView"
-- "barItemEdit"
-- "edit"
-- "selectItem"
-- "topFlagImage"
-- "currencys"
-- "numberOfSectionsInTableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "didReceiveMemoryWarning"
 - "viewDidLoad"
+- "loadData"
+- "topFlagImage"
+- "numberOfSectionsInTableView"
+- "barItemEdit"
+- "selectItem"
+- "edit"
+- "titleView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "currencys"
+- "didReceiveMemoryWarning"
 depends-top-level:
-- !private "UINib"
-- !private "dispatch_async"
 - !private "MainTableViewCell"
-- !private "*"
-- "Currency"
-- !private "dispatch_get_main_queue"
-- !private "String"
-- "UIViewController"
-- "Bool"
-- !private "UserDefaultDataService"
-- "UITableViewDelegate"
-- !private "CurrencyRequest"
-- "UITableViewDataSource"
-- "AnyObject"
 - !private "BooleanLiteralType"
+- !private "*"
 - !private "UnicodeScalarType"
-- "UIBarButtonItem"
-- !private "NSLocale"
-- "UIView"
-- "Int"
-- !private "UIImage"
-- "UITableViewCell"
-- !private "CurrencyMap"
-- !private "=="
-- !private "<"
-- "UITableView"
-- "NSIndexPath"
-- !private "Void"
+- "UITableViewDataSource"
 - "UIImageView"
-- !private "StringLiteralType"
+- !private "NSLocale"
+- !private "<"
+- "UITableViewDelegate"
+- !private "UserDefaultDataService"
+- !private "UINib"
 - !private "UIColor"
+- "UIBarButtonItem"
 - !private "/"
+- "UITableViewCell"
 - "ViewController"
+- "NSIndexPath"
+- !private "CurrencyMap"
+- "UIViewController"
+- !private "CurrencyRequest"
+- "UIView"
+- !private "dispatch_async"
+- "Int"
+- "AnyObject"
+- !private "StringLiteralType"
+- "Bool"
+- !private "=="
+- !private "dispatch_get_main_queue"
+- !private "UIImage"
+- !private "String"
+- "Currency"
+- "UITableView"
+- !private "Void"
 depends-member:
 - !private ["PSs9AnyObject", "CGColor"]
 - ["PSs9AnyObject", "Currency"]
@@ -279,17 +279,17 @@ depends-member:
 - !private ["PSs10Comparable", "IntegerLiteralType"]
 - !private ["PSs10Comparable", "Stride"]
 - !private ["PSs10Comparable", "init"]
-- !private ["C12ExchangeRate8Currency", "currencyCode"]
-- !private ["C12ExchangeRate8Currency", "displayName"]
-- !private ["C12ExchangeRate8Currency", "flagImage"]
-- !private ["C12ExchangeRate8Currency", "init"]
-- !private ["C12ExchangeRate8Currency", "isMajor"]
-- !private ["C12ExchangeRate8Currency", "rate"]
-- !private ["C12ExchangeRate8Currency", "symbol"]
-- !private ["V12ExchangeRate11CurrencyMap", "country"]
-- !private ["C12ExchangeRate15CurrencyRequest", "getCurrency"]
-- !private ["C12ExchangeRate15CurrencyRequest", "init"]
-- !private ["C12ExchangeRate15CurrencyRequest", "parseCurrency"]
+- !private ["C4Core8Currency", "currencyCode"]
+- !private ["C4Core8Currency", "displayName"]
+- !private ["C4Core8Currency", "flagImage"]
+- !private ["C4Core8Currency", "init"]
+- !private ["C4Core8Currency", "isMajor"]
+- !private ["C4Core8Currency", "rate"]
+- !private ["C4Core8Currency", "symbol"]
+- !private ["V4Core11CurrencyMap", "country"]
+- !private ["C4Core15CurrencyRequest", "getCurrency"]
+- !private ["C4Core15CurrencyRequest", "init"]
+- !private ["C4Core15CurrencyRequest", "parseCurrency"]
 - !private ["PSs28CustomDebugStringConvertible", "Generator"]
 - !private ["PSs28CustomDebugStringConvertible", "Index"]
 - ["PSs28CustomDebugStringConvertible", "Some"]
@@ -987,6 +987,10 @@ depends-member:
 - !private ["SS", "init"]
 - !private ["PSs30StringInterpolationConvertible", "init"]
 - !private ["PSs24StringLiteralConvertible", "init"]
+- !private ["P4Core13SubscriptType", "Distance"]
+- !private ["P4Core13SubscriptType", "IntegerLiteralType"]
+- !private ["P4Core13SubscriptType", "Stride"]
+- !private ["P4Core13SubscriptType", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "alpha"]
 - !private ["PSo29UIAccessibilityIdentification", "animateWithDuration"]
 - !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
@@ -1535,8 +1539,8 @@ depends-member:
 - !private ["VSs5UInt8", "deinit"]
 - !private ["Sc", "deinit"]
 - !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
-- !private ["C12ExchangeRate22UserDefaultDataService", "getQueryCurrencysDate"]
-- !private ["C12ExchangeRate22UserDefaultDataService", "sharedInstance"]
+- !private ["C4Core22UserDefaultDataService", "getQueryCurrencysDate"]
+- !private ["C4Core22UserDefaultDataService", "sharedInstance"]
 - ["C12ExchangeRate14ViewController", "AnyObject"]
 - ["C12ExchangeRate14ViewController", "Bool"]
 - ["C12ExchangeRate14ViewController", "Currency"]
@@ -1718,9 +1722,9 @@ depends-nominal:
 - !private "VSs9Character"
 - "PSs14CollectionType"
 - !private "PSs10Comparable"
-- !private "C12ExchangeRate8Currency"
-- !private "V12ExchangeRate11CurrencyMap"
-- !private "C12ExchangeRate15CurrencyRequest"
+- !private "C4Core8Currency"
+- !private "V4Core11CurrencyMap"
+- !private "C4Core15CurrencyRequest"
 - "PSs28CustomDebugStringConvertible"
 - "PSs23CustomStringConvertible"
 - !private "VSs10Dictionary"
@@ -1774,6 +1778,7 @@ depends-nominal:
 - !private "SS"
 - !private "PSs30StringInterpolationConvertible"
 - !private "PSs24StringLiteralConvertible"
+- !private "P4Core13SubscriptType"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
@@ -1804,7 +1809,7 @@ depends-nominal:
 - !private "VSs5UInt8"
 - !private "Sc"
 - !private "PSs31UnicodeScalarLiteralConvertible"
-- !private "C12ExchangeRate22UserDefaultDataService"
+- !private "C4Core22UserDefaultDataService"
 - "C12ExchangeRate14ViewController"
 - "PSs10_ArrayType"
 - !private "PSs33_BuiltinBooleanLiteralConvertible"
@@ -1833,5 +1838,9 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/cktalex/Documents/bProject/test4/ExchangeRate/DerivedData/ExchangeRate/Build/Products/Debug-iphonesimulator/Core.framework/Modules/Core.swiftmodule/x86_64.swiftmodule"
+- "/Users/cktalex/Documents/bProject/test4/ExchangeRate/DerivedData/ExchangeRate/Build/Products/Debug-iphonesimulator/Core.framework/Headers/Core-Swift.h"
+- "/Users/cktalex/Documents/bProject/test4/ExchangeRate/Core/Core.h"
+- "/Users/cktalex/Documents/bProject/test4/ExchangeRate/DerivedData/ExchangeRate/Build/Intermediates/ExchangeRate.build/Debug-iphonesimulator/Core.build/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
-interface-hash: "9513e1acdcd2be73ed7c29839729b149"
+interface-hash: "894bf2a6a9a422a3c487e6d9dd3f410c"

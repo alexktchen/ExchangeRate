@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Float {
+public extension Float {
     var toDecimalStyle:String {
         let formatter = NSNumberFormatter()
         formatter.numberStyle = NSNumberFormatterStyle.DecimalStyle
