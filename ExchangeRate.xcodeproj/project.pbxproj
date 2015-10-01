@@ -7,19 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		726AA02D1BA67CB900592B54 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 726AA02C1BA67CB900592B54 /* Media.xcassets */; };
-		726AA02F1BA67F0F00592B54 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726AA02E1BA67F0F00592B54 /* SwiftyJSON.swift */; };
+		72278B711BBC48C500F8459A /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72278B701BBC48C500F8459A /* Media.xcassets */; settings = {ASSET_TAGS = (); }; };
+		7236C6E41BBC0B720017F08A /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7236C6E31BBC0B720017F08A /* CustomColors.swift */; settings = {ASSET_TAGS = (); }; };
+		7236C6E61BBC0C760017F08A /* CurrencyMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7236C6E51BBC0C760017F08A /* CurrencyMap.swift */; settings = {ASSET_TAGS = (); }; };
+		7236C6E91BBC364C0017F08A /* UserDefaultDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7236C6E81BBC364C0017F08A /* UserDefaultDataService.swift */; settings = {ASSET_TAGS = (); }; };
+		72516D3B1BBA81A9001E52FB /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72516D3A1BBA81A9001E52FB /* SwiftyJSON.swift */; };
+		726151141BBA8209009F3BFE /* AEXML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726151131BBA8209009F3BFE /* AEXML.swift */; };
 		72C5151E1BA5E588003A2A97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C5151D1BA5E588003A2A97 /* AppDelegate.swift */; };
 		72C515211BA5E588003A2A97 /* ExchangeRate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 72C5151F1BA5E588003A2A97 /* ExchangeRate.xcdatamodeld */; };
-		72C515231BA5E588003A2A97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C515221BA5E588003A2A97 /* ViewController.swift */; };
-		72C515261BA5E588003A2A97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72C515241BA5E588003A2A97 /* Main.storyboard */; };
-		72C515281BA5E588003A2A97 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72C515271BA5E588003A2A97 /* Images.xcassets */; };
 		72C5152B1BA5E588003A2A97 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72C515291BA5E588003A2A97 /* LaunchScreen.xib */; };
 		72C515371BA5E588003A2A97 /* ExchangeRateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C515361BA5E588003A2A97 /* ExchangeRateTests.swift */; };
 		72C515471BA5E5C2003A2A97 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72C515461BA5E5C2003A2A97 /* NotificationCenter.framework */; };
 		72C5154C1BA5E5C2003A2A97 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C5154B1BA5E5C2003A2A97 /* TodayViewController.swift */; };
-		72C5154E1BA5E5C2003A2A97 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72C5154D1BA5E5C2003A2A97 /* MainInterface.storyboard */; };
 		72C515511BA5E5C2003A2A97 /* SampleKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 72C515441BA5E5C2003A2A97 /* SampleKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		72E322F11BBA824700759392 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E322EF1BBA824700759392 /* BaseRequest.swift */; };
+		72E322F21BBA824700759392 /* CurrencyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E322F01BBA824700759392 /* CurrencyRequest.swift */; };
+		72E322F51BBA825800759392 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E322F41BBA825800759392 /* Currency.swift */; };
+		72E322F91BBA826700759392 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E322F71BBA826700759392 /* UIColorExtension.swift */; };
+		72E322FA1BBA826700759392 /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E322F81BBA826700759392 /* DoubleExtension.swift */; };
+		72E322FF1BBA827B00759392 /* BackgroundHighlightedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E322FC1BBA827B00759392 /* BackgroundHighlightedButton.swift */; };
+		72E323001BBA827B00759392 /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72E322FD1BBA827B00759392 /* MainTableViewCell.xib */; };
+		72E323011BBA827B00759392 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E322FE1BBA827B00759392 /* MainTableViewCell.swift */; };
+		72E323031BBA828D00759392 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E323021BBA828D00759392 /* ViewController.swift */; };
+		72E323051BBA829900759392 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72E323041BBA829900759392 /* Main.storyboard */; };
+		72E323071BBA82A500759392 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72E323061BBA82A500759392 /* Images.xcassets */; };
+		72E3230B1BBA82C300759392 /* BackgroundHighlightedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E3230A1BBA82C300759392 /* BackgroundHighlightedButton.swift */; };
+		72E3230D1BBA830000759392 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72E3230C1BBA830000759392 /* MainInterface.storyboard */; };
+		72E3230F1BBA834D00759392 /* LocaleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E3230E1BBA834D00759392 /* LocaleExtension.swift */; };
+		72E323131BBAF07B00759392 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E323121BBAF07B00759392 /* StringExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,15 +69,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		726AA02C1BA67CB900592B54 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
-		726AA02E1BA67F0F00592B54 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		72278B701BBC48C500F8459A /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		72278B721BBC4B5B00F8459A /* ExchangeRate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ExchangeRate.entitlements; sourceTree = "<group>"; };
+		72278B731BBC4BE000F8459A /* SampleKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SampleKeyboard.entitlements; sourceTree = "<group>"; };
+		7236C6E31BBC0B720017F08A /* CustomColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
+		7236C6E51BBC0C760017F08A /* CurrencyMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyMap.swift; sourceTree = "<group>"; };
+		7236C6E81BBC364C0017F08A /* UserDefaultDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultDataService.swift; sourceTree = "<group>"; };
+		72516D3A1BBA81A9001E52FB /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		726151131BBA8209009F3BFE /* AEXML.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AEXML.swift; sourceTree = "<group>"; };
 		72C515181BA5E588003A2A97 /* ExchangeRate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExchangeRate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72C5151C1BA5E588003A2A97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72C5151D1BA5E588003A2A97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72C515201BA5E588003A2A97 /* ExchangeRate.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExchangeRate.xcdatamodel; sourceTree = "<group>"; };
-		72C515221BA5E588003A2A97 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		72C515251BA5E588003A2A97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		72C515271BA5E588003A2A97 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		72C5152A1BA5E588003A2A97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		72C515301BA5E588003A2A97 /* ExchangeRateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExchangeRateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72C515351BA5E588003A2A97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,7 +89,21 @@
 		72C515461BA5E5C2003A2A97 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		72C5154A1BA5E5C2003A2A97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72C5154B1BA5E5C2003A2A97 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
-		72C5154D1BA5E5C2003A2A97 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		72E322EF1BBA824700759392 /* BaseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		72E322F01BBA824700759392 /* CurrencyRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyRequest.swift; sourceTree = "<group>"; };
+		72E322F41BBA825800759392 /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		72E322F71BBA826700759392 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		72E322F81BBA826700759392 /* DoubleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
+		72E322FC1BBA827B00759392 /* BackgroundHighlightedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundHighlightedButton.swift; sourceTree = "<group>"; };
+		72E322FD1BBA827B00759392 /* MainTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
+		72E322FE1BBA827B00759392 /* MainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		72E323021BBA828D00759392 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		72E323041BBA829900759392 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		72E323061BBA82A500759392 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		72E3230A1BBA82C300759392 /* BackgroundHighlightedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundHighlightedButton.swift; sourceTree = "<group>"; };
+		72E3230C1BBA830000759392 /* MainInterface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		72E3230E1BBA834D00759392 /* LocaleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocaleExtension.swift; sourceTree = "<group>"; };
+		72E323121BBAF07B00759392 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +132,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7236C6E71BBC36270017F08A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7236C6E81BBC364C0017F08A /* UserDefaultDataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		726151171BBA8211009F3BFE /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				7236C6E31BBC0B720017F08A /* CustomColors.swift */,
+				7236C6E51BBC0C760017F08A /* CurrencyMap.swift */,
+			);
+			name = Constants;
+			path = ../../../ExchangeRate/ExchangeRate;
+			sourceTree = "<group>";
+		};
 		72C5150F1BA5E588003A2A97 = {
 			isa = PBXGroup;
 			children = (
@@ -124,10 +174,18 @@
 		72C5151A1BA5E588003A2A97 /* ExchangeRate */ = {
 			isa = PBXGroup;
 			children = (
+				72278B721BBC4B5B00F8459A /* ExchangeRate.entitlements */,
+				7236C6E71BBC36270017F08A /* Services */,
+				72E322FB1BBA827400759392 /* Controls */,
+				72E322F61BBA826000759392 /* Extension */,
+				72E322F31BBA825000759392 /* Models */,
+				72E322EE1BBA823E00759392 /* Http */,
+				726151171BBA8211009F3BFE /* Constants */,
+				72E323021BBA828D00759392 /* ViewController.swift */,
 				72C5151D1BA5E588003A2A97 /* AppDelegate.swift */,
-				72C515221BA5E588003A2A97 /* ViewController.swift */,
-				72C515241BA5E588003A2A97 /* Main.storyboard */,
-				72C515271BA5E588003A2A97 /* Images.xcassets */,
+				726151131BBA8209009F3BFE /* AEXML.swift */,
+				72E323041BBA829900759392 /* Main.storyboard */,
+				72E323061BBA82A500759392 /* Images.xcassets */,
 				72C515291BA5E588003A2A97 /* LaunchScreen.xib */,
 				72C5151F1BA5E588003A2A97 /* ExchangeRate.xcdatamodeld */,
 				72C5151B1BA5E588003A2A97 /* Supporting Files */,
@@ -171,11 +229,13 @@
 		72C515481BA5E5C2003A2A97 /* SampleKeyboard */ = {
 			isa = PBXGroup;
 			children = (
-				726AA02E1BA67F0F00592B54 /* SwiftyJSON.swift */,
+				72278B731BBC4BE000F8459A /* SampleKeyboard.entitlements */,
+				72278B701BBC48C500F8459A /* Media.xcassets */,
+				72E3230C1BBA830000759392 /* MainInterface.storyboard */,
+				72E3230A1BBA82C300759392 /* BackgroundHighlightedButton.swift */,
+				72516D3A1BBA81A9001E52FB /* SwiftyJSON.swift */,
 				72C5154B1BA5E5C2003A2A97 /* TodayViewController.swift */,
-				72C5154D1BA5E5C2003A2A97 /* MainInterface.storyboard */,
 				72C515491BA5E5C2003A2A97 /* Supporting Files */,
-				726AA02C1BA67CB900592B54 /* Media.xcassets */,
 			);
 			path = SampleKeyboard;
 			sourceTree = "<group>";
@@ -186,6 +246,44 @@
 				72C5154A1BA5E5C2003A2A97 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		72E322EE1BBA823E00759392 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				72E322EF1BBA824700759392 /* BaseRequest.swift */,
+				72E322F01BBA824700759392 /* CurrencyRequest.swift */,
+			);
+			name = Http;
+			sourceTree = "<group>";
+		};
+		72E322F31BBA825000759392 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				72E322F41BBA825800759392 /* Currency.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		72E322F61BBA826000759392 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				72E322F71BBA826700759392 /* UIColorExtension.swift */,
+				72E322F81BBA826700759392 /* DoubleExtension.swift */,
+				72E3230E1BBA834D00759392 /* LocaleExtension.swift */,
+				72E323121BBAF07B00759392 /* StringExtension.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		72E322FB1BBA827400759392 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				72E322FC1BBA827B00759392 /* BackgroundHighlightedButton.swift */,
+				72E322FD1BBA827B00759392 /* MainTableViewCell.xib */,
+				72E322FE1BBA827B00759392 /* MainTableViewCell.swift */,
+			);
+			name = Controls;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,11 +349,18 @@
 		72C515101BA5E588003A2A97 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Alex Chen";
 				TargetAttributes = {
 					72C515171BA5E588003A2A97 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = H9SXKCFCZM;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					72C5152F1BA5E588003A2A97 = {
 						CreatedOnToolsVersion = 6.4;
@@ -263,6 +368,12 @@
 					};
 					72C515431BA5E5C2003A2A97 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = H9SXKCFCZM;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -291,9 +402,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72C515261BA5E588003A2A97 /* Main.storyboard in Resources */,
 				72C5152B1BA5E588003A2A97 /* LaunchScreen.xib in Resources */,
-				72C515281BA5E588003A2A97 /* Images.xcassets in Resources */,
+				72E323071BBA82A500759392 /* Images.xcassets in Resources */,
+				72E323001BBA827B00759392 /* MainTableViewCell.xib in Resources */,
+				72E323051BBA829900759392 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,8 +420,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				726AA02D1BA67CB900592B54 /* Media.xcassets in Resources */,
-				72C5154E1BA5E5C2003A2A97 /* MainInterface.storyboard in Resources */,
+				72278B711BBC48C500F8459A /* Media.xcassets in Resources */,
+				72E3230D1BBA830000759392 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,8 +432,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72C515231BA5E588003A2A97 /* ViewController.swift in Sources */,
+				72E3230F1BBA834D00759392 /* LocaleExtension.swift in Sources */,
+				72E323011BBA827B00759392 /* MainTableViewCell.swift in Sources */,
+				7236C6E41BBC0B720017F08A /* CustomColors.swift in Sources */,
+				72E322F51BBA825800759392 /* Currency.swift in Sources */,
+				72E323131BBAF07B00759392 /* StringExtension.swift in Sources */,
+				726151141BBA8209009F3BFE /* AEXML.swift in Sources */,
+				7236C6E91BBC364C0017F08A /* UserDefaultDataService.swift in Sources */,
+				72E322FF1BBA827B00759392 /* BackgroundHighlightedButton.swift in Sources */,
+				72E322FA1BBA826700759392 /* DoubleExtension.swift in Sources */,
+				7236C6E61BBC0C760017F08A /* CurrencyMap.swift in Sources */,
 				72C515211BA5E588003A2A97 /* ExchangeRate.xcdatamodeld in Sources */,
+				72E322F11BBA824700759392 /* BaseRequest.swift in Sources */,
+				72E322F21BBA824700759392 /* CurrencyRequest.swift in Sources */,
+				72E323031BBA828D00759392 /* ViewController.swift in Sources */,
+				72E322F91BBA826700759392 /* UIColorExtension.swift in Sources */,
 				72C5151E1BA5E588003A2A97 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,8 +463,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72E3230B1BBA82C300759392 /* BackgroundHighlightedButton.swift in Sources */,
 				72C5154C1BA5E5C2003A2A97 /* TodayViewController.swift in Sources */,
-				726AA02F1BA67F0F00592B54 /* SwiftyJSON.swift in Sources */,
+				72516D3B1BBA81A9001E52FB /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,14 +485,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		72C515241BA5E588003A2A97 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				72C515251BA5E588003A2A97 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		72C515291BA5E588003A2A97 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -463,9 +581,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ExchangeRate/ExchangeRate.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ExchangeRate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -473,9 +597,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ExchangeRate/ExchangeRate.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ExchangeRate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -516,24 +646,40 @@
 		72C515531BA5E5C2003A2A97 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				CODE_SIGN_ENTITLEMENTS = SampleKeyboard/SampleKeyboard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = SampleKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		72C515541BA5E5C2003A2A97 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				CODE_SIGN_ENTITLEMENTS = SampleKeyboard/SampleKeyboard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SampleKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -547,7 +693,7 @@
 				72C515391BA5E588003A2A97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		72C5153A1BA5E588003A2A97 /* Build configuration list for PBXNativeTarget "ExchangeRate" */ = {
 			isa = XCConfigurationList;
@@ -556,7 +702,7 @@
 				72C5153C1BA5E588003A2A97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		72C5153D1BA5E588003A2A97 /* Build configuration list for PBXNativeTarget "ExchangeRateTests" */ = {
 			isa = XCConfigurationList;
@@ -565,7 +711,7 @@
 				72C5153F1BA5E588003A2A97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		72C515521BA5E5C2003A2A97 /* Build configuration list for PBXNativeTarget "SampleKeyboard" */ = {
 			isa = XCConfigurationList;
@@ -574,7 +720,7 @@
 				72C515541BA5E5C2003A2A97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 

@@ -12,9 +12,9 @@ import NotificationCenter
 class TodayViewController: UIViewController, NCWidgetProviding {
     
     @IBOutlet weak var ntLabel: UILabel!
-    
     @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var statusLabel: UILabel!
+    @IBOutlet weak var topImage: UIImageView!
+    @IBOutlet weak var bottomImage: UIImageView!
     
     var numberString: String = ""
     
@@ -26,27 +26,17 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     func getStatus(){
         
-        let aDefaults:NSUserDefaults = NSUserDefaults.standardUserDefaults()
+        let defaults = NSUserDefaults(suiteName: "group.com.seligmanventures.LightAlarmFree")
+        defaults!.synchronize()
         
-       
-        if var date: AnyObject = aDefaults.objectForKey("Date") {
+        if let test: NSDate = defaults!.objectForKey("queryCurrencysDate") as? NSDate{
             
-            var rate = aDefaults.doubleForKey("Rate")
-            var date = aDefaults.objectForKey("Date") as! NSDate
-            
-            var dateFormatter = NSDateFormatter()
-            dateFormatter.dateFormat = "MM/dd HH:mm"
-            
-            
-            var dateString = dateFormatter.stringFromDate(date)
-            println(dateString) 
-            
-            dispatch_async(dispatch_get_main_queue(), {
-                self.statusLabel.text = "最後更新時間：\(dateString) 匯率：\(rate)"
-            })
+            ntLabel.text = String(test)
+          print(test)
+        } else {
+             print("No")
+            ntLabel.text = "No"
         }
-       
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -54,7 +44,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         // Dispose of any resources that can be recreated.
     }
     
-    func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)!) {
+    func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)) {
         // Perform any setup necessary in order to update the view.
         
         // If an error is encountered, use NCUpdateResult.Failed
@@ -73,9 +63,9 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         let url = NSURL(string: "http://rate-exchange.herokuapp.com/fetchRate?from=JPY&to=TWD")
         
         let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
-            let json = JSON(data: data)
-            println(json)
-            println(json["Rate"].doubleValue)
+            let json = JSON(data: data!)
+            print(json)
+            print(json["Rate"].doubleValue)
             
             let aDefaults:NSUserDefaults = NSUserDefaults.standardUserDefaults()
             aDefaults.setDouble(json["Rate"].doubleValue, forKey: "Rate")
@@ -93,41 +83,61 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     @IBAction func clear(sender: AnyObject) {
         self.label.text = "0"
         ntLabel.text = "0"
-        numberString = "0"
+        numberString = ""
     }
     
     var isEqual = false
     
     @IBAction func equal(sender: AnyObject) {
-        var yNumber = NSString(string: self.label!.text!).doubleValue
+        
+    }
+    
+    func equal(){
+        let yNumber = NSString(string: self.label!.text!).doubleValue
         let aDefaults:NSUserDefaults = NSUserDefaults.standardUserDefaults()
-        var rate = aDefaults.doubleForKey("Rate")
+        let rate = aDefaults.doubleForKey("Rate")
         ntLabel.text = "\(yNumber * rate)"
         isEqual = true
     }
     
     @IBAction func numberTouchUp(sender: AnyObject) {
         
-        if (isEqual){
-           
-            isEqual = false
-            var s = (sender as! UIButton).titleLabel!.text
-            self.label.text = s
-            numberString = s!
-        } else {
-            
-            var s = (sender as! UIButton).titleLabel!.text
-            if self.label.text == "0" {
-                self.numberString = s!
-            } else {
-                numberString += s!
+        let str = (sender as! UIButton).titleLabel!.text!
+        
+        switch str {
+        case "." :
+            if numberString.containsString(".") {
+                return
             }
-            self.label.text = numberString
+            break
+        case "0":
+            if numberString.characters.count == 0 {
+                self.label.text = str
+                return
+            }
+            break
+        default:
+            break
         }
-
+        
+        numberString += (sender as! UIButton).titleLabel!.text!
+        
+        self.label.text = numberString
+        
+        let yNumber = NSString(string: numberString).doubleValue * 0.2757
+        //let aDefaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
+        
+        ntLabel.text = NSString(format: "%.02f", yNumber) as String
     }
 }
 
-
+extension Float {
+    var toDecimalStyle:String {
+        let formatter = NSNumberFormatter()
+        formatter.numberStyle = NSNumberFormatterStyle.DecimalStyle
+        formatter.locale = NSLocale.currentLocale()
+        return formatter.stringFromNumber(self)!
+    }
+}
 
 

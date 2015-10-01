@@ -1,102 +1,1244 @@
 ### Swift dependencies file v0 ###
-provides:
+provides-top-level:
 - "TodayViewController"
-nominals:
+provides-nominal:
 - "C14SampleKeyboard19TodayViewController"
-class-members:
-- "equal"
-- "didReceiveMemoryWarning"
-- "ntLabel"
-- "refresh"
-- "numberString"
+provides-member:
+- ["C14SampleKeyboard19TodayViewController", ""]
+- ["Sf", ""]
+- ["Sf", "toDecimalStyle"]
+provides-dynamic-lookup:
 - "updatePreferredContentSize"
 - "widgetPerformUpdateWithCompletionHandler"
-- "numberTouchUp"
-- "getCurrency"
-- "label"
+- "equal"
+- "equal"
+- "numberString"
+- "topImage"
+- "isEqual"
 - "getStatus"
 - "viewDidLoad"
+- "getCurrency"
+- "ntLabel"
+- "numberTouchUp"
+- "didReceiveMemoryWarning"
+- "bottomImage"
+- "refresh"
 - "clear"
-- "isEqual"
-- "statusLabel"
-top-level:
-- "NCWidgetProviding"
-- !private "JSON"
-- !private "NSDate"
-- !private "UnicodeScalarType"
-- !private "NSString"
-- "NCUpdateResult"
-- "Void"
-- "StringLiteralType"
-- "UILabel"
-- !private "NSUserDefaults"
-- "String"
-- !private "CGFloat"
-- !private "CGSizeMake"
-- !private "NSDateFormatter"
-- "BooleanLiteralType"
-- !private "+="
-- !private "println"
-- !private "NSURLSession"
-- !private "UIButton"
-- !private "*"
-- "AnyObject"
-- !private "NSURL"
+- "label"
+depends-top-level:
 - !private "=="
 - !private "dispatch_get_main_queue"
-- "UIViewController"
+- "AnyObject"
+- !private "NSLocale"
 - !private "dispatch_async"
-member-access:
-- !private "VSs6UInt16"
-- !private "CSo7UILabel"
-- !private "VSs5Int16"
+- "String"
+- "BooleanLiteralType"
+- !private "NSURLSession"
+- !private "NSNumberFormatter"
+- !private "NSUserDefaults"
+- !private "NSString"
+- !private "NSURL"
+- !private "NSNumberFormatterStyle"
+- "NCUpdateResult"
+- !private "NSDateFormatter"
+- !private "+="
+- "NCWidgetProviding"
+- !private "NSDate"
+- !private "CGSizeMake"
+- !private "JSON"
+- !private "CGFloat"
+- "StringLiteralType"
+- "Void"
+- !private "UIButton"
+- "Float"
+- "UIViewController"
+- "UIImageView"
+- !private "print"
+- !private "UnicodeScalarType"
+- "UILabel"
+- !private "*"
+- !private "~="
+- "TodayViewController"
+depends-member:
+- !private ["PSs16AbsoluteValuable", "NSLocale"]
+- !private ["PSs16AbsoluteValuable", "NSNumberFormatter"]
+- !private ["PSs16AbsoluteValuable", "NSNumberFormatterStyle"]
+- !private ["PSs16AbsoluteValuable", "init"]
+- !private ["PSs9AnyObject", "CGFloat"]
+- !private ["PSs9AnyObject", "CGSizeMake"]
+- !private ["PSs9AnyObject", "JSON"]
+- !private ["PSs9AnyObject", "NCUpdateResult"]
+- !private ["PSs9AnyObject", "NSDate"]
+- !private ["PSs9AnyObject", "NSDateFormatter"]
+- !private ["PSs9AnyObject", "NSString"]
+- !private ["PSs9AnyObject", "NSURL"]
+- !private ["PSs9AnyObject", "NSURLSession"]
+- !private ["PSs9AnyObject", "NSUserDefaults"]
+- ["PSs9AnyObject", "bottomImage"]
+- !private ["PSs9AnyObject", "characters"]
+- ["PSs9AnyObject", "clear"]
+- !private ["PSs9AnyObject", "containsString"]
+- !private ["PSs9AnyObject", "currentLocale"]
+- !private ["PSs9AnyObject", "dataTaskWithURL"]
+- !private ["PSs9AnyObject", "dateFormat"]
+- ["PSs9AnyObject", "didReceiveMemoryWarning"]
+- !private ["PSs9AnyObject", "dispatch_async"]
+- !private ["PSs9AnyObject", "dispatch_get_main_queue"]
+- !private ["PSs9AnyObject", "doubleForKey"]
+- !private ["PSs9AnyObject", "doubleValue"]
+- ["PSs9AnyObject", "equal"]
+- ["PSs9AnyObject", "getCurrency"]
+- ["PSs9AnyObject", "getStatus"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "isEqual"]
+- ["PSs9AnyObject", "label"]
+- !private ["PSs9AnyObject", "locale"]
+- ["PSs9AnyObject", "ntLabel"]
+- ["PSs9AnyObject", "numberString"]
+- !private ["PSs9AnyObject", "numberStyle"]
+- ["PSs9AnyObject", "numberTouchUp"]
+- !private ["PSs9AnyObject", "objectForKey"]
+- !private ["PSs9AnyObject", "preferredContentSize"]
+- !private ["PSs9AnyObject", "print"]
+- ["PSs9AnyObject", "refresh"]
+- !private ["PSs9AnyObject", "resume"]
+- !private ["PSs9AnyObject", "setDouble"]
+- !private ["PSs9AnyObject", "setObject"]
+- !private ["PSs9AnyObject", "sharedSession"]
+- !private ["PSs9AnyObject", "standardUserDefaults"]
+- !private ["PSs9AnyObject", "stringFromDate"]
+- !private ["PSs9AnyObject", "stringFromNumber"]
+- !private ["PSs9AnyObject", "text"]
+- !private ["PSs9AnyObject", "titleLabel"]
+- ["PSs9AnyObject", "topImage"]
+- ["PSs9AnyObject", "updatePreferredContentSize"]
+- ["PSs9AnyObject", "viewDidLoad"]
+- ["PSs9AnyObject", "widgetMarginInsetsForProposedMarginInsets"]
+- ["PSs9AnyObject", "widgetPerformUpdateWithCompletionHandler"]
+- ["PSs9AnyObject", ""]
+- !private ["Sa", "deinit"]
+- !private ["PSs23ArrayLiteralConvertible", "doubleValue"]
+- !private ["PSs23ArrayLiteralConvertible", "init"]
+- !private ["PSs23ArrayLiteralConvertible", "subscript"]
+- !private ["PSs22BidirectionalIndexType", "Distance"]
+- !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs25BooleanLiteralConvertible", "doubleValue"]
+- !private ["PSs25BooleanLiteralConvertible", "init"]
+- !private ["PSs25BooleanLiteralConvertible", "subscript"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "doubleValue"]
+- !private ["PSs11BooleanType", "init"]
+- !private ["PSs11BooleanType", "subscript"]
+- !private ["V12CoreGraphics7CGFloat", "init"]
+- !private ["PSs11CVarArgType", "CGFloat"]
+- !private ["PSs11CVarArgType", "CGSizeMake"]
+- !private ["PSs11CVarArgType", "IntegerLiteralType"]
+- !private ["PSs11CVarArgType", "JSON"]
+- !private ["PSs11CVarArgType", "NCUpdateResult"]
+- !private ["PSs11CVarArgType", "NSDate"]
+- !private ["PSs11CVarArgType", "NSDateFormatter"]
+- !private ["PSs11CVarArgType", "NSLocale"]
+- !private ["PSs11CVarArgType", "NSNumberFormatter"]
+- !private ["PSs11CVarArgType", "NSNumberFormatterStyle"]
+- !private ["PSs11CVarArgType", "NSString"]
+- !private ["PSs11CVarArgType", "NSURL"]
+- !private ["PSs11CVarArgType", "NSURLSession"]
+- !private ["PSs11CVarArgType", "NSUserDefaults"]
+- ["PSs11CVarArgType", "bottomImage"]
+- !private ["PSs11CVarArgType", "characters"]
+- ["PSs11CVarArgType", "clear"]
+- !private ["PSs11CVarArgType", "containsString"]
+- !private ["PSs11CVarArgType", "currentLocale"]
+- !private ["PSs11CVarArgType", "dataTaskWithURL"]
+- !private ["PSs11CVarArgType", "dateFormat"]
+- ["PSs11CVarArgType", "didReceiveMemoryWarning"]
+- !private ["PSs11CVarArgType", "dispatch_async"]
+- !private ["PSs11CVarArgType", "dispatch_get_main_queue"]
+- !private ["PSs11CVarArgType", "doubleForKey"]
+- !private ["PSs11CVarArgType", "doubleValue"]
+- ["PSs11CVarArgType", "equal"]
+- ["PSs11CVarArgType", "getCurrency"]
+- ["PSs11CVarArgType", "getStatus"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "isEqual"]
+- ["PSs11CVarArgType", "label"]
+- !private ["PSs11CVarArgType", "locale"]
+- ["PSs11CVarArgType", "ntLabel"]
+- ["PSs11CVarArgType", "numberString"]
+- !private ["PSs11CVarArgType", "numberStyle"]
+- ["PSs11CVarArgType", "numberTouchUp"]
+- !private ["PSs11CVarArgType", "objectForKey"]
+- !private ["PSs11CVarArgType", "preferredContentSize"]
+- !private ["PSs11CVarArgType", "print"]
+- ["PSs11CVarArgType", "refresh"]
+- !private ["PSs11CVarArgType", "resume"]
+- !private ["PSs11CVarArgType", "setDouble"]
+- !private ["PSs11CVarArgType", "setObject"]
+- !private ["PSs11CVarArgType", "sharedSession"]
+- !private ["PSs11CVarArgType", "standardUserDefaults"]
+- !private ["PSs11CVarArgType", "stringFromDate"]
+- !private ["PSs11CVarArgType", "stringFromNumber"]
+- !private ["PSs11CVarArgType", "text"]
+- !private ["PSs11CVarArgType", "titleLabel"]
+- ["PSs11CVarArgType", "topImage"]
+- ["PSs11CVarArgType", "updatePreferredContentSize"]
+- ["PSs11CVarArgType", "viewDidLoad"]
+- ["PSs11CVarArgType", "widgetMarginInsetsForProposedMarginInsets"]
+- ["PSs11CVarArgType", "widgetPerformUpdateWithCompletionHandler"]
+- ["PSs11CVarArgType", ""]
+- !private ["VSs9Character", "deinit"]
+- !private ["VSS13CharacterView", "Generator"]
+- !private ["VSS13CharacterView", "Index"]
+- !private ["VSS13CharacterView", "SubSequence"]
+- !private ["VSS13CharacterView", "count"]
+- !private ["PSs14CollectionType", "Generator"]
+- !private ["PSs14CollectionType", "Index"]
+- !private ["PSs14CollectionType", "SubSequence"]
+- !private ["PSs14CollectionType", "count"]
+- !private ["PSs10Comparable", "Distance"]
+- !private ["PSs10Comparable", "IntegerLiteralType"]
+- !private ["PSs10Comparable", "NSLocale"]
+- !private ["PSs10Comparable", "NSNumberFormatter"]
+- !private ["PSs10Comparable", "NSNumberFormatterStyle"]
+- !private ["PSs10Comparable", "characters"]
+- !private ["PSs10Comparable", "containsString"]
+- !private ["PSs10Comparable", "doubleValue"]
+- !private ["PSs10Comparable", "init"]
+- !private ["PSs10Comparable", "subscript"]
+- ["PSs28CustomDebugStringConvertible", "Some"]
+- !private ["PSs28CustomDebugStringConvertible", "characters"]
+- !private ["PSs28CustomDebugStringConvertible", "containsString"]
+- !private ["PSs28CustomDebugStringConvertible", "doubleValue"]
+- !private ["PSs28CustomDebugStringConvertible", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "subscript"]
+- !private ["PSs23CustomStringConvertible", "CGFloat"]
+- !private ["PSs23CustomStringConvertible", "CGSizeMake"]
+- !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["PSs23CustomStringConvertible", "JSON"]
+- !private ["PSs23CustomStringConvertible", "NCUpdateResult"]
+- !private ["PSs23CustomStringConvertible", "NSDate"]
+- !private ["PSs23CustomStringConvertible", "NSDateFormatter"]
+- !private ["PSs23CustomStringConvertible", "NSLocale"]
+- !private ["PSs23CustomStringConvertible", "NSNumberFormatter"]
+- !private ["PSs23CustomStringConvertible", "NSNumberFormatterStyle"]
+- !private ["PSs23CustomStringConvertible", "NSString"]
+- !private ["PSs23CustomStringConvertible", "NSURL"]
+- !private ["PSs23CustomStringConvertible", "NSURLSession"]
+- !private ["PSs23CustomStringConvertible", "NSUserDefaults"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["PSs23CustomStringConvertible", "bottomImage"]
+- !private ["PSs23CustomStringConvertible", "characters"]
+- ["PSs23CustomStringConvertible", "clear"]
+- !private ["PSs23CustomStringConvertible", "containsString"]
+- !private ["PSs23CustomStringConvertible", "currentLocale"]
+- !private ["PSs23CustomStringConvertible", "dataTaskWithURL"]
+- !private ["PSs23CustomStringConvertible", "dateFormat"]
+- ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["PSs23CustomStringConvertible", "dispatch_async"]
+- !private ["PSs23CustomStringConvertible", "dispatch_get_main_queue"]
+- !private ["PSs23CustomStringConvertible", "doubleForKey"]
+- !private ["PSs23CustomStringConvertible", "doubleValue"]
+- ["PSs23CustomStringConvertible", "equal"]
+- ["PSs23CustomStringConvertible", "getCurrency"]
+- ["PSs23CustomStringConvertible", "getStatus"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "isEqual"]
+- ["PSs23CustomStringConvertible", "label"]
+- !private ["PSs23CustomStringConvertible", "locale"]
+- ["PSs23CustomStringConvertible", "ntLabel"]
+- ["PSs23CustomStringConvertible", "numberString"]
+- !private ["PSs23CustomStringConvertible", "numberStyle"]
+- ["PSs23CustomStringConvertible", "numberTouchUp"]
+- !private ["PSs23CustomStringConvertible", "objectForKey"]
+- !private ["PSs23CustomStringConvertible", "preferredContentSize"]
+- !private ["PSs23CustomStringConvertible", "print"]
+- ["PSs23CustomStringConvertible", "refresh"]
+- !private ["PSs23CustomStringConvertible", "resume"]
+- !private ["PSs23CustomStringConvertible", "setDouble"]
+- !private ["PSs23CustomStringConvertible", "setObject"]
+- !private ["PSs23CustomStringConvertible", "sharedSession"]
+- !private ["PSs23CustomStringConvertible", "standardUserDefaults"]
+- !private ["PSs23CustomStringConvertible", "stringFromDate"]
+- !private ["PSs23CustomStringConvertible", "stringFromNumber"]
+- !private ["PSs23CustomStringConvertible", "subscript"]
+- !private ["PSs23CustomStringConvertible", "text"]
+- !private ["PSs23CustomStringConvertible", "titleLabel"]
+- ["PSs23CustomStringConvertible", "topImage"]
+- ["PSs23CustomStringConvertible", "updatePreferredContentSize"]
+- ["PSs23CustomStringConvertible", "viewDidLoad"]
+- ["PSs23CustomStringConvertible", "widgetMarginInsetsForProposedMarginInsets"]
+- ["PSs23CustomStringConvertible", "widgetPerformUpdateWithCompletionHandler"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["PSs28DictionaryLiteralConvertible", "doubleValue"]
+- !private ["PSs28DictionaryLiteralConvertible", "init"]
+- !private ["PSs28DictionaryLiteralConvertible", "subscript"]
+- !private ["Sd", "deinit"]
+- !private ["PSs9Equatable", "CGFloat"]
+- !private ["PSs9Equatable", "CGSizeMake"]
+- !private ["PSs9Equatable", "DecimalStyle"]
+- !private ["PSs9Equatable", "Distance"]
+- !private ["PSs9Equatable", "IntegerLiteralType"]
+- !private ["PSs9Equatable", "JSON"]
+- !private ["PSs9Equatable", "NCUpdateResult"]
+- !private ["PSs9Equatable", "NSDate"]
+- !private ["PSs9Equatable", "NSDateFormatter"]
+- !private ["PSs9Equatable", "NSLocale"]
+- !private ["PSs9Equatable", "NSNumberFormatter"]
+- !private ["PSs9Equatable", "NSNumberFormatterStyle"]
+- !private ["PSs9Equatable", "NSString"]
+- !private ["PSs9Equatable", "NSURL"]
+- !private ["PSs9Equatable", "NSURLSession"]
+- !private ["PSs9Equatable", "NSUserDefaults"]
+- !private ["PSs9Equatable", "NewData"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- ["PSs9Equatable", "bottomImage"]
+- !private ["PSs9Equatable", "characters"]
+- ["PSs9Equatable", "clear"]
+- !private ["PSs9Equatable", "containsString"]
+- !private ["PSs9Equatable", "currentLocale"]
+- !private ["PSs9Equatable", "dataTaskWithURL"]
+- !private ["PSs9Equatable", "dateFormat"]
+- ["PSs9Equatable", "didReceiveMemoryWarning"]
+- !private ["PSs9Equatable", "dispatch_async"]
+- !private ["PSs9Equatable", "dispatch_get_main_queue"]
+- !private ["PSs9Equatable", "doubleForKey"]
+- !private ["PSs9Equatable", "doubleValue"]
+- ["PSs9Equatable", "equal"]
+- ["PSs9Equatable", "getCurrency"]
+- ["PSs9Equatable", "getStatus"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "isEqual"]
+- ["PSs9Equatable", "label"]
+- !private ["PSs9Equatable", "locale"]
+- ["PSs9Equatable", "ntLabel"]
+- ["PSs9Equatable", "numberString"]
+- !private ["PSs9Equatable", "numberStyle"]
+- ["PSs9Equatable", "numberTouchUp"]
+- !private ["PSs9Equatable", "objectForKey"]
+- !private ["PSs9Equatable", "preferredContentSize"]
+- !private ["PSs9Equatable", "print"]
+- ["PSs9Equatable", "refresh"]
+- !private ["PSs9Equatable", "resume"]
+- !private ["PSs9Equatable", "setDouble"]
+- !private ["PSs9Equatable", "setObject"]
+- !private ["PSs9Equatable", "sharedSession"]
+- !private ["PSs9Equatable", "standardUserDefaults"]
+- !private ["PSs9Equatable", "stringFromDate"]
+- !private ["PSs9Equatable", "stringFromNumber"]
+- !private ["PSs9Equatable", "subscript"]
+- !private ["PSs9Equatable", "text"]
+- !private ["PSs9Equatable", "titleLabel"]
+- ["PSs9Equatable", "topImage"]
+- ["PSs9Equatable", "updatePreferredContentSize"]
+- ["PSs9Equatable", "viewDidLoad"]
+- ["PSs9Equatable", "widgetMarginInsetsForProposedMarginInsets"]
+- ["PSs9Equatable", "widgetPerformUpdateWithCompletionHandler"]
+- ["PSs9Equatable", ""]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "characters"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "containsString"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "doubleValue"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "subscript"]
+- !private ["Sf", "NSLocale"]
+- !private ["Sf", "NSNumberFormatter"]
+- !private ["Sf", "NSNumberFormatterStyle"]
+- ["Sf", "String"]
+- !private ["Sf", "deinit"]
+- ["Sf", "toDecimalStyle"]
+- !private ["PSs23FloatLiteralConvertible", "NSLocale"]
+- !private ["PSs23FloatLiteralConvertible", "NSNumberFormatter"]
+- !private ["PSs23FloatLiteralConvertible", "NSNumberFormatterStyle"]
+- !private ["PSs23FloatLiteralConvertible", "doubleValue"]
+- !private ["PSs23FloatLiteralConvertible", "init"]
+- !private ["PSs23FloatLiteralConvertible", "subscript"]
+- !private ["PSs17FloatingPointType", "NSLocale"]
+- !private ["PSs17FloatingPointType", "NSNumberFormatter"]
+- !private ["PSs17FloatingPointType", "NSNumberFormatterStyle"]
+- !private ["PSs17FloatingPointType", "init"]
+- !private ["PSs16ForwardIndexType", "Distance"]
+- !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
+- !private ["PSs8Hashable", "CGFloat"]
+- !private ["PSs8Hashable", "CGSizeMake"]
+- !private ["PSs8Hashable", "DecimalStyle"]
+- !private ["PSs8Hashable", "IntegerLiteralType"]
+- !private ["PSs8Hashable", "JSON"]
+- !private ["PSs8Hashable", "NCUpdateResult"]
+- !private ["PSs8Hashable", "NSDate"]
+- !private ["PSs8Hashable", "NSDateFormatter"]
+- !private ["PSs8Hashable", "NSLocale"]
+- !private ["PSs8Hashable", "NSNumberFormatter"]
+- !private ["PSs8Hashable", "NSNumberFormatterStyle"]
+- !private ["PSs8Hashable", "NSString"]
+- !private ["PSs8Hashable", "NSURL"]
+- !private ["PSs8Hashable", "NSURLSession"]
+- !private ["PSs8Hashable", "NSUserDefaults"]
+- !private ["PSs8Hashable", "NewData"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- ["PSs8Hashable", "bottomImage"]
+- !private ["PSs8Hashable", "characters"]
+- ["PSs8Hashable", "clear"]
+- !private ["PSs8Hashable", "containsString"]
+- !private ["PSs8Hashable", "currentLocale"]
+- !private ["PSs8Hashable", "dataTaskWithURL"]
+- !private ["PSs8Hashable", "dateFormat"]
+- ["PSs8Hashable", "didReceiveMemoryWarning"]
+- !private ["PSs8Hashable", "dispatch_async"]
+- !private ["PSs8Hashable", "dispatch_get_main_queue"]
+- !private ["PSs8Hashable", "doubleForKey"]
+- !private ["PSs8Hashable", "doubleValue"]
+- ["PSs8Hashable", "equal"]
+- ["PSs8Hashable", "getCurrency"]
+- ["PSs8Hashable", "getStatus"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "isEqual"]
+- ["PSs8Hashable", "label"]
+- !private ["PSs8Hashable", "locale"]
+- ["PSs8Hashable", "ntLabel"]
+- ["PSs8Hashable", "numberString"]
+- !private ["PSs8Hashable", "numberStyle"]
+- ["PSs8Hashable", "numberTouchUp"]
+- !private ["PSs8Hashable", "objectForKey"]
+- !private ["PSs8Hashable", "preferredContentSize"]
+- !private ["PSs8Hashable", "print"]
+- ["PSs8Hashable", "refresh"]
+- !private ["PSs8Hashable", "resume"]
+- !private ["PSs8Hashable", "setDouble"]
+- !private ["PSs8Hashable", "setObject"]
+- !private ["PSs8Hashable", "sharedSession"]
+- !private ["PSs8Hashable", "standardUserDefaults"]
+- !private ["PSs8Hashable", "stringFromDate"]
+- !private ["PSs8Hashable", "stringFromNumber"]
+- !private ["PSs8Hashable", "text"]
+- !private ["PSs8Hashable", "titleLabel"]
+- ["PSs8Hashable", "topImage"]
+- ["PSs8Hashable", "updatePreferredContentSize"]
+- ["PSs8Hashable", "viewDidLoad"]
+- ["PSs8Hashable", "widgetMarginInsetsForProposedMarginInsets"]
+- ["PSs8Hashable", "widgetPerformUpdateWithCompletionHandler"]
+- ["PSs8Hashable", ""]
+- !private ["SQ", "deinit"]
+- !private ["VVSS13CharacterView5Index", "Distance"]
+- !private ["PSs9Indexable", "Generator"]
+- !private ["PSs9Indexable", "Index"]
+- !private ["PSs9Indexable", "SubSequence"]
+- !private ["PSs9Indexable", "count"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "deinit"]
+- !private ["VSs5Int16", "deinit"]
+- !private ["VSs5Int32", "deinit"]
+- !private ["VSs5Int64", "deinit"]
+- !private ["VSs4Int8", "deinit"]
+- !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs25IntegerLiteralConvertible", "NSLocale"]
+- !private ["PSs25IntegerLiteralConvertible", "NSNumberFormatter"]
+- !private ["PSs25IntegerLiteralConvertible", "NSNumberFormatterStyle"]
+- !private ["PSs25IntegerLiteralConvertible", "doubleValue"]
+- !private ["PSs25IntegerLiteralConvertible", "init"]
+- !private ["PSs25IntegerLiteralConvertible", "subscript"]
+- !private ["PSs11IntegerType", "IntegerLiteralType"]
+- !private ["V14SampleKeyboard4JSON", "deinit"]
+- !private ["V14SampleKeyboard4JSON", "doubleValue"]
+- !private ["V14SampleKeyboard4JSON", "init"]
+- !private ["V14SampleKeyboard4JSON", "subscript"]
+- !private ["PSs14MirrorPathType", "IntegerLiteralType"]
+- !private ["PSs14MirrorPathType", "characters"]
+- !private ["PSs14MirrorPathType", "containsString"]
+- !private ["PSs14MirrorPathType", "init"]
+- !private ["OSC14NCUpdateResult", "NewData"]
+- !private ["PSo17NCWidgetProviding", "CGFloat"]
+- !private ["PSo17NCWidgetProviding", "CGSizeMake"]
+- !private ["PSo17NCWidgetProviding", "JSON"]
+- !private ["PSo17NCWidgetProviding", "NCUpdateResult"]
+- !private ["PSo17NCWidgetProviding", "NSDate"]
+- !private ["PSo17NCWidgetProviding", "NSDateFormatter"]
+- !private ["PSo17NCWidgetProviding", "NSString"]
+- !private ["PSo17NCWidgetProviding", "NSURL"]
+- !private ["PSo17NCWidgetProviding", "NSURLSession"]
+- !private ["PSo17NCWidgetProviding", "NSUserDefaults"]
+- !private ["PSo17NCWidgetProviding", "dispatch_async"]
+- !private ["PSo17NCWidgetProviding", "dispatch_get_main_queue"]
+- !private ["PSo17NCWidgetProviding", "getCurrency"]
+- !private ["PSo17NCWidgetProviding", "getStatus"]
+- !private ["PSo17NCWidgetProviding", "isEqual"]
+- !private ["PSo17NCWidgetProviding", "label"]
+- !private ["PSo17NCWidgetProviding", "ntLabel"]
+- !private ["PSo17NCWidgetProviding", "numberString"]
+- !private ["PSo17NCWidgetProviding", "preferredContentSize"]
+- !private ["PSo17NCWidgetProviding", "print"]
+- !private ["PSo17NCWidgetProviding", "updatePreferredContentSize"]
+- ["PSo17NCWidgetProviding", "widgetMarginInsetsForProposedMarginInsets"]
+- ["PSo17NCWidgetProviding", "widgetPerformUpdateWithCompletionHandler"]
+- ["PSo17NCWidgetProviding", ""]
+- !private ["PSo8NSCoding", "CGFloat"]
+- !private ["PSo8NSCoding", "CGSizeMake"]
+- !private ["PSo8NSCoding", "JSON"]
+- !private ["PSo8NSCoding", "NCUpdateResult"]
+- !private ["PSo8NSCoding", "NSDate"]
+- !private ["PSo8NSCoding", "NSDateFormatter"]
+- !private ["PSo8NSCoding", "NSString"]
+- !private ["PSo8NSCoding", "NSURL"]
+- !private ["PSo8NSCoding", "NSURLSession"]
+- !private ["PSo8NSCoding", "NSUserDefaults"]
+- ["PSo8NSCoding", "bottomImage"]
+- !private ["PSo8NSCoding", "characters"]
+- ["PSo8NSCoding", "clear"]
+- !private ["PSo8NSCoding", "containsString"]
+- !private ["PSo8NSCoding", "currentLocale"]
+- !private ["PSo8NSCoding", "dateFormat"]
+- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- !private ["PSo8NSCoding", "dispatch_async"]
+- !private ["PSo8NSCoding", "dispatch_get_main_queue"]
+- !private ["PSo8NSCoding", "doubleValue"]
+- ["PSo8NSCoding", "equal"]
+- ["PSo8NSCoding", "getCurrency"]
+- ["PSo8NSCoding", "getStatus"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "isEqual"]
+- ["PSo8NSCoding", "label"]
+- !private ["PSo8NSCoding", "locale"]
+- ["PSo8NSCoding", "ntLabel"]
+- ["PSo8NSCoding", "numberString"]
+- !private ["PSo8NSCoding", "numberStyle"]
+- ["PSo8NSCoding", "numberTouchUp"]
+- !private ["PSo8NSCoding", "preferredContentSize"]
+- !private ["PSo8NSCoding", "print"]
+- ["PSo8NSCoding", "refresh"]
+- !private ["PSo8NSCoding", "stringFromDate"]
+- !private ["PSo8NSCoding", "stringFromNumber"]
+- !private ["PSo8NSCoding", "text"]
+- !private ["PSo8NSCoding", "titleLabel"]
+- ["PSo8NSCoding", "topImage"]
+- ["PSo8NSCoding", "updatePreferredContentSize"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", "widgetMarginInsetsForProposedMarginInsets"]
+- ["PSo8NSCoding", "widgetPerformUpdateWithCompletionHandler"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "characters"]
+- !private ["PSo9NSCopying", "containsString"]
+- !private ["PSo9NSCopying", "currentLocale"]
+- !private ["PSo9NSCopying", "dateFormat"]
+- !private ["PSo9NSCopying", "doubleValue"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "locale"]
+- !private ["PSo9NSCopying", "numberStyle"]
+- !private ["PSo9NSCopying", "resume"]
+- !private ["PSo9NSCopying", "stringFromDate"]
+- !private ["PSo9NSCopying", "stringFromNumber"]
+- !private ["CSo6NSDate", "init"]
+- !private ["CSo15NSDateFormatter", "dateFormat"]
+- !private ["CSo15NSDateFormatter", "init"]
+- !private ["CSo15NSDateFormatter", "stringFromDate"]
+- !private ["PSo26NSExtensionRequestHandling", "CGFloat"]
+- !private ["PSo26NSExtensionRequestHandling", "CGSizeMake"]
+- !private ["PSo26NSExtensionRequestHandling", "JSON"]
+- !private ["PSo26NSExtensionRequestHandling", "NCUpdateResult"]
+- !private ["PSo26NSExtensionRequestHandling", "NSDate"]
+- !private ["PSo26NSExtensionRequestHandling", "NSDateFormatter"]
+- !private ["PSo26NSExtensionRequestHandling", "NSString"]
+- !private ["PSo26NSExtensionRequestHandling", "NSURL"]
+- !private ["PSo26NSExtensionRequestHandling", "NSURLSession"]
+- !private ["PSo26NSExtensionRequestHandling", "NSUserDefaults"]
+- ["PSo26NSExtensionRequestHandling", "bottomImage"]
+- ["PSo26NSExtensionRequestHandling", "clear"]
+- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- !private ["PSo26NSExtensionRequestHandling", "dispatch_async"]
+- !private ["PSo26NSExtensionRequestHandling", "dispatch_get_main_queue"]
+- ["PSo26NSExtensionRequestHandling", "equal"]
+- ["PSo26NSExtensionRequestHandling", "getCurrency"]
+- ["PSo26NSExtensionRequestHandling", "getStatus"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "isEqual"]
+- ["PSo26NSExtensionRequestHandling", "label"]
+- ["PSo26NSExtensionRequestHandling", "ntLabel"]
+- ["PSo26NSExtensionRequestHandling", "numberString"]
+- ["PSo26NSExtensionRequestHandling", "numberTouchUp"]
+- !private ["PSo26NSExtensionRequestHandling", "preferredContentSize"]
+- !private ["PSo26NSExtensionRequestHandling", "print"]
+- ["PSo26NSExtensionRequestHandling", "refresh"]
+- ["PSo26NSExtensionRequestHandling", "topImage"]
+- ["PSo26NSExtensionRequestHandling", "updatePreferredContentSize"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", "widgetMarginInsetsForProposedMarginInsets"]
+- ["PSo26NSExtensionRequestHandling", "widgetPerformUpdateWithCompletionHandler"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["CSo11NSFormatter", "dateFormat"]
+- !private ["CSo11NSFormatter", "init"]
+- !private ["CSo11NSFormatter", "locale"]
+- !private ["CSo11NSFormatter", "numberStyle"]
+- !private ["CSo11NSFormatter", "stringFromDate"]
+- !private ["CSo11NSFormatter", "stringFromNumber"]
+- !private ["CSo8NSLocale", "currentLocale"]
+- !private ["PSo16NSMutableCopying", "characters"]
+- !private ["PSo16NSMutableCopying", "containsString"]
+- !private ["PSo16NSMutableCopying", "doubleValue"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo17NSNumberFormatter", "init"]
+- !private ["CSo17NSNumberFormatter", "locale"]
+- !private ["CSo17NSNumberFormatter", "numberStyle"]
+- !private ["CSo17NSNumberFormatter", "stringFromNumber"]
+- !private ["OSC22NSNumberFormatterStyle", "DecimalStyle"]
+- ["CSo8NSObject", "AnyObject"]
+- !private ["CSo8NSObject", "CGFloat"]
+- !private ["CSo8NSObject", "CGSizeMake"]
+- !private ["CSo8NSObject", "JSON"]
+- ["CSo8NSObject", "NCUpdateResult"]
+- !private ["CSo8NSObject", "NSDate"]
+- !private ["CSo8NSObject", "NSDateFormatter"]
+- !private ["CSo8NSObject", "NSString"]
+- !private ["CSo8NSObject", "NSURL"]
+- !private ["CSo8NSObject", "NSURLSession"]
+- !private ["CSo8NSObject", "NSUserDefaults"]
+- ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "UIButton"]
+- ["CSo8NSObject", "UIImageView"]
+- ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "Void"]
+- ["CSo8NSObject", "bottomImage"]
+- !private ["CSo8NSObject", "characters"]
+- ["CSo8NSObject", "clear"]
+- !private ["CSo8NSObject", "containsString"]
+- !private ["CSo8NSObject", "currentLocale"]
+- !private ["CSo8NSObject", "dataTaskWithURL"]
+- !private ["CSo8NSObject", "dateFormat"]
+- !private ["CSo8NSObject", "deinit"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- !private ["CSo8NSObject", "dispatch_async"]
+- !private ["CSo8NSObject", "dispatch_get_main_queue"]
+- !private ["CSo8NSObject", "doubleForKey"]
+- !private ["CSo8NSObject", "doubleValue"]
+- ["CSo8NSObject", "equal"]
+- ["CSo8NSObject", "getCurrency"]
+- ["CSo8NSObject", "getStatus"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "isEqual"]
+- ["CSo8NSObject", "label"]
+- !private ["CSo8NSObject", "locale"]
+- ["CSo8NSObject", "ntLabel"]
+- ["CSo8NSObject", "numberString"]
+- !private ["CSo8NSObject", "numberStyle"]
+- ["CSo8NSObject", "numberTouchUp"]
+- !private ["CSo8NSObject", "objectForKey"]
+- !private ["CSo8NSObject", "preferredContentSize"]
+- !private ["CSo8NSObject", "print"]
+- ["CSo8NSObject", "refresh"]
+- !private ["CSo8NSObject", "resume"]
+- !private ["CSo8NSObject", "setDouble"]
+- !private ["CSo8NSObject", "setObject"]
+- !private ["CSo8NSObject", "sharedSession"]
+- !private ["CSo8NSObject", "standardUserDefaults"]
+- !private ["CSo8NSObject", "stringFromDate"]
+- !private ["CSo8NSObject", "stringFromNumber"]
+- !private ["CSo8NSObject", "text"]
+- !private ["CSo8NSObject", "titleLabel"]
+- ["CSo8NSObject", "topImage"]
+- ["CSo8NSObject", "updatePreferredContentSize"]
+- ["CSo8NSObject", "viewDidLoad"]
+- ["CSo8NSObject", "widgetMarginInsetsForProposedMarginInsets"]
+- ["CSo8NSObject", "widgetPerformUpdateWithCompletionHandler"]
+- !private ["PSo16NSObjectProtocol", "CGFloat"]
+- !private ["PSo16NSObjectProtocol", "CGSizeMake"]
+- !private ["PSo16NSObjectProtocol", "JSON"]
+- !private ["PSo16NSObjectProtocol", "NCUpdateResult"]
+- !private ["PSo16NSObjectProtocol", "NSDate"]
+- !private ["PSo16NSObjectProtocol", "NSDateFormatter"]
+- !private ["PSo16NSObjectProtocol", "NSString"]
+- !private ["PSo16NSObjectProtocol", "NSURL"]
+- !private ["PSo16NSObjectProtocol", "NSURLSession"]
+- !private ["PSo16NSObjectProtocol", "NSUserDefaults"]
+- ["PSo16NSObjectProtocol", "bottomImage"]
+- !private ["PSo16NSObjectProtocol", "characters"]
+- ["PSo16NSObjectProtocol", "clear"]
+- !private ["PSo16NSObjectProtocol", "containsString"]
+- !private ["PSo16NSObjectProtocol", "currentLocale"]
+- !private ["PSo16NSObjectProtocol", "dataTaskWithURL"]
+- !private ["PSo16NSObjectProtocol", "dateFormat"]
+- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "dispatch_async"]
+- !private ["PSo16NSObjectProtocol", "dispatch_get_main_queue"]
+- !private ["PSo16NSObjectProtocol", "doubleForKey"]
+- !private ["PSo16NSObjectProtocol", "doubleValue"]
+- ["PSo16NSObjectProtocol", "equal"]
+- ["PSo16NSObjectProtocol", "getCurrency"]
+- ["PSo16NSObjectProtocol", "getStatus"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "isEqual"]
+- ["PSo16NSObjectProtocol", "label"]
+- !private ["PSo16NSObjectProtocol", "locale"]
+- ["PSo16NSObjectProtocol", "ntLabel"]
+- ["PSo16NSObjectProtocol", "numberString"]
+- !private ["PSo16NSObjectProtocol", "numberStyle"]
+- ["PSo16NSObjectProtocol", "numberTouchUp"]
+- !private ["PSo16NSObjectProtocol", "objectForKey"]
+- !private ["PSo16NSObjectProtocol", "preferredContentSize"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- ["PSo16NSObjectProtocol", "refresh"]
+- !private ["PSo16NSObjectProtocol", "resume"]
+- !private ["PSo16NSObjectProtocol", "setDouble"]
+- !private ["PSo16NSObjectProtocol", "setObject"]
+- !private ["PSo16NSObjectProtocol", "sharedSession"]
+- !private ["PSo16NSObjectProtocol", "standardUserDefaults"]
+- !private ["PSo16NSObjectProtocol", "stringFromDate"]
+- !private ["PSo16NSObjectProtocol", "stringFromNumber"]
+- !private ["PSo16NSObjectProtocol", "text"]
+- !private ["PSo16NSObjectProtocol", "titleLabel"]
+- ["PSo16NSObjectProtocol", "topImage"]
+- ["PSo16NSObjectProtocol", "updatePreferredContentSize"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", "widgetMarginInsetsForProposedMarginInsets"]
+- ["PSo16NSObjectProtocol", "widgetPerformUpdateWithCompletionHandler"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "characters"]
+- !private ["PSo14NSSecureCoding", "containsString"]
+- !private ["PSo14NSSecureCoding", "currentLocale"]
+- !private ["PSo14NSSecureCoding", "doubleValue"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "characters"]
+- !private ["CSo8NSString", "containsString"]
+- !private ["CSo8NSString", "deinit"]
+- !private ["CSo8NSString", "doubleValue"]
+- !private ["CSo8NSString", "init"]
+- !private ["CSo5NSURL", "init"]
+- !private ["CSo12NSURLSession", "dataTaskWithURL"]
+- !private ["CSo12NSURLSession", "sharedSession"]
+- !private ["CSo20NSURLSessionDataTask", "resume"]
+- !private ["CSo16NSURLSessionTask", "resume"]
+- !private ["CSo14NSUserDefaults", "doubleForKey"]
+- !private ["CSo14NSUserDefaults", "init"]
+- !private ["CSo14NSUserDefaults", "objectForKey"]
+- !private ["CSo14NSUserDefaults", "setDouble"]
+- !private ["CSo14NSUserDefaults", "setObject"]
+- !private ["CSo14NSUserDefaults", "standardUserDefaults"]
+- ["PSs21NilLiteralConvertible", "Some"]
+- !private ["PSs21NilLiteralConvertible", "doubleValue"]
+- !private ["PSs21NilLiteralConvertible", "init"]
+- !private ["PSs21NilLiteralConvertible", "subscript"]
+- ["Sq", "Some"]
+- !private ["Sq", "deinit"]
+- !private ["PSs16OutputStreamType", "characters"]
+- !private ["PSs16OutputStreamType", "containsString"]
+- !private ["PSs16OutputStreamType", "init"]
+- !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["VSs5Range", "deinit"]
+- !private ["PSs30RangeReplaceableCollectionType", "Generator"]
+- !private ["PSs30RangeReplaceableCollectionType", "Index"]
+- !private ["PSs30RangeReplaceableCollectionType", "SubSequence"]
+- !private ["PSs30RangeReplaceableCollectionType", "count"]
+- !private ["PSs16RawRepresentable", "DecimalStyle"]
+- !private ["PSs16RawRepresentable", "NewData"]
+- !private ["PSs16RawRepresentable", "doubleValue"]
+- !private ["PSs16RawRepresentable", "init"]
+- !private ["PSs16RawRepresentable", "subscript"]
+- !private ["PSs12SequenceType", "Generator"]
+- !private ["PSs12SequenceType", "Index"]
+- !private ["PSs12SequenceType", "SubSequence"]
+- !private ["PSs12SequenceType", "count"]
+- !private ["PSs12SequenceType", "doubleValue"]
+- !private ["PSs12SequenceType", "init"]
+- !private ["PSs12SequenceType", "subscript"]
+- !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs16SignedNumberType", "IntegerLiteralType"]
+- !private ["PSs16SignedNumberType", "NSLocale"]
+- !private ["PSs16SignedNumberType", "NSNumberFormatter"]
+- !private ["PSs16SignedNumberType", "NSNumberFormatterStyle"]
+- !private ["PSs16SignedNumberType", "init"]
+- !private ["PSs10Streamable", "characters"]
+- !private ["PSs10Streamable", "containsString"]
+- !private ["PSs10Streamable", "init"]
+- !private ["PSs10Strideable", "IntegerLiteralType"]
+- !private ["PSs10Strideable", "NSLocale"]
+- !private ["PSs10Strideable", "NSNumberFormatter"]
+- !private ["PSs10Strideable", "NSNumberFormatterStyle"]
+- !private ["PSs10Strideable", "init"]
+- !private ["SS", "characters"]
+- !private ["SS", "containsString"]
+- !private ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["PSs30StringInterpolationConvertible", "characters"]
+- !private ["PSs30StringInterpolationConvertible", "containsString"]
+- !private ["PSs30StringInterpolationConvertible", "init"]
+- !private ["PSs24StringLiteralConvertible", "characters"]
+- !private ["PSs24StringLiteralConvertible", "containsString"]
+- !private ["PSs24StringLiteralConvertible", "doubleValue"]
+- !private ["PSs24StringLiteralConvertible", "init"]
+- !private ["PSs24StringLiteralConvertible", "subscript"]
+- !private ["P14SampleKeyboard13SubscriptType", "IntegerLiteralType"]
+- !private ["P14SampleKeyboard13SubscriptType", "characters"]
+- !private ["P14SampleKeyboard13SubscriptType", "containsString"]
+- !private ["P14SampleKeyboard13SubscriptType", "init"]
+- ["C14SampleKeyboard19TodayViewController", "AnyObject"]
+- !private ["C14SampleKeyboard19TodayViewController", "CGFloat"]
+- !private ["C14SampleKeyboard19TodayViewController", "CGSizeMake"]
+- !private ["C14SampleKeyboard19TodayViewController", "JSON"]
+- ["C14SampleKeyboard19TodayViewController", "NCUpdateResult"]
+- !private ["C14SampleKeyboard19TodayViewController", "NSDate"]
+- !private ["C14SampleKeyboard19TodayViewController", "NSDateFormatter"]
+- !private ["C14SampleKeyboard19TodayViewController", "NSString"]
+- !private ["C14SampleKeyboard19TodayViewController", "NSURL"]
+- !private ["C14SampleKeyboard19TodayViewController", "NSURLSession"]
+- !private ["C14SampleKeyboard19TodayViewController", "NSUserDefaults"]
+- ["C14SampleKeyboard19TodayViewController", "String"]
+- !private ["C14SampleKeyboard19TodayViewController", "UIButton"]
+- ["C14SampleKeyboard19TodayViewController", "UIImageView"]
+- ["C14SampleKeyboard19TodayViewController", "UILabel"]
+- ["C14SampleKeyboard19TodayViewController", "Void"]
+- ["C14SampleKeyboard19TodayViewController", "bottomImage"]
+- ["C14SampleKeyboard19TodayViewController", "clear"]
+- ["C14SampleKeyboard19TodayViewController", "deinit"]
+- ["C14SampleKeyboard19TodayViewController", "didReceiveMemoryWarning"]
+- !private ["C14SampleKeyboard19TodayViewController", "dispatch_async"]
+- !private ["C14SampleKeyboard19TodayViewController", "dispatch_get_main_queue"]
+- ["C14SampleKeyboard19TodayViewController", "equal"]
+- ["C14SampleKeyboard19TodayViewController", "getCurrency"]
+- ["C14SampleKeyboard19TodayViewController", "getStatus"]
+- ["C14SampleKeyboard19TodayViewController", "init"]
+- ["C14SampleKeyboard19TodayViewController", "isEqual"]
+- ["C14SampleKeyboard19TodayViewController", "label"]
+- ["C14SampleKeyboard19TodayViewController", "ntLabel"]
+- ["C14SampleKeyboard19TodayViewController", "numberString"]
+- ["C14SampleKeyboard19TodayViewController", "numberTouchUp"]
+- !private ["C14SampleKeyboard19TodayViewController", "preferredContentSize"]
+- !private ["C14SampleKeyboard19TodayViewController", "print"]
+- ["C14SampleKeyboard19TodayViewController", "refresh"]
+- ["C14SampleKeyboard19TodayViewController", "topImage"]
+- ["C14SampleKeyboard19TodayViewController", "updatePreferredContentSize"]
+- ["C14SampleKeyboard19TodayViewController", "viewDidLoad"]
+- ["C14SampleKeyboard19TodayViewController", "widgetMarginInsetsForProposedMarginInsets"]
+- ["C14SampleKeyboard19TodayViewController", "widgetPerformUpdateWithCompletionHandler"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo29UIAccessibilityIdentification", "titleLabel"]
+- !private ["PSo12UIAppearance", "text"]
+- !private ["PSo12UIAppearance", "titleLabel"]
+- !private ["PSo21UIAppearanceContainer", "CGFloat"]
+- !private ["PSo21UIAppearanceContainer", "CGSizeMake"]
+- !private ["PSo21UIAppearanceContainer", "JSON"]
+- !private ["PSo21UIAppearanceContainer", "NCUpdateResult"]
+- !private ["PSo21UIAppearanceContainer", "NSDate"]
+- !private ["PSo21UIAppearanceContainer", "NSDateFormatter"]
+- !private ["PSo21UIAppearanceContainer", "NSString"]
+- !private ["PSo21UIAppearanceContainer", "NSURL"]
+- !private ["PSo21UIAppearanceContainer", "NSURLSession"]
+- !private ["PSo21UIAppearanceContainer", "NSUserDefaults"]
+- ["PSo21UIAppearanceContainer", "bottomImage"]
+- ["PSo21UIAppearanceContainer", "clear"]
+- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- !private ["PSo21UIAppearanceContainer", "dispatch_async"]
+- !private ["PSo21UIAppearanceContainer", "dispatch_get_main_queue"]
+- ["PSo21UIAppearanceContainer", "equal"]
+- ["PSo21UIAppearanceContainer", "getCurrency"]
+- ["PSo21UIAppearanceContainer", "getStatus"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "isEqual"]
+- ["PSo21UIAppearanceContainer", "label"]
+- ["PSo21UIAppearanceContainer", "ntLabel"]
+- ["PSo21UIAppearanceContainer", "numberString"]
+- ["PSo21UIAppearanceContainer", "numberTouchUp"]
+- !private ["PSo21UIAppearanceContainer", "preferredContentSize"]
+- !private ["PSo21UIAppearanceContainer", "print"]
+- ["PSo21UIAppearanceContainer", "refresh"]
+- !private ["PSo21UIAppearanceContainer", "text"]
+- !private ["PSo21UIAppearanceContainer", "titleLabel"]
+- ["PSo21UIAppearanceContainer", "topImage"]
+- ["PSo21UIAppearanceContainer", "updatePreferredContentSize"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", "widgetMarginInsetsForProposedMarginInsets"]
+- ["PSo21UIAppearanceContainer", "widgetPerformUpdateWithCompletionHandler"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo8UIButton", "titleLabel"]
+- !private ["PSo18UIContentContainer", "CGFloat"]
+- !private ["PSo18UIContentContainer", "CGSizeMake"]
+- !private ["PSo18UIContentContainer", "JSON"]
+- !private ["PSo18UIContentContainer", "NCUpdateResult"]
+- !private ["PSo18UIContentContainer", "NSDate"]
+- !private ["PSo18UIContentContainer", "NSDateFormatter"]
+- !private ["PSo18UIContentContainer", "NSString"]
+- !private ["PSo18UIContentContainer", "NSURL"]
+- !private ["PSo18UIContentContainer", "NSURLSession"]
+- !private ["PSo18UIContentContainer", "NSUserDefaults"]
+- ["PSo18UIContentContainer", "bottomImage"]
+- ["PSo18UIContentContainer", "clear"]
+- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- !private ["PSo18UIContentContainer", "dispatch_async"]
+- !private ["PSo18UIContentContainer", "dispatch_get_main_queue"]
+- ["PSo18UIContentContainer", "equal"]
+- ["PSo18UIContentContainer", "getCurrency"]
+- ["PSo18UIContentContainer", "getStatus"]
+- ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "isEqual"]
+- ["PSo18UIContentContainer", "label"]
+- ["PSo18UIContentContainer", "ntLabel"]
+- ["PSo18UIContentContainer", "numberString"]
+- ["PSo18UIContentContainer", "numberTouchUp"]
+- !private ["PSo18UIContentContainer", "preferredContentSize"]
+- !private ["PSo18UIContentContainer", "print"]
+- ["PSo18UIContentContainer", "refresh"]
+- ["PSo18UIContentContainer", "topImage"]
+- ["PSo18UIContentContainer", "updatePreferredContentSize"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", "widgetMarginInsetsForProposedMarginInsets"]
+- ["PSo18UIContentContainer", "widgetPerformUpdateWithCompletionHandler"]
+- ["PSo18UIContentContainer", ""]
+- !private ["CSo9UIControl", "titleLabel"]
+- !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo17UICoordinateSpace", "titleLabel"]
+- !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo13UIDynamicItem", "titleLabel"]
+- !private ["CSo7UILabel", "text"]
+- ["CSo11UIResponder", "AnyObject"]
+- !private ["CSo11UIResponder", "CGFloat"]
+- !private ["CSo11UIResponder", "CGSizeMake"]
+- !private ["CSo11UIResponder", "JSON"]
+- ["CSo11UIResponder", "NCUpdateResult"]
+- !private ["CSo11UIResponder", "NSDate"]
+- !private ["CSo11UIResponder", "NSDateFormatter"]
+- !private ["CSo11UIResponder", "NSString"]
+- !private ["CSo11UIResponder", "NSURL"]
+- !private ["CSo11UIResponder", "NSURLSession"]
+- !private ["CSo11UIResponder", "NSUserDefaults"]
+- ["CSo11UIResponder", "String"]
+- !private ["CSo11UIResponder", "UIButton"]
+- ["CSo11UIResponder", "UIImageView"]
+- ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "Void"]
+- ["CSo11UIResponder", "bottomImage"]
+- ["CSo11UIResponder", "clear"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- !private ["CSo11UIResponder", "dispatch_async"]
+- !private ["CSo11UIResponder", "dispatch_get_main_queue"]
+- ["CSo11UIResponder", "equal"]
+- ["CSo11UIResponder", "getCurrency"]
+- ["CSo11UIResponder", "getStatus"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "isEqual"]
+- ["CSo11UIResponder", "label"]
+- ["CSo11UIResponder", "ntLabel"]
+- ["CSo11UIResponder", "numberString"]
+- ["CSo11UIResponder", "numberTouchUp"]
+- !private ["CSo11UIResponder", "preferredContentSize"]
+- !private ["CSo11UIResponder", "print"]
+- ["CSo11UIResponder", "refresh"]
+- !private ["CSo11UIResponder", "text"]
+- !private ["CSo11UIResponder", "titleLabel"]
+- ["CSo11UIResponder", "topImage"]
+- ["CSo11UIResponder", "updatePreferredContentSize"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- ["CSo11UIResponder", "widgetMarginInsetsForProposedMarginInsets"]
+- ["CSo11UIResponder", "widgetPerformUpdateWithCompletionHandler"]
+- !private ["PSo16UIStateRestoring", "CGFloat"]
+- !private ["PSo16UIStateRestoring", "CGSizeMake"]
+- !private ["PSo16UIStateRestoring", "JSON"]
+- !private ["PSo16UIStateRestoring", "NCUpdateResult"]
+- !private ["PSo16UIStateRestoring", "NSDate"]
+- !private ["PSo16UIStateRestoring", "NSDateFormatter"]
+- !private ["PSo16UIStateRestoring", "NSString"]
+- !private ["PSo16UIStateRestoring", "NSURL"]
+- !private ["PSo16UIStateRestoring", "NSURLSession"]
+- !private ["PSo16UIStateRestoring", "NSUserDefaults"]
+- ["PSo16UIStateRestoring", "bottomImage"]
+- ["PSo16UIStateRestoring", "clear"]
+- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- !private ["PSo16UIStateRestoring", "dispatch_async"]
+- !private ["PSo16UIStateRestoring", "dispatch_get_main_queue"]
+- ["PSo16UIStateRestoring", "equal"]
+- ["PSo16UIStateRestoring", "getCurrency"]
+- ["PSo16UIStateRestoring", "getStatus"]
+- ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "isEqual"]
+- ["PSo16UIStateRestoring", "label"]
+- ["PSo16UIStateRestoring", "ntLabel"]
+- ["PSo16UIStateRestoring", "numberString"]
+- ["PSo16UIStateRestoring", "numberTouchUp"]
+- !private ["PSo16UIStateRestoring", "preferredContentSize"]
+- !private ["PSo16UIStateRestoring", "print"]
+- ["PSo16UIStateRestoring", "refresh"]
+- ["PSo16UIStateRestoring", "topImage"]
+- ["PSo16UIStateRestoring", "updatePreferredContentSize"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", "widgetMarginInsetsForProposedMarginInsets"]
+- ["PSo16UIStateRestoring", "widgetPerformUpdateWithCompletionHandler"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "CGFloat"]
+- !private ["PSo18UITraitEnvironment", "CGSizeMake"]
+- !private ["PSo18UITraitEnvironment", "JSON"]
+- !private ["PSo18UITraitEnvironment", "NCUpdateResult"]
+- !private ["PSo18UITraitEnvironment", "NSDate"]
+- !private ["PSo18UITraitEnvironment", "NSDateFormatter"]
+- !private ["PSo18UITraitEnvironment", "NSString"]
+- !private ["PSo18UITraitEnvironment", "NSURL"]
+- !private ["PSo18UITraitEnvironment", "NSURLSession"]
+- !private ["PSo18UITraitEnvironment", "NSUserDefaults"]
+- ["PSo18UITraitEnvironment", "bottomImage"]
+- ["PSo18UITraitEnvironment", "clear"]
+- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UITraitEnvironment", "dispatch_async"]
+- !private ["PSo18UITraitEnvironment", "dispatch_get_main_queue"]
+- ["PSo18UITraitEnvironment", "equal"]
+- ["PSo18UITraitEnvironment", "getCurrency"]
+- ["PSo18UITraitEnvironment", "getStatus"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "isEqual"]
+- ["PSo18UITraitEnvironment", "label"]
+- ["PSo18UITraitEnvironment", "ntLabel"]
+- ["PSo18UITraitEnvironment", "numberString"]
+- ["PSo18UITraitEnvironment", "numberTouchUp"]
+- !private ["PSo18UITraitEnvironment", "preferredContentSize"]
+- !private ["PSo18UITraitEnvironment", "print"]
+- ["PSo18UITraitEnvironment", "refresh"]
+- !private ["PSo18UITraitEnvironment", "text"]
+- !private ["PSo18UITraitEnvironment", "titleLabel"]
+- ["PSo18UITraitEnvironment", "topImage"]
+- ["PSo18UITraitEnvironment", "updatePreferredContentSize"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", "widgetMarginInsetsForProposedMarginInsets"]
+- ["PSo18UITraitEnvironment", "widgetPerformUpdateWithCompletionHandler"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "text"]
+- !private ["CSo6UIView", "titleLabel"]
+- ["CSo16UIViewController", "AnyObject"]
+- !private ["CSo16UIViewController", "CGFloat"]
+- !private ["CSo16UIViewController", "CGSizeMake"]
+- !private ["CSo16UIViewController", "JSON"]
+- ["CSo16UIViewController", "NCUpdateResult"]
+- !private ["CSo16UIViewController", "NSDate"]
+- !private ["CSo16UIViewController", "NSDateFormatter"]
+- !private ["CSo16UIViewController", "NSString"]
+- !private ["CSo16UIViewController", "NSURL"]
+- !private ["CSo16UIViewController", "NSURLSession"]
+- !private ["CSo16UIViewController", "NSUserDefaults"]
+- ["CSo16UIViewController", "String"]
+- !private ["CSo16UIViewController", "UIButton"]
+- ["CSo16UIViewController", "UIImageView"]
+- ["CSo16UIViewController", "UILabel"]
+- ["CSo16UIViewController", "Void"]
+- ["CSo16UIViewController", "bottomImage"]
+- ["CSo16UIViewController", "clear"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- !private ["CSo16UIViewController", "dispatch_async"]
+- !private ["CSo16UIViewController", "dispatch_get_main_queue"]
+- ["CSo16UIViewController", "equal"]
+- ["CSo16UIViewController", "getCurrency"]
+- ["CSo16UIViewController", "getStatus"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "isEqual"]
+- ["CSo16UIViewController", "label"]
+- ["CSo16UIViewController", "ntLabel"]
+- ["CSo16UIViewController", "numberString"]
+- ["CSo16UIViewController", "numberTouchUp"]
+- !private ["CSo16UIViewController", "preferredContentSize"]
+- !private ["CSo16UIViewController", "print"]
+- ["CSo16UIViewController", "refresh"]
+- ["CSo16UIViewController", "topImage"]
+- ["CSo16UIViewController", "updatePreferredContentSize"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", "widgetMarginInsetsForProposedMarginInsets"]
+- ["CSo16UIViewController", "widgetPerformUpdateWithCompletionHandler"]
+- ["CSo16UIViewController", ""]
+- !private ["Su", "deinit"]
+- !private ["VSs6UInt16", "deinit"]
+- !private ["VSs6UInt32", "deinit"]
+- !private ["VSs6UInt64", "deinit"]
+- !private ["VSs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "characters"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "containsString"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "doubleValue"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "subscript"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "characters"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "containsString"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["PSs31_BuiltinFloatLiteralConvertible", "NSLocale"]
+- !private ["PSs31_BuiltinFloatLiteralConvertible", "NSNumberFormatter"]
+- !private ["PSs31_BuiltinFloatLiteralConvertible", "NSNumberFormatterStyle"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "NSLocale"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "NSNumberFormatter"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "NSNumberFormatterStyle"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "characters"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "containsString"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "init"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "characters"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "containsString"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "characters"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "containsString"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs19_CVarArgAlignedType", "NSLocale"]
+- !private ["PSs19_CVarArgAlignedType", "NSNumberFormatter"]
+- !private ["PSs19_CVarArgAlignedType", "NSNumberFormatterStyle"]
+- !private ["PSs19_CVarArgAlignedType", "init"]
+- !private ["PSs22_CVarArgPassedAsDouble", "NSLocale"]
+- !private ["PSs22_CVarArgPassedAsDouble", "NSNumberFormatter"]
+- !private ["PSs22_CVarArgPassedAsDouble", "NSNumberFormatterStyle"]
+- !private ["PSs22_CVarArgPassedAsDouble", "init"]
+- !private ["PSs16_CocoaStringType", "characters"]
+- !private ["PSs16_CocoaStringType", "containsString"]
+- !private ["PSs16_CocoaStringType", "doubleValue"]
+- !private ["PSs16_CocoaStringType", "init"]
+- !private ["PSs14_Incrementable", "Distance"]
+- !private ["PSs14_Incrementable", "IntegerLiteralType"]
+- !private ["PSs22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs12_IntegerType", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "NSLocale"]
+- !private ["PSs21_ObjectiveCBridgeable", "NSNumberFormatter"]
+- !private ["PSs21_ObjectiveCBridgeable", "NSNumberFormatterStyle"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "characters"]
+- !private ["PSs21_ObjectiveCBridgeable", "containsString"]
+- !private ["PSs21_ObjectiveCBridgeable", "init"]
+- !private ["VSs26_OptionalNilComparisonType", "deinit"]
+- !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "Distance"]
+- !private ["PSs12_Reflectable", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "NSLocale"]
+- !private ["PSs12_Reflectable", "NSNumberFormatter"]
+- !private ["PSs12_Reflectable", "NSNumberFormatterStyle"]
+- ["PSs12_Reflectable", "Some"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "characters"]
+- !private ["PSs12_Reflectable", "containsString"]
+- !private ["PSs12_Reflectable", "doubleValue"]
+- !private ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "text"]
+- !private ["PSs12_Reflectable", "titleLabel"]
+- !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs11_Strideable", "IntegerLiteralType"]
+- !private ["PSs11_Strideable", "NSLocale"]
+- !private ["PSs11_Strideable", "NSNumberFormatter"]
+- !private ["PSs11_Strideable", "NSNumberFormatterStyle"]
+- !private ["PSs11_Strideable", "init"]
+depends-nominal:
+- !private "PSs16AbsoluteValuable"
 - "PSs9AnyObject"
-- "CSo11UIResponder"
-- !private "Sc"
-- !private "Si"
-- !private "VSs4Int8"
-- !private "CSo20NSURLSessionDataTask"
-- !private "CSo8UIButton"
-- !private "V14SampleKeyboard4JSON"
-- !private "CSo15NSDateFormatter"
-- !private "VSs6UInt32"
-- !private "VSs5UInt8"
-- "CSo16UIViewController"
-- !private "CSo6UIView"
-- !private "Sq"
-- !private "CSo12NSURLSession"
-- !private "VSs5Int32"
 - !private "Sa"
+- !private "PSs23ArrayLiteralConvertible"
+- !private "PSs22BidirectionalIndexType"
+- !private "PSs21BitwiseOperationsType"
 - !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
 - !private "V12CoreGraphics7CGFloat"
-- !private "Sd"
-- !private "CSo5NSURL"
-- !private "SS"
-- !private "VSs6UInt64"
-- "C14SampleKeyboard19TodayViewController"
-- !private "CSo8NSString"
-- !private "CSo6NSDate"
+- "PSs11CVarArgType"
 - !private "VSs9Character"
-- !private "OSC14NCUpdateResult"
-- !private "CSo16NSURLSessionTask"
+- !private "VSS13CharacterView"
+- !private "PSs14CollectionType"
+- !private "PSs10Comparable"
+- "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- !private "PSs28DictionaryLiteralConvertible"
+- !private "Sd"
+- "PSs9Equatable"
+- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
+- "Sf"
+- !private "PSs23FloatLiteralConvertible"
+- !private "PSs17FloatingPointType"
+- !private "PSs16ForwardIndexType"
+- "PSs8Hashable"
 - !private "SQ"
-- !private "CSo9UIControl"
+- !private "VVSS13CharacterView5Index"
+- !private "PSs9Indexable"
+- !private "Si"
+- !private "VSs5Int16"
+- !private "VSs5Int32"
 - !private "VSs5Int64"
-- !private "CSo14NSUserDefaults"
-- !private "Sf"
-- "CSo8NSObject"
-- !private "VSs26_OptionalNilComparisonType"
-- !private "Su"
+- !private "VSs4Int8"
+- !private "PSs21IntegerArithmeticType"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "PSs11IntegerType"
+- !private "V14SampleKeyboard4JSON"
+- !private "PSs14MirrorPathType"
+- !private "OSC14NCUpdateResult"
 - "PSo17NCWidgetProviding"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo6NSDate"
+- !private "CSo15NSDateFormatter"
+- "PSo26NSExtensionRequestHandling"
 - !private "CSo11NSFormatter"
-dynamic-lookup:
-cross-module:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/Security.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/CoreImage.swiftmodule"
+- !private "CSo8NSLocale"
+- !private "PSo16NSMutableCopying"
+- !private "CSo17NSNumberFormatter"
+- !private "OSC22NSNumberFormatterStyle"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "CSo5NSURL"
+- !private "CSo12NSURLSession"
+- !private "CSo20NSURLSessionDataTask"
+- !private "CSo16NSURLSessionTask"
+- !private "CSo14NSUserDefaults"
+- "PSs21NilLiteralConvertible"
+- "Sq"
+- !private "PSs16OutputStreamType"
+- !private "PSs21RandomAccessIndexType"
+- !private "VSs5Range"
+- !private "PSs30RangeReplaceableCollectionType"
+- !private "PSs16RawRepresentable"
+- !private "PSs12SequenceType"
+- !private "PSs17SignedIntegerType"
+- !private "PSs16SignedNumberType"
+- !private "PSs10Streamable"
+- !private "PSs10Strideable"
+- !private "SS"
+- !private "PSs30StringInterpolationConvertible"
+- !private "PSs24StringLiteralConvertible"
+- !private "P14SampleKeyboard13SubscriptType"
+- "C14SampleKeyboard19TodayViewController"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- !private "CSo8UIButton"
+- "PSo18UIContentContainer"
+- !private "CSo9UIControl"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- !private "CSo7UILabel"
+- "CSo11UIResponder"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "Su"
+- !private "VSs6UInt16"
+- !private "VSs6UInt32"
+- !private "VSs6UInt64"
+- !private "VSs5UInt8"
+- !private "Sc"
+- !private "PSs31UnicodeScalarLiteralConvertible"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "PSs31_BuiltinFloatLiteralConvertible"
+- !private "PSs33_BuiltinIntegerLiteralConvertible"
+- !private "PSs32_BuiltinStringLiteralConvertible"
+- !private "PSs37_BuiltinUTF16StringLiteralConvertible"
+- !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "PSs19_CVarArgAlignedType"
+- !private "PSs22_CVarArgPassedAsDouble"
+- !private "PSs16_CocoaStringType"
+- !private "PSs14_Incrementable"
+- !private "PSs22_IntegerArithmeticType"
+- !private "PSs12_IntegerType"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "VSs26_OptionalNilComparisonType"
+- !private "PSs22_RandomAccessAmbiguity"
+- "PSs12_Reflectable"
+- !private "PSs18_SignedIntegerType"
+- !private "PSs11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+interface-hash: "3f34ffce155b7b94b59e7d4b488f9b43"

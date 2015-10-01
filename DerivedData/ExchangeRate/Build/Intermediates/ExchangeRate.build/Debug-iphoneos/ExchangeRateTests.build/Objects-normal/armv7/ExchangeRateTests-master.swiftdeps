@@ -1,4 +1,4 @@
 version: "Apple Swift version 1.2 (swiftlang-602.0.53.1 clang-602.0.53)"
-options: "b01596a5c1c6c5e69f64feb1ada999d0"
+options: "c0ec1e4be92532f34814086632ef645f"
 inputs: 
-- "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRateTests/ExchangeRateTests.swift"
+- "/Users/cktalex/Documents/bProject/test4/ExchangeRate/ExchangeRateTests/ExchangeRateTests.swift"

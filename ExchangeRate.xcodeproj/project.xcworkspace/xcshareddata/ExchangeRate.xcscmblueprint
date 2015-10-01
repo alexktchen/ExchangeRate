@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8750BF8671EBB79E37223A3AAA7CDD7323EAD866+++F40668B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8750BF8671EBB79E37223A3AAA7CDD7323EAD866+++F40668B" : 0,
+    "8750BF8671EBB79E37223A3AAA7CDD7323EAD866+++5560B21" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "50E5EF39-DC98-4DED-80B2-79E7757EADBE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8750BF8671EBB79E37223A3AAA7CDD7323EAD866+++F40668B" : "ExchangeRate",
+    "8750BF8671EBB79E37223A3AAA7CDD7323EAD866+++5560B21" : "ExchangeRate"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ExchangeRate",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ExchangeRate.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/alexktchen\/ExchangeRate.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8750BF8671EBB79E37223A3AAA7CDD7323EAD866+++5560B21"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/alexktchen\/ExchangeRate.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8750BF8671EBB79E37223A3AAA7CDD7323EAD866+++F40668B"
+    }
+  ]
+}
