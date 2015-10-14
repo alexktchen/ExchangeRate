@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "ZW_zimbabwe.png"
+      "filename" : "ZW_zimbabwe.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

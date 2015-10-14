@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "EC_ecuador.png"
+      "filename" : "EC_ecuador.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

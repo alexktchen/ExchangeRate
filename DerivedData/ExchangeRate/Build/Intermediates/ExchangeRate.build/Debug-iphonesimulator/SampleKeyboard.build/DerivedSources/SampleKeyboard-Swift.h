@@ -107,33 +107,44 @@ SWIFT_CLASS("_TtC14SampleKeyboard27BackgroundHighlightedButton")
 @end
 
 @class Currency;
-@class NSData;
-@class UILabel;
+@class UIView;
 @class UIImageView;
+@class UILabel;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC14SampleKeyboard19TodayViewController")
 @interface TodayViewController : UIViewController <NCWidgetProviding>
-@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified ntLabel;
-@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified label;
-@property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified topImage;
-@property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified bottomImage;
+@property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified majorImage;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified majorLabel;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified majorCurrencyCode;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified majorCurrencySymbol;
+@property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified minorImage;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified minorLabel;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified minorCurrencyCode;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified minorCurrencySymbol;
+@property (nonatomic, weak) IBOutlet UIView * __null_unspecified rightView;
+@property (nonatomic, weak) IBOutlet UIView * __null_unspecified centerView;
+@property (nonatomic, weak) IBOutlet UIView * __null_unspecified keyboardView;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified updateTimeLabel;
+@property (nonatomic, weak) IBOutlet UIButton * __null_unspecified refreshButton;
 @property (nonatomic, copy) NSString * __nonnull numberString;
 @property (nonatomic, copy) NSArray<Currency *> * __nonnull currencys;
+@property (nonatomic) Currency * __nullable majorCurrency;
 - (void)viewDidLoad;
-- (void)loadData;
-- (void)getStatus;
-- (void)parseCurrency:(NSArray<Currency *> * __nonnull)currencys data:(NSData * __nonnull)data;
-- (void)didReceiveMemoryWarning;
-- (void)widgetPerformUpdateWithCompletionHandler:(void (^ __nonnull)(NCUpdateResult))completionHandler;
+- (void)viewWillAppear:(BOOL)animated;
 - (UIEdgeInsets)widgetMarginInsetsForProposedMarginInsets:(UIEdgeInsets)defaultMarginInsets;
-- (IBAction)refresh:(id __nonnull)sender;
-- (void)getCurrency;
+- (void)viewDidAppear:(BOOL)animated;
+- (void)didReceiveMemoryWarning;
+- (IBAction)refreshButtonUpInside:(id __nonnull)sender;
+- (void)loadAnimation;
+- (void)adjustUi;
+- (CGRect)getCenterViewCGRect:(UIView * __nonnull)view;
+- (CGRect)getRightViewCGRect:(UIView * __nonnull)view;
+- (void)loadData;
+- (void)delay:(double)delay closure:(void (^ __nonnull)(void))closure;
+- (void)widgetPerformUpdateWithCompletionHandler:(void (^ __nonnull)(NCUpdateResult))completionHandler;
 - (void)updatePreferredContentSize;
 - (IBAction)clear:(id __nonnull)sender;
-@property (nonatomic) BOOL isEqual;
-- (IBAction)equal:(id __nonnull)sender;
-- (void)equal;
 - (IBAction)numberTouchUp:(id __nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;

@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "MX_mexico.png"
+      "filename" : "MX_mexico.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

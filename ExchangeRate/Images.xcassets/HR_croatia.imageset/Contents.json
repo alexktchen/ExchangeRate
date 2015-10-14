@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "HR_croatia.png"
+      "filename" : "HR_croatia.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

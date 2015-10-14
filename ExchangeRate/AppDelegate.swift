@@ -3,7 +3,7 @@
 //  ExchangeRate
 //
 //  Created by Alex Chen on 2015/9/14.
-//  Copyright (c) 2015年 Alex Chen. All rights reserved.
+//  Copyright (c) 2015 Alex Chen. All rights reserved.
 //
 
 import UIKit
@@ -12,11 +12,12 @@ import Core
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    
+
     var window: UIWindow?
-    
-    
+
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+
+        LoadCountryDataService.sharedInstance.loadCountry()
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let navigationController = storyboard.instantiateViewControllerWithIdentifier("NavigationController") as! UINavigationController

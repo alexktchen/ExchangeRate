@@ -3,7 +3,7 @@
 //  ExchangeRate
 //
 //  Created by Alex Chen on 2015/9/24.
-//  Copyright © 2015年 Alex Chen. All rights reserved.
+//  Copyright © 2015 Alex Chen. All rights reserved.
 //
 
 import Foundation

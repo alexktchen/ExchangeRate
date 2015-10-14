@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "SG_singapore.png"
+      "filename" : "SG_singapore.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

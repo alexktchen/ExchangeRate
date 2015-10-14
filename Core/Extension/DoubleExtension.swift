@@ -1,18 +1,19 @@
 //
-//  FloatExtension.swift
+//  DoubleExtension.swift
 //  ExchangeRate
 //
-//  Created by Alex Chen on 2015/9/24.
-//  Copyright © 2015 Alex Chen. All rights reserved.
+//  Created by Alex Chen on 2015/10/4.
+//  Copyright © 2015 AlexChen. All rights reserved.
 //
 
 import Foundation
 
-public extension Float {
-    var toDecimalStyle:String {
+public extension Double {
+
+    var toCurrencyStyle: String {
         let formatter = NSNumberFormatter()
-        formatter.numberStyle = NSNumberFormatterStyle.DecimalStyle
-        formatter.locale = NSLocale.currentLocale()
-        return formatter.stringFromNumber(self)!
+        formatter.numberStyle = .CurrencyStyle
+        
+        return formatter.stringFromNumber(self)!.stringByReplacingOccurrencesOfString("$", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
     }
 }

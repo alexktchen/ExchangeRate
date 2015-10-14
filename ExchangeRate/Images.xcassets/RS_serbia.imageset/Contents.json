@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "RS_serbia.png"
+      "filename" : "RS_serbia.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

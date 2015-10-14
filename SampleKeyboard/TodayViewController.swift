@@ -3,7 +3,7 @@
 //  SampleKeyboard
 //
 //  Created by Alex Chen on 2015/9/14.
-//  Copyright (c) 2015年 Alex Chen. All rights reserved.
+//  Copyright (c) 2015 Alex Chen. All rights reserved.
 //
 
 import UIKit
@@ -11,210 +11,164 @@ import NotificationCenter
 import Core
 
 class TodayViewController: UIViewController, NCWidgetProviding {
-    
-    @IBOutlet weak var ntLabel: UILabel!
-    @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var topImage: UIImageView!
-    @IBOutlet weak var bottomImage: UIImageView!
-    
+
+    @IBOutlet weak var majorImage: UIImageView!
+    @IBOutlet weak var majorLabel: UILabel!
+    @IBOutlet weak var majorCurrencyCode: UILabel!
+    @IBOutlet weak var majorCurrencySymbol: UILabel!
+    @IBOutlet weak var minorImage: UIImageView!
+    @IBOutlet weak var minorLabel: UILabel!
+    @IBOutlet weak var minorCurrencyCode: UILabel!
+    @IBOutlet weak var minorCurrencySymbol: UILabel!
+    @IBOutlet weak var rightView: UIView!
+    @IBOutlet weak var centerView: UIView!
+    @IBOutlet weak var keyboardView: UIView!
+    @IBOutlet weak var updateTimeLabel: UILabel!
+    @IBOutlet weak var refreshButton: UIButton!
+
     var numberString: String = ""
     var currencys: [Currency] = [Currency]()
-    
+    var majorCurrency: Currency?
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.refreshButton.layer.cornerRadius = self.refreshButton.frame.size.width / 2
+        self.refreshButton.clipsToBounds = true
+        self.refreshButton.layer.borderWidth = 1
+        self.refreshButton.layer.borderColor = CustomColors.switchGrayColor.CGColor
         updatePreferredContentSize()
-        loadData()
-        getStatus()
-    }
-    
-    
-    func loadData() {
-        
-        for country in CurrencyMap.country {
-            
-            let isoCode = country.0
-            let countryName = country.1
-            
-            let imageName = ("\(isoCode)_\(countryName)")
-            let currency = Currency()
-            
-            currency.flagImage = UIImage(named: imageName)
-            
-            if let symbol = NSLocale.localesCurrencySymbol(country.0) {
-                currency.symbol = symbol
-            }
-            
-            if let currencyCode = NSLocale.localesCurrencyCode(country.0) {
-                currency.currencyCode = currencyCode
-            }
-            
-            if let displayName = NSLocale.locales(country.0) {
-                currency.displayName = displayName
-            }
-            
-            if isoCode == "TW" {
-                currency.isMajor = true
-            } else {
-                currency.isMajor = false
-            }
-            
-            currencys.append(currency)
-        }
-        
-        // reorder items
-        self.currencys.sortInPlace({ $0.displayName < $1.displayName })
-        
-        if let item = self.currencys.filter({m in m.isMajor}).first {
-            
-            if let i = self.currencys.indexOf({m in m.isMajor}) {
-                self.currencys.removeAtIndex(i)
-            }
-            
-            let currencyRequest = CurrencyRequest()
-            
-            if let data = UserDefaultDataService.sharedInstance.getQueryCurrencysDate() {
-                currencyRequest.parseCurrency(self.currencys, data: data)
-            } else {
-                currencyRequest.getCurrency(item.currencyCode, currencys: self.currencys) { (currency) -> Void in
-                    dispatch_async(dispatch_get_main_queue()) {
-                        
-                    }
-                }
-            }
-        }
     }
 
-    func getStatus(){
-        
-        
-        
-        let defaults = NSUserDefaults(suiteName: "group.com.AlexChen.extrmeCurrencyShareData")
-       
-        let data = defaults!.objectForKey("queryCurrencysDate") as! NSData
-        
-        let currencyRequest = CurrencyRequest()
-        
-        currencyRequest.parseCurrency(currencys, data: data)
-        
-        for currency in currencys {
-            print(currency)
-        }
-        
-        /*
-        if let test: NSDate = defaults!.objectForKey("queryCurrencysDate"){
-            
-            ntLabel.text = String(test)
-          print(test)
-        } else {
-             print("No")
-            ntLabel.text = "No"
-        }*/
+    override func viewWillAppear(animated: Bool) {
+        adjustUi()
     }
-    
-    func parseCurrency(currencys : [Currency], data: NSData) {
-        
-        do {
-            let xmlDoc = try AEXMLDocument(xmlData: data)
-            print(xmlDoc.xmlString)
-            
-            if let rates = xmlDoc.root["results"]["rate"].all {
-                
-                for rate in rates {
-                    
-                    if let id = rate.attributes["id"] {
-                        
-                        let currency = currencys.filter({m in id.rangeOfString(m.currencyCode) != nil })
-                        
-                        for c in currency {
-                            
-                            c.dollarsName = rate["Name"].stringValue
-                            
-                            c.rate = rate["Rate"].doubleValue
-                            
-                            c.ask = rate["Ask"].doubleValue
-                            
-                            c.bid = rate["Bid"].doubleValue
-                            
-                            c.dateTime = NSDate()
-                        }
-                    }
+
+    func widgetMarginInsetsForProposedMarginInsets(defaultMarginInsets: UIEdgeInsets) -> (UIEdgeInsets) {
+        return UIEdgeInsetsZero
+    }
+
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+
+    @IBAction func refreshButtonUpInside(sender: AnyObject) {
+        loadData()
+    }
+
+
+    func loadAnimation() {
+        let duration = 2.0
+        let delay = 0.0
+        let options = UIViewKeyframeAnimationOptions.CalculationModePaced
+
+        let fullRotation = CGFloat(M_PI * 2)
+
+        UIView.animateKeyframesWithDuration(duration, delay: delay, options: options, animations: {
+            // note that we've set relativeStartTime and relativeDuration to zero.
+            // Because we're using `CalculationModePaced` these values are ignored
+            // and iOS figures out values that are needed to create a smooth constant transition
+            UIView.addKeyframeWithRelativeStartTime(0, relativeDuration: 0, animations: {
+                self.refreshButton.transform = CGAffineTransformMakeRotation(1/3 * fullRotation)
+            })
+
+            UIView.addKeyframeWithRelativeStartTime(0, relativeDuration: 0, animations: {
+                self.refreshButton.transform = CGAffineTransformMakeRotation(2/3 * fullRotation)
+            })
+
+            UIView.addKeyframeWithRelativeStartTime(0, relativeDuration: 0, animations: {
+                self.refreshButton.transform = CGAffineTransformMakeRotation(3/3 * fullRotation)
+            })
+
+            }, completion: nil)
+    }
+
+    func adjustUi() {
+        centerView.frame = getCenterViewCGRect(centerView)
+        minorLabel.frame = getRightViewCGRect(minorLabel)
+        rightView.frame = getRightViewCGRect(rightView)
+        keyboardView.frame = getCenterViewCGRect(keyboardView)
+        updateTimeLabel.frame = getCenterViewCGRect(updateTimeLabel)
+    }
+
+    func getCenterViewCGRect(view: UIView) -> CGRect {
+        let centerViewFrame = view.frame
+        let centerViewWidth = view.frame.width / 2
+        let frameWidth = self.view.frame.width / 2
+        return CGRectMake(frameWidth - centerViewWidth, centerViewFrame.origin.y, centerViewFrame.width, centerViewFrame.height)
+    }
+
+    func getRightViewCGRect(view: UIView) -> CGRect {
+        let frameWidth = self.view.frame.width - 5
+        let rightViewFrame = view.frame
+        return CGRectMake(frameWidth - rightViewFrame.width , rightViewFrame.origin.y, rightViewFrame.width, rightViewFrame.height)
+    }
+
+    func loadData() {
+
+        loadAnimation()
+
+        if let item = UserDefaultDataService.sharedInstance.getMajorCurrencysData() {
+            self.majorCurrency = item
+            self.majorImage.image = item.flagImage
+            self.majorCurrencyCode.text = item.currencyCode
+            self.currencys.append(item)
+        }
+
+        if let item = UserDefaultDataService.sharedInstance.getMinorCurrencysData() {
+            self.minorImage.image = item.flagImage
+            self.minorCurrencyCode.text = item.currencyCode
+            self.currencys.append(item)
+        }
+
+        let currencyRequest = CurrencyRequest()
+        currencyRequest.getTodayExtensionCurrency(self.currencys[0].currencyCode, minorCode: self.currencys[1].currencyCode) { (currencys) -> Void in
+            self.delay(0.0) {
+                self.updateTimeLabel.text = NSDate().toString("yyyy/MM/dd HH:mm")
+
+                if let c = currencys {
+                    self.currencys = c
+                    self.majorCurrencySymbol.text = "1 \(c[0].symbol) = \(c[0].rate) \(c[1].symbol)"
+                    self.minorCurrencySymbol.text = "1 \(c[1].symbol) = \(c[1].rate) \(c[0].symbol)"
                 }
             }
         }
-        catch {
-            print("\(error)")
-        }
+
+
+
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
+    func delay(delay:Double, closure:()->()) {
+        dispatch_after(
+            dispatch_time(
+                DISPATCH_TIME_NOW,
+                Int64(delay * Double(NSEC_PER_SEC))
+            ),
+            dispatch_get_main_queue(), closure)
     }
-    
+
     func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)) {
-        // Perform any setup necessary in order to update the view.
-        
-        // If an error is encountered, use NCUpdateResult.Failed
-        // If there's no update required, use NCUpdateResult.NoData
-        // If there's an update, use NCUpdateResult.NewData
-        getStatus()
         completionHandler(NCUpdateResult.NewData)
+        loadData()
     }
-    
-    func widgetMarginInsetsForProposedMarginInsets(defaultMarginInsets: UIEdgeInsets) -> (UIEdgeInsets) {
-            return UIEdgeInsetsZero
-    }
-    
-    @IBAction func refresh(sender: AnyObject) {
-        getCurrency()
-    }
-    
-    func getCurrency(){
-        
-        let url = NSURL(string: "http://rate-exchange.herokuapp.com/fetchRate?from=JPY&to=TWD")
-        
-        let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
-            let json = JSON(data: data!)
-            print(json)
-            print(json["Rate"].doubleValue)
-            
-            let aDefaults:NSUserDefaults = NSUserDefaults.standardUserDefaults()
-            aDefaults.setDouble(json["Rate"].doubleValue, forKey: "Rate")
-            aDefaults.setObject(NSDate(), forKey: "Date")
-            self.getStatus()
-        }
-        
-        task.resume()
-    }
-    
+
     func updatePreferredContentSize() {
         self.preferredContentSize = CGSizeMake(CGFloat(0), CGFloat(400))
     }
-    
+
     @IBAction func clear(sender: AnyObject) {
-        self.label.text = "0"
-        ntLabel.text = "0"
+        self.majorLabel.text = "0"
+        self.minorLabel.text = "0"
         numberString = ""
     }
-    
-    var isEqual = false
-    
-    @IBAction func equal(sender: AnyObject) {
-        
-    }
-    
-    func equal(){
-        let yNumber = NSString(string: self.label!.text!).doubleValue
-        let aDefaults:NSUserDefaults = NSUserDefaults.standardUserDefaults()
-        let rate = aDefaults.doubleForKey("Rate")
-        ntLabel.text = "\(yNumber * rate)"
-        isEqual = true
-    }
-    
+
     @IBAction func numberTouchUp(sender: AnyObject) {
-        
+        //adjustUi()
         let str = (sender as! UIButton).titleLabel!.text!
-        
+
         switch str {
         case "." :
             if numberString.containsString(".") {
@@ -223,32 +177,23 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             break
         case "0":
             if numberString.characters.count == 0 {
-                self.label.text = str
+                let majorNum = NSString(string: str).doubleValue
+
+                self.majorLabel.text = majorNum.toCurrencyStyle
                 return
             }
             break
         default:
             break
         }
-        
+
         numberString += (sender as! UIButton).titleLabel!.text!
-        
-        self.label.text = numberString
-        
-        let yNumber = NSString(string: numberString).doubleValue * 0.2757
-        //let aDefaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
-        
-        ntLabel.text = NSString(format: "%.02f", yNumber) as String
+        let majorNum = NSString(string: numberString).doubleValue
+        self.majorLabel.text = majorNum.toCurrencyStyle
+
+        let minorNum = NSString(string: numberString).doubleValue
+        let rate = currencys[0].rate
+        let number = minorNum * rate
+        self.minorLabel.text = number.toCurrencyStyle
     }
 }
-
-extension Float {
-    var toDecimalStyle:String {
-        let formatter = NSNumberFormatter()
-        formatter.numberStyle = NSNumberFormatterStyle.DecimalStyle
-        formatter.locale = NSLocale.currentLocale()
-        return formatter.stringFromNumber(self)!
-    }
-}
-
-

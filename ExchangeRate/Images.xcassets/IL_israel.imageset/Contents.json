@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "IL_israel.png"
+      "filename" : "IL_israel.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "DK_denmark.png"
+      "filename" : "DK_denmark.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

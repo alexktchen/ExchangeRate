@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "AR_argentinia.png"
+      "filename" : "AR_argentinia.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

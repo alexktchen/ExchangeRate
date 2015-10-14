@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "UA_ukraine.png"
+      "filename" : "UA_ukraine.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "CH_switserland.png"
+      "filename" : "CH_switserland.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

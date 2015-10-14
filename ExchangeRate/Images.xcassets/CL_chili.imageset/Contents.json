@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "CL_chili.png"
+      "filename" : "CL_chili.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

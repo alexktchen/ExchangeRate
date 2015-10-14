@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "PH_phillipines.png"
+      "filename" : "PH_phillipines.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

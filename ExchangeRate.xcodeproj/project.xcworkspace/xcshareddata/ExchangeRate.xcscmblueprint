@@ -1,18 +1,18 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8750BF8671EBB79E37223A3AAA7CDD7323EAD866+++A866893",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8750BF8671EBB79E37223A3AAA7CDD7323EAD866+++896B803",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "8750BF8671EBB79E37223A3AAA7CDD7323EAD866+++62EE760" : 0,
-    "8750BF8671EBB79E37223A3AAA7CDD7323EAD866+++A866893" : 0,
-    "8750BF8671EBB79E37223A3AAA7CDD7323EAD866+++F2D6782" : 0
+    "8750BF8671EBB79E37223A3AAA7CDD7323EAD866+++896B803" : 0,
+    "8750BF8671EBB79E37223A3AAA7CDD7323EAD866+++A9F4180" : 0,
+    "8750BF8671EBB79E37223A3AAA7CDD7323EAD866+++8C2EBF3" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "50E5EF39-DC98-4DED-80B2-79E7757EADBE",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "8750BF8671EBB79E37223A3AAA7CDD7323EAD866+++62EE760" : "ExchangeRate",
-    "8750BF8671EBB79E37223A3AAA7CDD7323EAD866+++A866893" : "ExchangeRate",
-    "8750BF8671EBB79E37223A3AAA7CDD7323EAD866+++F2D6782" : "..\/ExchangeRate"
+    "8750BF8671EBB79E37223A3AAA7CDD7323EAD866+++896B803" : "ExchangeRate",
+    "8750BF8671EBB79E37223A3AAA7CDD7323EAD866+++A9F4180" : "ExchangeRate",
+    "8750BF8671EBB79E37223A3AAA7CDD7323EAD866+++8C2EBF3" : "..\/ExchangeRate"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "ExchangeRate",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -21,17 +21,17 @@
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/alexktchen\/ExchangeRate.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8750BF8671EBB79E37223A3AAA7CDD7323EAD866+++62EE760"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8750BF8671EBB79E37223A3AAA7CDD7323EAD866+++896B803"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/alexktchen\/ExchangeRate.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8750BF8671EBB79E37223A3AAA7CDD7323EAD866+++A866893"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8750BF8671EBB79E37223A3AAA7CDD7323EAD866+++8C2EBF3"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/alexktchen\/ExchangeRate.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8750BF8671EBB79E37223A3AAA7CDD7323EAD866+++F2D6782"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8750BF8671EBB79E37223A3AAA7CDD7323EAD866+++A9F4180"
     }
   ]
 }

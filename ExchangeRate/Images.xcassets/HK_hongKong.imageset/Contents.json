@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "HK_hongKong.png"
+      "filename" : "HK_hongKong.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

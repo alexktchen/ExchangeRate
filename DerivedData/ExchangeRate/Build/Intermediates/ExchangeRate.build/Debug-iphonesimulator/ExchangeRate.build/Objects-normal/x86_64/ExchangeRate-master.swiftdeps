@@ -1,8 +1,12 @@
 version: "Apple Swift version 2.0 (swiftlang-700.0.59 clang-700.0.72)"
-options: "e11e9a1c46be878b5d6021179fa78cc9"
-build_time: [497035354, 984118000]
+options: "169d98743ef06bf6d59c790e03cffc96"
+build_time: [498156369, 461549000]
 inputs: 
-	"/Users/cktalex/Documents/bProject/test4/ExchangeRate/ExchangeRate/ViewController.swift": [497034589, 0]
-	"/Users/cktalex/Documents/bProject/test4/ExchangeRate/ExchangeRate/MainTableViewCell.swift": [497035354, 0]
-	"/Users/cktalex/Documents/bProject/test4/ExchangeRate/ExchangeRate/AppDelegate.swift": [497035354, 0]
-	"/Users/cktalex/Documents/bProject/test4/ExchangeRate/ExchangeRate/BackgroundHighlightedButton.swift": [496251196, 0]
+	"/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/BackgroundHighlightedButton.swift": [497290020, 0]
+	"/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/AppDelegate.swift": [497290020, 0]
+	"/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/MainTableViewCell.swift": [497290020, 0]
+	"/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/CountryFetchTableView.swift": [497290020, 0]
+	"/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/ViewController.swift": [498154785, 0]
+	"/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/TodaySettingViewController.swift": [498154785, 0]
+	"/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/TTableViewController.swift": [497290020, 0]
+	"/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/SettingViewController.swift": [497290020, 0]

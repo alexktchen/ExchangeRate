@@ -130,6 +130,24 @@ SWIFT_CLASS("_TtC12ExchangeRate27BackgroundHighlightedButton")
 - (void)drawRect:(CGRect)rect;
 @end
 
+@class UITableView;
+@class NSIndexPath;
+@class UITableViewCell;
+@class NSBundle;
+
+SWIFT_CLASS("_TtC12ExchangeRate21CountryFetchTableView")
+@interface CountryFetchTableView : UITableViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * __nonnull)tableView;
+- (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (void)tableView:(UITableView * __nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UILabel;
 @class UIImageView;
 
@@ -144,12 +162,50 @@ SWIFT_CLASS("_TtC12ExchangeRate17MainTableViewCell")
 - (void)drawRect:(CGRect)rect;
 @end
 
+
+SWIFT_CLASS("_TtC12ExchangeRate21SettingViewController")
+@interface SettingViewController : UITableViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * __nonnull)tableView;
+- (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC12ExchangeRate20TTableViewController")
+@interface TTableViewController : UITableViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * __nonnull)tableView;
+- (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class Currency;
-@class UITableView;
-@class NSIndexPath;
+
+SWIFT_CLASS("_TtC12ExchangeRate26TodaySettingViewController")
+@interface TodaySettingViewController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, weak) IBOutlet UITableView * __null_unspecified tableView;
+@property (nonatomic) BOOL isMajor;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (void)currenctSelected:(Currency * __nonnull)aCurrency;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * __nonnull)tableView;
+- (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (void)tableView:(UITableView * __nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UITableViewRowAction;
 @class UIBarButtonItem;
 @class UIView;
-@class NSBundle;
 
 SWIFT_CLASS("_TtC12ExchangeRate14ViewController")
 @interface ViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
@@ -168,6 +224,7 @@ SWIFT_CLASS("_TtC12ExchangeRate14ViewController")
 - (void)tableView:(UITableView * __nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (BOOL)tableView:(UITableView * __nonnull)tableView canMoveRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (void)tableView:(UITableView * __nonnull)tableView moveRowAtIndexPath:(NSIndexPath * __nonnull)fromIndexPath toIndexPath:(NSIndexPath * __nonnull)toIndexPath;
+- (NSArray<UITableViewRowAction *> * __nullable)tableView:(UITableView * __nonnull)tableView editActionsForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (void)selectItem:(Currency * __nonnull)item;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;

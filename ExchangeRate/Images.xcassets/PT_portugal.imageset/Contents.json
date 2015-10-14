@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "PT_portugal.png"
+      "filename" : "PT_portugal.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

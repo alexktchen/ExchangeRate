@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "UK_unitedKingdom.png"
+      "filename" : "UK_unitedKingdom.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

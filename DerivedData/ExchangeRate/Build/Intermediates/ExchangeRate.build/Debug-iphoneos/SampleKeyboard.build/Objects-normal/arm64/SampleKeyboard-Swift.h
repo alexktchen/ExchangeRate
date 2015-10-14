@@ -88,7 +88,6 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
 @import CoreGraphics;
-@import Foundation;
 @import NotificationCenter;
 #endif
 
@@ -107,33 +106,28 @@ SWIFT_CLASS("_TtC14SampleKeyboard27BackgroundHighlightedButton")
 - (void)drawRect:(CGRect)rect;
 @end
 
-
-@interface NSNumber (SWIFT_EXTENSION(SampleKeyboard))
-@property (nonatomic, readonly) BOOL isBool;
-@end
-
-@class UILabel;
+@class Currency;
 @class UIImageView;
+@class UILabel;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC14SampleKeyboard19TodayViewController")
 @interface TodayViewController : UIViewController <NCWidgetProviding>
-@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified ntLabel;
-@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified label;
-@property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified topImage;
-@property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified bottomImage;
+@property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified majorImage;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified majorLabel;
+@property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified minorImage;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified minorLabel;
+@property (nonatomic, weak) IBOutlet UIButton * __null_unspecified switchButton;
 @property (nonatomic, copy) NSString * __nonnull numberString;
+@property (nonatomic, copy) NSArray<Currency *> * __nonnull currencys;
+@property (nonatomic) Currency * __nullable majorCurrency;
 - (void)viewDidLoad;
-- (void)getStatus;
+- (UIEdgeInsets)widgetMarginInsetsForProposedMarginInsets:(UIEdgeInsets)defaultMarginInsets;
+- (void)loadData;
 - (void)didReceiveMemoryWarning;
 - (void)widgetPerformUpdateWithCompletionHandler:(void (^ __nonnull)(NCUpdateResult))completionHandler;
-- (IBAction)refresh:(id __nonnull)sender;
-- (void)getCurrency;
 - (void)updatePreferredContentSize;
 - (IBAction)clear:(id __nonnull)sender;
-@property (nonatomic) BOOL isEqual;
-- (IBAction)equal:(id __nonnull)sender;
-- (void)equal;
 - (IBAction)numberTouchUp:(id __nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;

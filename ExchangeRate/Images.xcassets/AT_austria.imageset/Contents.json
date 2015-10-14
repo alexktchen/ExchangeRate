@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "AT_austria.png"
+      "filename" : "AT_austria.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

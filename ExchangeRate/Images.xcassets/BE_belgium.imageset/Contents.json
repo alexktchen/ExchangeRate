@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "BE_belgium.png"
+      "filename" : "BE_belgium.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

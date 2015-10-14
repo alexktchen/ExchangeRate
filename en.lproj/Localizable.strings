@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  ExchangeRate
+
+  Created by Alex Chen on 2015/10/2.
+  Copyright © 2015 AlexChen. All rights reserved.
+*/
+
+"cell_default" = "set default";
+"cell_delete" = "remove";
+"setting_view_title" = "Setting";
+"today_view_title" = "Today Widget";

@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "FR_france.png"
+      "filename" : "FR_france.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

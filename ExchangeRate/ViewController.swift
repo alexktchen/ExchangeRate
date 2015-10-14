@@ -15,75 +15,44 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var topFlagImage: UIImageView!
     @IBOutlet weak var titleView: UIView!
-    
+
     var currencys: [Currency] = [Currency]()
-    
+
     @IBAction func edit(sender: AnyObject) {
         self.tableView.setEditing(true, animated: true)
-        
     }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         self.topFlagImage.layer.cornerRadius = self.topFlagImage.frame.size.width / 2
         self.topFlagImage.clipsToBounds = true
         self.topFlagImage.layer.borderWidth = 2
         self.topFlagImage.layer.borderColor = UIColor.whiteColor().CGColor
-        
+
         self.tableView.dataSource = self
         self.tableView.delegate = self
         self.tableView.registerNib(UINib(nibName: "MainTableViewCell", bundle: nil), forCellReuseIdentifier: "MainTableViewCell")
-        
         loadData()
     }
-    
+
     func loadData() {
-        
-        for country in CurrencyMap.country {
-            
-            let isoCode = country.0
-            let countryName = country.1
-            
-            let imageName = ("\(isoCode)_\(countryName)")
-            let currency = Currency()
-            
-            currency.flagImage = UIImage(named: imageName)
 
-            if let symbol = NSLocale.localesCurrencySymbol(country.0) {
-                currency.symbol = symbol
-            }
-
-            if let currencyCode = NSLocale.localesCurrencyCode(country.0) {
-                currency.currencyCode = currencyCode
-            }
-
-            if let displayName = NSLocale.locales(country.0) {
-                currency.displayName = displayName
-            }
-
-            if isoCode == "TW" {
-                currency.isMajor = true
-            } else {
-                currency.isMajor = false
-            }
-
-            currencys.append(currency)
-        }
-
+        currencys = LoadCountryDataService.sharedInstance.currencys
         // reorder items
         self.currencys.sortInPlace({ $0.displayName < $1.displayName })
-
+        
         if let item = self.currencys.filter({m in m.isMajor}).first {
-
+            
             if let i = self.currencys.indexOf({m in m.isMajor}) {
                 self.currencys.removeAtIndex(i)
             }
-
+            
             selectItem(item)
-
+            
             let currencyRequest = CurrencyRequest()
-
-            if let data = UserDefaultDataService.sharedInstance.getQueryCurrencysDate() {
+            
+            if let data = UserDefaultDataService.sharedInstance.getQueryCurrencysData() {
                 currencyRequest.parseCurrency(self.currencys, data: data)
             } else {
                 currencyRequest.getCurrency(item.currencyCode, currencys: self.currencys) { (currency) -> Void in
@@ -95,7 +64,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             self.tableView.reloadData()
         }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -110,7 +79,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return currencys.count
     }
-
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell: MainTableViewCell = tableView.dequeueReusableCellWithIdentifier("MainTableViewCell", forIndexPath: indexPath) as! MainTableViewCell
@@ -120,16 +89,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.symbolLabel.text = currencys[indexPath.row].symbol
         cell.flagImage.image = currencys[indexPath.row].flagImage
         cell.backgroundColor = UIColor(rgba: "#F5F5F5")
-        
-        if let r = currencys[indexPath.row].rate {
-            cell.priceLabel.text = String(1 * r)
-        }
+        cell.priceLabel.text = String(1 * currencys[indexPath.row].rate)
 
         return cell
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        selectItem(self.currencys[indexPath.row])
+        
     }
     
     func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
@@ -142,6 +108,23 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         currencys.removeAtIndex(fromIndexPath.row)
         currencys.insert(item, atIndex: toIndexPath.row)
     }
+    
+    func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
+        
+        let delete = UITableViewRowAction(style: UITableViewRowActionStyle.Destructive, title: "cell_delete".localized) { action, index in
+            self.currencys.removeAtIndex(indexPath.row)
+            self.tableView.beginUpdates()
+            self.tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Fade)
+            self.tableView.endUpdates()
+        }
+        let set = UITableViewRowAction(style: UITableViewRowActionStyle.Destructive, title: "cell_default".localized) { action, index in
+            self.selectItem(self.currencys[indexPath.row])
+            self.tableView.setEditing(false, animated: true)
+        }
+        set.backgroundColor = CustomColors.lightRedColor
+        return [set,delete]
+    }
+    
     
     func selectItem(item: Currency) {
         topFlagImage.alpha = 0

@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "TR_turkey.png"
+      "filename" : "TR_turkey.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

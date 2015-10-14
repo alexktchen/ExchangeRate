@@ -1,7 +1,6 @@
 version: "Apple Swift version 2.0 (swiftlang-700.0.59 clang-700.0.72)"
-options: "fee87c8a0f7ada5d04f8ad49f6b69cd7"
-build_time: [497030481, 534890000]
+options: "5fc43ce885ace16fbc9d7f178c66eb73"
+build_time: [497457989, 428851000]
 inputs: 
-	"/Users/cktalex/Documents/bProject/test4/ExchangeRate/SampleKeyboard/SwiftyJSON.swift": [496161266, 0]
-	"/Users/cktalex/Documents/bProject/test4/ExchangeRate/SampleKeyboard/BackgroundHighlightedButton.swift": [496251704, 0]
-	"/Users/cktalex/Documents/bProject/test4/ExchangeRate/SampleKeyboard/TodayViewController.swift": [497030404, 0]
+	"/Users/cktalex/Documents/bProject/ExchangeRate/SampleKeyboard/TodayViewController.swift": !dirty [497292293, 0]
+	"/Users/cktalex/Documents/bProject/ExchangeRate/SampleKeyboard/BackgroundHighlightedButton.swift": !dirty [497290020, 0]

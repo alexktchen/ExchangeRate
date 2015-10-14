@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "TH_thailand.png"
+      "filename" : "TH_thailand.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

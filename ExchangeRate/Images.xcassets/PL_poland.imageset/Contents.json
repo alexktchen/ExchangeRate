@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "PL_poland.png"
+      "filename" : "PL_poland.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

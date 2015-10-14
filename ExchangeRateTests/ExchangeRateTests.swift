@@ -3,7 +3,7 @@
 //  ExchangeRateTests
 //
 //  Created by Alex Chen on 2015/9/14.
-//  Copyright (c) 2015年 Alex Chen. All rights reserved.
+//  Copyright (c) 2015 Alex Chen. All rights reserved.
 //
 
 import UIKit

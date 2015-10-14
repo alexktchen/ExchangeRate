@@ -8,7 +8,7 @@
 	<string>H9SXKCFCZM</string>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.com.extrmeCurrencyShareData</string>
+		<string>group.com.AlexChen.extrmeCurrencyShareData</string>
 	</array>
 	<key>get-task-allow</key>
 	<true/>

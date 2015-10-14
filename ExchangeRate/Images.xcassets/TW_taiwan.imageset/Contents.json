@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "TW_taiwan.png"
+      "filename" : "TW_taiwan.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

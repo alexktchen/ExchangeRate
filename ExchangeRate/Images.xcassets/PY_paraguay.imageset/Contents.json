@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "PY_paraguay.png"
+      "filename" : "PY_paraguay.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

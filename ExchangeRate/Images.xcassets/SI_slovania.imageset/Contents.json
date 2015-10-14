@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "SI_slovania.png"
+      "filename" : "SI_slovania.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

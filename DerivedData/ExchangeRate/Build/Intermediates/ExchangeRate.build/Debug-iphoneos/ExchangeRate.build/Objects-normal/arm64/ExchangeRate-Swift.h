@@ -86,185 +86,15 @@ typedef int swift_int2  __attribute__((__ext_vector_type__(2)));
 typedef int swift_int3  __attribute__((__ext_vector_type__(3)));
 typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
-@import ObjectiveC;
 @import UIKit;
 @import CoreGraphics;
-@import Foundation;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
-
-
-/// This is base class for holding XML structure.
-///
-/// You can access its structure by using subscript like this:
-/// <code>element["foo"]["bar"]
-/// </code> would return <code><bar></bar>
-/// </code> element from <code><element><foo><bar></bar></foo></element>
-/// </code> XML as an <code>AEXMLElement
-/// </code> object.
-SWIFT_CLASS("_TtC12ExchangeRate12AEXMLElement")
-@interface AEXMLElement : NSObject
-
-/// Every AEXMLElement should have its parent element instead of AEXMLDocument which parent is nil.
-@property (nonatomic, readonly, weak) AEXMLElement * __nullable parent;
-
-/// Child XML elements.
-@property (nonatomic, readonly, copy) NSArray<AEXMLElement *> * __nonnull children;
-
-/// XML Element name (defaults to empty string).
-@property (nonatomic, copy) NSString * __nonnull name;
-
-/// XML Element value.
-@property (nonatomic, copy) NSString * __nullable value;
-
-/// XML Element attributes (defaults to empty dictionary).
-@property (nonatomic, copy) NSDictionary<NSString *, NSString *> * __nonnull attributes;
-
-/// String representation of value property (if value is nil this is empty String).
-@property (nonatomic, readonly, copy) NSString * __nonnull stringValue;
-
-/// String representation of value property with special characters escaped (if value is nil this is empty String).
-@property (nonatomic, readonly, copy) NSString * __nonnull escapedStringValue;
-
-/// Boolean representation of value property (if value is "true" or 1 this is True, otherwise False).
-@property (nonatomic, readonly) BOOL boolValue;
-
-/// Integer representation of value property (this is 0 if value can't be represented as Integer).
-@property (nonatomic, readonly) NSInteger intValue;
-
-/// Double representation of value property (this is 0.00 if value can't be represented as Double).
-@property (nonatomic, readonly) double doubleValue;
-
-/// Designated initializer - all parameters are optional.
-///
-/// :param: name XML element name.
-/// :param: value XML element value
-/// :param: attributes XML element attributes
-///
-/// :returns: An initialized <code>AEXMLElement
-/// </code> object.
-- (nonnull instancetype)init:(NSString * __nullable)name value:(NSString * __nullable)value attributes:(NSDictionary<NSString *, NSString *> * __nullable)attributes OBJC_DESIGNATED_INITIALIZER;
-
-/// This element name is used when unable to find element.
-+ (NSString * __nonnull)errorElementName;
-- (AEXMLElement * __nonnull)objectForKeyedSubscript:(NSString * __nonnull)key;
-
-/// Returns all of the elements with equal name as self (nil if not exists).
-@property (nonatomic, readonly, copy) NSArray<AEXMLElement *> * __nullable all;
-
-/// Returns the first element with equal name as self (nil if not exists).
-@property (nonatomic, readonly) AEXMLElement * __nullable first;
-
-/// Returns the last element with equal name as self (nil if not exists).
-@property (nonatomic, readonly) AEXMLElement * __nullable last;
-
-/// Returns number of all elements with equal name as self.
-@property (nonatomic, readonly) NSInteger count;
-
-/// Returns all elements with given value.
-///
-/// :param: value XML element value.
-///
-/// :returns: Optional Array of found XML elements.
-- (NSArray<AEXMLElement *> * __nullable)allWithValue:(NSString * __nonnull)value;
-
-/// Returns all elements with given attributes.
-///
-/// :param: attributes Dictionary of Keys and Values of attributes.
-///
-/// :returns: Optional Array of found XML elements.
-- (NSArray<AEXMLElement *> * __nullable)allWithAttributes:(NSDictionary<NSString *, NSString *> * __nonnull)attributes;
-
-/// Adds child XML element to self.
-///
-/// :param: child Child XML element to add.
-///
-/// :returns: Child XML element with <code>self
-/// </code> as <code>parent
-/// </code>.
-- (AEXMLElement * __nonnull)addChild:(AEXMLElement * __nonnull)child;
-
-/// Adds child XML element to self.
-///
-/// :param: name Child XML element name.
-/// :param: value Child XML element value.
-/// :param: attributes Child XML element attributes.
-///
-/// :returns: Child XML element with <code>self
-/// </code> as <code>parent
-/// </code>.
-- (AEXMLElement * __nonnull)addChildWithName:(NSString * __nonnull)name value:(NSString * __nullable)value attributes:(NSDictionary<NSString *, NSString *> * __nullable)attributes;
-
-/// Removes self from parent XML element.
-- (void)removeFromParent;
-
-/// Complete hierarchy of self and children in XML escaped and formatted String
-@property (nonatomic, readonly, copy) NSString * __nonnull xmlString;
-@end
-
-@class NSData;
-
-
-/// This class is inherited from AEXMLElement and has a few addons to represent XML Document.
-///
-/// XML Parsing is also done with this object.
-SWIFT_CLASS("_TtC12ExchangeRate13AEXMLDocument")
-@interface AEXMLDocument : AEXMLElement
-
-/// This is only used for XML Document header (default value is 1.0).
-@property (nonatomic, readonly) double version;
-
-/// This is only used for XML Document header (default value is "utf-8").
-@property (nonatomic, readonly, copy) NSString * __nonnull encoding;
-
-/// This is only used for XML Document header (default value is "no").
-@property (nonatomic, readonly, copy) NSString * __nonnull standalone;
-
-/// Root (the first child element) element of XML Document (AEXMLError element if not exists).
-@property (nonatomic, readonly) AEXMLElement * __nonnull root;
-
-/// Designated initializer - Creates and returns XML Document object.
-///
-/// :param: version Version value for XML Document header (defaults to 1.0).
-/// :param: encoding Encoding value for XML Document header (defaults to "utf-8").
-/// :param: standalone Standalone value for XML Document header (defaults to "no").
-/// :param: root Root XML element for XML Document (defaults to <code>nil
-/// </code>).
-///
-/// :returns: An initialized XML Document object.
-- (nonnull instancetype)initWithVersion:(double)version encoding:(NSString * __nonnull)encoding standalone:(NSString * __nonnull)standalone root:(AEXMLElement * __nullable)root OBJC_DESIGNATED_INITIALIZER;
-
-/// Convenience initializer - used for parsing XML data (by calling loadXMLData: internally).
-///
-/// :param: version Version value for XML Document header (defaults to 1.0).
-/// :param: encoding Encoding value for XML Document header (defaults to "utf-8").
-/// :param: standalone Standalone value for XML Document header (defaults to "no").
-/// :param: xmlData XML data to parse.
-/// :param: error If there is an error reading in the data, upon return contains an <code>NSError
-/// </code> object that describes the problem.
-///
-/// :returns: An initialized XML Document object containing the parsed data. Returns <code>nil
-/// </code> if the data could not be parsed.
-- (nullable instancetype)initWithVersion:(double)version encoding:(NSString * __nonnull)encoding standalone:(NSString * __nonnull)standalone xmlData:(NSData * __nonnull)xmlData error:(NSError * __nullable * __null_unspecified)error;
-
-/// Creates instance of AEXMLParser (private class which is simple wrapper around NSXMLParser) and starts parsing the given XML data.
-///
-/// :param: data XML which should be parsed.
-///
-/// :returns: <code>NSError
-/// </code> if parsing is not successfull, otherwise <code>nil
-/// </code>.
-- (BOOL)loadXMLData:(NSData * __nonnull)data error:(NSError * __nullable * __null_unspecified)error;
-
-/// Override of xmlString property of AEXMLElement - it just inserts XML Document header at the beginning.
-@property (nonatomic, readonly, copy) NSString * __nonnull xmlString;
-@end
-
-
 @class UIWindow;
 @class UIApplication;
+@class NSObject;
 @class NSURL;
 @class NSManagedObjectModel;
 @class NSPersistentStoreCoordinator;
@@ -300,41 +130,22 @@ SWIFT_CLASS("_TtC12ExchangeRate27BackgroundHighlightedButton")
 - (void)drawRect:(CGRect)rect;
 @end
 
-@class NSError;
+@class UITableView;
+@class NSIndexPath;
+@class UITableViewCell;
+@class NSBundle;
 
-SWIFT_CLASS("_TtC12ExchangeRate11BaseRequest")
-@interface BaseRequest : NSObject
-- (void)request:(NSString * __nonnull)url completionHandler:(void (^ __nonnull)(NSData * __nullable, NSError * __nullable))completionHandler;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class NSDate;
-@class UIImage;
-
-SWIFT_CLASS("_TtC12ExchangeRate8Currency")
-@interface Currency : NSObject
-@property (nonatomic) NSDate * __nullable dateTime;
-@property (nonatomic, copy) NSString * __nonnull dollarsName;
-@property (nonatomic) BOOL isMajor;
-@property (nonatomic, copy) NSString * __nonnull price;
-@property (nonatomic, copy) NSString * __nonnull symbol;
-@property (nonatomic, copy) NSString * __nonnull ts;
-@property (nonatomic, copy) NSString * __nonnull type;
-@property (nonatomic, copy) NSString * __nonnull utctime;
-@property (nonatomic, copy) NSString * __nonnull volume;
-@property (nonatomic, copy) NSString * __nonnull displayName;
-@property (nonatomic, copy) NSString * __nonnull currencyCode;
-@property (nonatomic, copy) NSString * __nonnull country;
-@property (nonatomic) UIImage * __nullable flagImage;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC12ExchangeRate15CurrencyRequest")
-@interface CurrencyRequest : NSObject <NSXMLParserDelegate>
-- (void)getCurrency:(NSString * __nonnull)majorCode currencys:(NSArray<Currency *> * __nonnull)currencys completionHandler:(void (^ __nonnull)(NSArray<Currency *> * __nullable))completionHandler;
-- (void)parseCurrency:(NSArray<Currency *> * __nonnull)currencys data:(NSData * __nonnull)data;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+SWIFT_CLASS("_TtC12ExchangeRate21CountryFetchTableView")
+@interface CountryFetchTableView : UITableViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * __nonnull)tableView;
+- (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (void)tableView:(UITableView * __nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class UILabel;
@@ -352,22 +163,49 @@ SWIFT_CLASS("_TtC12ExchangeRate17MainTableViewCell")
 @end
 
 
-@interface NSLocale (SWIFT_EXTENSION(ExchangeRate))
-+ (NSString * __nullable)locales:(NSString * __nonnull)code;
-+ (NSString * __nullable)localesCurrencyCode:(NSString * __nonnull)code;
-+ (NSString * __nullable)localesCurrencySymbol:(NSString * __nonnull)code;
+SWIFT_CLASS("_TtC12ExchangeRate21SettingViewController")
+@interface SettingViewController : UITableViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * __nonnull)tableView;
+- (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
-@interface UIColor (SWIFT_EXTENSION(ExchangeRate))
-- (nonnull instancetype)initWithRgba:(NSString * __nonnull)rgba;
+SWIFT_CLASS("_TtC12ExchangeRate20TTableViewController")
+@interface TTableViewController : UITableViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * __nonnull)tableView;
+- (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UITableView;
-@class NSIndexPath;
+@class Currency;
+
+SWIFT_CLASS("_TtC12ExchangeRate26TodaySettingViewController")
+@interface TodaySettingViewController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, weak) IBOutlet UITableView * __null_unspecified tableView;
+@property (nonatomic) BOOL isMajor;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (void)currenctSelected:(Currency * __nonnull)aCurrency;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * __nonnull)tableView;
+- (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (void)tableView:(UITableView * __nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UITableViewRowAction;
 @class UIBarButtonItem;
 @class UIView;
-@class NSBundle;
 
 SWIFT_CLASS("_TtC12ExchangeRate14ViewController")
 @interface ViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
@@ -386,6 +224,7 @@ SWIFT_CLASS("_TtC12ExchangeRate14ViewController")
 - (void)tableView:(UITableView * __nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (BOOL)tableView:(UITableView * __nonnull)tableView canMoveRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (void)tableView:(UITableView * __nonnull)tableView moveRowAtIndexPath:(NSIndexPath * __nonnull)fromIndexPath toIndexPath:(NSIndexPath * __nonnull)toIndexPath;
+- (NSArray<UITableViewRowAction *> * __nullable)tableView:(UITableView * __nonnull)tableView editActionsForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (void)selectItem:(Currency * __nonnull)item;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
