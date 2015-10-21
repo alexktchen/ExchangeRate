@@ -16,6 +16,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     @IBOutlet weak var majorLabel: UILabel!
     @IBOutlet weak var majorCurrencyCode: UILabel!
     @IBOutlet weak var majorCurrencySymbol: UILabel!
+    @IBOutlet weak var majorView: UIView!
     @IBOutlet weak var minorImage: UIImageView!
     @IBOutlet weak var minorLabel: UILabel!
     @IBOutlet weak var minorCurrencyCode: UILabel!
@@ -25,6 +26,8 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     @IBOutlet weak var keyboardView: UIView!
     @IBOutlet weak var updateTimeLabel: UILabel!
     @IBOutlet weak var refreshButton: UIButton!
+    @IBOutlet weak var addButton: UIButton!
+    @IBOutlet weak var addCurrencyView: UIView!
 
     var numberString: String = ""
     var currencys: [Currency] = [Currency]()
@@ -36,11 +39,22 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         self.refreshButton.clipsToBounds = true
         self.refreshButton.layer.borderWidth = 1
         self.refreshButton.layer.borderColor = CustomColors.switchGrayColor.CGColor
+
+        self.addButton.layer.cornerRadius = 2
+
         updatePreferredContentSize()
+        majorLabel.text = "0"
+        minorLabel.text = "0"
+    }
+
+
+    func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)) {
+        completionHandler(NCUpdateResult.NewData)
+        adjustUi()
     }
 
     override func viewWillAppear(animated: Bool) {
-        adjustUi()
+
     }
 
     func widgetMarginInsetsForProposedMarginInsets(defaultMarginInsets: UIEdgeInsets) -> (UIEdgeInsets) {
@@ -59,39 +73,58 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         loadData()
     }
 
-
     func loadAnimation() {
-        let duration = 2.0
+        let duration = 1.0
         let delay = 0.0
-        let options = UIViewKeyframeAnimationOptions.CalculationModePaced
+        let options = UIViewKeyframeAnimationOptions.Repeat
 
-        let fullRotation = CGFloat(M_PI * 2)
+        let fullRotation = CGFloat(2*M_PI)
 
-        UIView.animateKeyframesWithDuration(duration, delay: delay, options: options, animations: {
+        
+        UIView.animateKeyframesWithDuration(duration, delay: 0.0, options: options, animations: {
             // note that we've set relativeStartTime and relativeDuration to zero.
             // Because we're using `CalculationModePaced` these values are ignored
             // and iOS figures out values that are needed to create a smooth constant transition
-            UIView.addKeyframeWithRelativeStartTime(0, relativeDuration: 0, animations: {
-                self.refreshButton.transform = CGAffineTransformMakeRotation(1/3 * fullRotation)
+            UIView.addKeyframeWithRelativeStartTime(0, relativeDuration: 4, animations: {
+                self.refreshButton.transform = CGAffineTransformMakeRotation(fullRotation)
             })
 
-            UIView.addKeyframeWithRelativeStartTime(0, relativeDuration: 0, animations: {
-                self.refreshButton.transform = CGAffineTransformMakeRotation(2/3 * fullRotation)
-            })
+           // UIView.addKeyframeWithRelativeStartTime(0, relativeDuration: 1, animations: {
+               // self.refreshButton.transform = CGAffineTransformMakeRotation(2/3 * fullRotation)
+            //})
 
-            UIView.addKeyframeWithRelativeStartTime(0, relativeDuration: 0, animations: {
-                self.refreshButton.transform = CGAffineTransformMakeRotation(3/3 * fullRotation)
-            })
+            //UIView.addKeyframeWithRelativeStartTime(0, relativeDuration: 1, animations: {
+               // self.refreshButton.transform = CGAffineTransformMakeRotation(3/3 * fullRotation)
+            //})
 
-            }, completion: nil)
+            }, completion: {finished in
+
+        })
+
     }
 
     func adjustUi() {
-        centerView.frame = getCenterViewCGRect(centerView)
-        minorLabel.frame = getRightViewCGRect(minorLabel)
-        rightView.frame = getRightViewCGRect(rightView)
-        keyboardView.frame = getCenterViewCGRect(keyboardView)
-        updateTimeLabel.frame = getCenterViewCGRect(updateTimeLabel)
+
+        if let _ = UserDefaultDataService.sharedInstance.getMajorCurrencysData() {
+            centerView.frame = getCenterViewCGRect(centerView)
+            minorLabel.frame = getRightViewCGRect(minorLabel)
+            rightView.frame = getRightViewCGRect(rightView)
+            keyboardView.frame = getCenterViewCGRect(keyboardView)
+            updateTimeLabel.frame = getCenterViewCGRect(updateTimeLabel)
+            loadData()
+        } else {
+            let centerViewFrame = addCurrencyView.frame
+            let centerViewWidth = addCurrencyView.frame.width / 2
+            let frameWidth = self.view.frame.width / 2
+            addCurrencyView.frame = CGRectMake(frameWidth - centerViewWidth, 20, centerViewFrame.width, centerViewFrame.height)
+            centerView.hidden = true
+            majorLabel.hidden = true
+            minorLabel.hidden = true
+            majorView.hidden = true
+            rightView.hidden = true
+            keyboardView.hidden = true
+            updateTimeLabel.hidden = true
+        }
     }
 
     func getCenterViewCGRect(view: UIView) -> CGRect {
@@ -129,16 +162,13 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             self.delay(0.0) {
                 self.updateTimeLabel.text = NSDate().toString("yyyy/MM/dd HH:mm")
 
-                if let c = currencys {
-                    self.currencys = c
-                    self.majorCurrencySymbol.text = "1 \(c[0].symbol) = \(c[0].rate) \(c[1].symbol)"
-                    self.minorCurrencySymbol.text = "1 \(c[1].symbol) = \(c[1].rate) \(c[0].symbol)"
+                if currencys?.count > 0 {
+                    self.currencys = currencys!
+                    self.majorCurrencySymbol.text = "1 \(self.currencys[0].symbol) = \(self.currencys[0].rate) \(self.currencys[1].symbol)"
+                    self.minorCurrencySymbol.text = "1 \(self.currencys[1].symbol) = \(self.currencys[1].rate) \(self.currencys[0].symbol)"
                 }
             }
         }
-
-
-
     }
 
     func delay(delay:Double, closure:()->()) {
@@ -150,10 +180,6 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             dispatch_get_main_queue(), closure)
     }
 
-    func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)) {
-        completionHandler(NCUpdateResult.NewData)
-        loadData()
-    }
 
     func updatePreferredContentSize() {
         self.preferredContentSize = CGSizeMake(CGFloat(0), CGFloat(400))
@@ -166,6 +192,11 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     }
 
     @IBAction func numberTouchUp(sender: AnyObject) {
+
+        if self.majorLabel.text?.characters.count > 11 || self.minorLabel.text?.characters.count > 11 {
+            return
+        }
+
         //adjustUi()
         let str = (sender as! UIButton).titleLabel!.text!
 
@@ -195,5 +226,9 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         let rate = currencys[0].rate
         let number = minorNum * rate
         self.minorLabel.text = number.toCurrencyStyle
+    }
+    
+    @IBAction func addButtonUpInside(sender: AnyObject) {
+         extensionContext!.openURL(NSURL(string: "simpleTimer://finished")!, completionHandler: nil)
     }
 }

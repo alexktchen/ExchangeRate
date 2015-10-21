@@ -23,8 +23,9 @@ public class Currency: NSObject, NSCoding {
     public var currencyCode: String = ""
     public var country: String = ""
     public var flagImageName: String?
+    public var largeFlagImageName: String?
     public var flagImage: UIImage?
-
+    public var largeFlagImage: UIImage?
     public override init() {
 
     }

@@ -1,12 +1,12 @@
-version: "Apple Swift version 2.0 (swiftlang-700.0.59 clang-700.0.72)"
-options: "169d98743ef06bf6d59c790e03cffc96"
-build_time: [498156369, 461549000]
+version: "Apple Swift version 1.2 (swiftlang-602.0.53.1 clang-602.0.53)"
+options: "ff1b34fb289e28c369758b1050677d1d"
 inputs: 
-	"/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/BackgroundHighlightedButton.swift": [497290020, 0]
-	"/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/AppDelegate.swift": [497290020, 0]
-	"/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/MainTableViewCell.swift": [497290020, 0]
-	"/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/CountryFetchTableView.swift": [497290020, 0]
-	"/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/ViewController.swift": [498154785, 0]
-	"/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/TodaySettingViewController.swift": [498154785, 0]
-	"/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/TTableViewController.swift": [497290020, 0]
-	"/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/SettingViewController.swift": [497290020, 0]
+- !dirty "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/TTableViewController.swift"
+- !dirty "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/MainTableViewCell.swift"
+- !dirty "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/CountryFetchTableView.swift"
+- !dirty "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/TodaySettingViewController.swift"
+- !dirty "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/BackgroundHighlightedButton.swift"
+- !dirty "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/MainViewController.swift"
+- !dirty "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/AppDelegate.swift"
+- !dirty "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/IntroductionView.swift"
+- !dirty "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/SettingViewController.swift"

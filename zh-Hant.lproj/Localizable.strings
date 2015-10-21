@@ -10,3 +10,8 @@
 "cell_delete" = "移除";
 "setting_view_title" = "設定";
 "today_view_title" = "今日 Widget";
+"today_view_detail_no_selected" = "未選取";
+"today_view_detail_major_currency" = "主要貨幣";
+"today_view_detail_minor_currency" = "次要貨幣";
+
+

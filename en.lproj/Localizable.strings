@@ -10,3 +10,6 @@
 "cell_delete" = "remove";
 "setting_view_title" = "Setting";
 "today_view_title" = "Today Widget";
+"today_view_detail_no_selected" = "no selected";
+"today_view_detail_major_currency" = "major currency";
+"today_view_detail_minor_currency" = "minor currency";

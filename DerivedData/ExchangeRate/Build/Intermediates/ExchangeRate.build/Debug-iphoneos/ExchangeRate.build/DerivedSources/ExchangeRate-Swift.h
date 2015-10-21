@@ -90,6 +90,8 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 @import CoreGraphics;
 #endif
 
+#import "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/ExchangeRate-Bridging-Header.h"
+
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
 @class UIWindow;
@@ -104,6 +106,8 @@ SWIFT_CLASS("_TtC12ExchangeRate11AppDelegate")
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 @property (nonatomic) UIWindow * __nullable window;
 - (BOOL)application:(UIApplication * __nonnull)application didFinishLaunchingWithOptions:(NSDictionary * __nullable)launchOptions;
+- (BOOL)application:(UIApplication * __nonnull)application openURL:(NSURL * __nonnull)url sourceApplication:(NSString * __nullable)sourceApplication annotation:(id __nonnull)annotation;
+- (void)changeStatusBarColor;
 - (void)applicationWillResignActive:(UIApplication * __nonnull)application;
 - (void)applicationDidEnterBackground:(UIApplication * __nonnull)application;
 - (void)applicationWillEnterForeground:(UIApplication * __nonnull)application;
@@ -130,20 +134,48 @@ SWIFT_CLASS("_TtC12ExchangeRate27BackgroundHighlightedButton")
 - (void)drawRect:(CGRect)rect;
 @end
 
+@class Currency;
+@class UIScrollView;
+@class UISearchBar;
 @class UITableView;
 @class NSIndexPath;
 @class UITableViewCell;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC12ExchangeRate21CountryFetchTableView")
-@interface CountryFetchTableView : UITableViewController
+@interface CountryFetchTableView : UITableViewController <UIBarPositioningDelegate, UISearchBarDelegate>
+@property (nonatomic, weak) IBOutlet UISearchBar * __null_unspecified searchBar;
+@property (nonatomic) BOOL searchActive;
+@property (nonatomic, copy) NSArray<Currency *> * __nonnull filtered;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+
+/// <ul><li>Occur when table view was drag
+/// *:param: scrollView</li></ul>
+- (void)scrollViewDidScroll:(UIScrollView * __nonnull)scrollView;
+- (void)searchBarTextDidEndEditing:(UISearchBar * __nonnull)searchBar;
+- (void)searchBarCancelButtonClicked:(UISearchBar * __nonnull)searchBar;
+- (void)searchBarBookmarkButtonClicked:(UISearchBar * __nonnull)searchBar;
+- (void)searchBar:(UISearchBar * __nonnull)searchBar textDidChange:(NSString * __nonnull)searchText;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * __nonnull)tableView;
 - (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (void)tableView:(UITableView * __nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class MYIntroductionPanel;
+
+SWIFT_CLASS("_TtC12ExchangeRate16IntroductionView")
+@interface IntroductionView : UIViewController <MYIntroductionDelegate>
+- (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
+- (void)didReceiveMemoryWarning;
+- (void)introductionDidFinishWithType:(MYFinishType)finishType;
+- (void)introductionDidChangeToPanel:(MYIntroductionPanel * __null_unspecified)panel withIndex:(NSInteger)panelIndex;
+- (void)introductionView;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -162,13 +194,43 @@ SWIFT_CLASS("_TtC12ExchangeRate17MainTableViewCell")
 - (void)drawRect:(CGRect)rect;
 @end
 
+@class UITableViewRowAction;
+@class UIBarButtonItem;
+@class UIView;
+
+SWIFT_CLASS("_TtC12ExchangeRate18MainViewController")
+@interface MainViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
+@property (nonatomic, weak) IBOutlet UIBarButtonItem * __null_unspecified barItemEdit;
+@property (nonatomic, weak) IBOutlet UITableView * __null_unspecified tableView;
+@property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified topFlagImage;
+@property (nonatomic, weak) IBOutlet UIView * __null_unspecified titleView;
+- (IBAction)edit:(id __nonnull)sender;
+- (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)didReceiveMemoryWarning;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * __nonnull)tableView;
+- (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (void)tableView:(UITableView * __nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (BOOL)tableView:(UITableView * __nonnull)tableView canMoveRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (void)tableView:(UITableView * __nonnull)tableView moveRowAtIndexPath:(NSIndexPath * __nonnull)fromIndexPath toIndexPath:(NSIndexPath * __nonnull)toIndexPath;
+- (NSArray<UITableViewRowAction *> * __nullable)tableView:(UITableView * __nonnull)tableView editActionsForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (void)selectItem:(Currency * __nonnull)item;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC12ExchangeRate21SettingViewController")
 @interface SettingViewController : UITableViewController
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * __nonnull)tableView;
 - (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (void)scrollViewDidScroll:(UIScrollView * __nonnull)scrollView;
+- (UIView * __nullable)tableView:(UITableView * __nonnull)tableView viewForFooterInSection:(NSInteger)section;
+- (CGFloat)tableView:(UITableView * __nonnull)tableView heightForFooterInSection:(NSInteger)section;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -186,7 +248,6 @@ SWIFT_CLASS("_TtC12ExchangeRate20TTableViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class Currency;
 
 SWIFT_CLASS("_TtC12ExchangeRate26TodaySettingViewController")
 @interface TodaySettingViewController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
@@ -199,33 +260,6 @@ SWIFT_CLASS("_TtC12ExchangeRate26TodaySettingViewController")
 - (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (void)tableView:(UITableView * __nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
-- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class UITableViewRowAction;
-@class UIBarButtonItem;
-@class UIView;
-
-SWIFT_CLASS("_TtC12ExchangeRate14ViewController")
-@interface ViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
-@property (nonatomic, weak) IBOutlet UIBarButtonItem * __null_unspecified barItemEdit;
-@property (nonatomic, weak) IBOutlet UITableView * __null_unspecified tableView;
-@property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified topFlagImage;
-@property (nonatomic, weak) IBOutlet UIView * __null_unspecified titleView;
-@property (nonatomic, copy) NSArray<Currency *> * __nonnull currencys;
-- (IBAction)edit:(id __nonnull)sender;
-- (void)viewDidLoad;
-- (void)loadData;
-- (void)didReceiveMemoryWarning;
-- (NSInteger)numberOfSectionsInTableView:(UITableView * __nonnull)tableView;
-- (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
-- (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
-- (void)tableView:(UITableView * __nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
-- (BOOL)tableView:(UITableView * __nonnull)tableView canMoveRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
-- (void)tableView:(UITableView * __nonnull)tableView moveRowAtIndexPath:(NSIndexPath * __nonnull)fromIndexPath toIndexPath:(NSIndexPath * __nonnull)toIndexPath;
-- (NSArray<UITableViewRowAction *> * __nullable)tableView:(UITableView * __nonnull)tableView editActionsForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
-- (void)selectItem:(Currency * __nonnull)item;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

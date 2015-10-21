@@ -6,56 +6,58 @@ provides-nominal:
 provides-member:
 - ["C12ExchangeRate11AppDelegate", ""]
 provides-dynamic-lookup:
-- "managedObjectContext"
-- "persistentStoreCoordinator"
 - "applicationDidEnterBackground"
+- "managedObjectContext"
 - "saveContext"
-- "application"
 - "applicationWillResignActive"
+- "window"
+- "applicationDidBecomeActive"
+- "changeStatusBarColor"
+- "application"
+- "application"
+- "applicationWillEnterForeground"
+- "applicationWillTerminate"
 - "managedObjectModel"
 - "applicationDocumentsDirectory"
-- "window"
-- "applicationWillTerminate"
-- "applicationDidBecomeActive"
-- "applicationWillEnterForeground"
+- "persistentStoreCoordinator"
 depends-top-level:
+- "AnyObject"
+- !private "UIImage"
+- "UIApplicationDelegate"
 - !private "NSFileManager"
-- !private "UIColor"
 - !private "NSLog"
 - !private "UINavigationController"
 - !private "LoadCountryDataService"
 - !private "UINavigationBar"
 - !private "UIStatusBarStyle"
-- !private "CustomColors"
-- "AnyObject"
-- "NSError"
-- !private "UIBarMetrics"
-- !private "CGRectMake"
-- !private "NSBundle"
-- "NSManagedObjectContext"
-- !private "String"
-- !private "NSLocalizedFailureReasonErrorKey"
-- !private "BooleanLiteralType"
-- !private "fatalError"
-- "UIResponder"
+- "Bool"
 - "UIWindow"
-- !private "UIImage"
-- !private "NSSQLiteStoreType"
-- !private "UIStoryboard"
-- !private "=="
-- "UIApplicationDelegate"
+- !private "UIColor"
+- "UIResponder"
+- !private "-"
+- "String"
+- "NSManagedObjectContext"
+- !private "NSUnderlyingErrorKey"
 - !private "NSLocalizedDescriptionKey"
+- "NSError"
+- !private "fatalError"
+- !private "BooleanLiteralType"
+- !private "NSSQLiteStoreType"
+- !private "UILabel"
+- "NSURL"
+- !private "CGRectMake"
+- !private "UIBarMetrics"
+- !private "NSBundle"
+- "NSManagedObjectModel"
+- !private "=="
+- !private "UIStoryboard"
+- "NSPersistentStoreCoordinator"
 - "StringLiteralType"
 - "NSObject"
-- "NSPersistentStoreCoordinator"
-- "Bool"
-- "AppDelegate"
-- !private "UILabel"
-- !private "-"
-- "NSManagedObjectModel"
-- !private "NSUnderlyingErrorKey"
-- "NSURL"
+- !private "NSLocalizedFailureReasonErrorKey"
 - !private "abort"
+- !private "CustomColors"
+- "AppDelegate"
 - "UIApplication"
 depends-member:
 - !private ["PSs9AnyObject", "AnyObject"]
@@ -104,12 +106,14 @@ depends-member:
 - ["PSs9AnyObject", "applicationWillResignActive"]
 - ["PSs9AnyObject", "applicationWillTerminate"]
 - !private ["PSs9AnyObject", "backgroundColor"]
+- ["PSs9AnyObject", "changeStatusBarColor"]
 - !private ["PSs9AnyObject", "clearColor"]
 - !private ["PSs9AnyObject", "defaultManager"]
 - !private ["PSs9AnyObject", "deinit"]
 - !private ["PSs9AnyObject", "fatalError"]
 - !private ["PSs9AnyObject", "frame"]
 - !private ["PSs9AnyObject", "hasChanges"]
+- !private ["PSs9AnyObject", "host"]
 - ["PSs9AnyObject", "init"]
 - !private ["PSs9AnyObject", "instantiateViewControllerWithIdentifier"]
 - !private ["PSs9AnyObject", "loadCountry"]
@@ -120,9 +124,11 @@ depends-member:
 - ["PSs9AnyObject", "managedObjectModel.storage"]
 - ["PSs9AnyObject", "persistentStoreCoordinator"]
 - ["PSs9AnyObject", "persistentStoreCoordinator.storage"]
+- !private ["PSs9AnyObject", "pushViewController"]
 - !private ["PSs9AnyObject", "rootViewController"]
 - !private ["PSs9AnyObject", "save"]
 - ["PSs9AnyObject", "saveContext"]
+- !private ["PSs9AnyObject", "scheme"]
 - !private ["PSs9AnyObject", "setBackgroundImage"]
 - !private ["PSs9AnyObject", "setStatusBarStyle"]
 - !private ["PSs9AnyObject", "shadowImage"]
@@ -151,7 +157,7 @@ depends-member:
 - !private ["C12ExchangeRate11AppDelegate", "NSSQLiteStoreType"]
 - ["C12ExchangeRate11AppDelegate", "NSURL"]
 - !private ["C12ExchangeRate11AppDelegate", "NSUnderlyingErrorKey"]
-- !private ["C12ExchangeRate11AppDelegate", "String"]
+- ["C12ExchangeRate11AppDelegate", "String"]
 - ["C12ExchangeRate11AppDelegate", "UIApplication"]
 - !private ["C12ExchangeRate11AppDelegate", "UIBarMetrics"]
 - !private ["C12ExchangeRate11AppDelegate", "UIColor"]
@@ -177,6 +183,7 @@ depends-member:
 - ["C12ExchangeRate11AppDelegate", "applicationWillEnterForeground"]
 - ["C12ExchangeRate11AppDelegate", "applicationWillResignActive"]
 - ["C12ExchangeRate11AppDelegate", "applicationWillTerminate"]
+- ["C12ExchangeRate11AppDelegate", "changeStatusBarColor"]
 - ["C12ExchangeRate11AppDelegate", "deinit"]
 - !private ["C12ExchangeRate11AppDelegate", "fatalError"]
 - ["C12ExchangeRate11AppDelegate", "init"]
@@ -261,11 +268,13 @@ depends-member:
 - ["PSs11CVarArgType", "applicationWillResignActive"]
 - ["PSs11CVarArgType", "applicationWillTerminate"]
 - !private ["PSs11CVarArgType", "backgroundColor"]
+- ["PSs11CVarArgType", "changeStatusBarColor"]
 - !private ["PSs11CVarArgType", "clearColor"]
 - !private ["PSs11CVarArgType", "defaultManager"]
 - !private ["PSs11CVarArgType", "fatalError"]
 - !private ["PSs11CVarArgType", "frame"]
 - !private ["PSs11CVarArgType", "hasChanges"]
+- !private ["PSs11CVarArgType", "host"]
 - ["PSs11CVarArgType", "init"]
 - !private ["PSs11CVarArgType", "instantiateViewControllerWithIdentifier"]
 - !private ["PSs11CVarArgType", "loadCountry"]
@@ -276,9 +285,11 @@ depends-member:
 - ["PSs11CVarArgType", "managedObjectModel.storage"]
 - ["PSs11CVarArgType", "persistentStoreCoordinator"]
 - ["PSs11CVarArgType", "persistentStoreCoordinator.storage"]
+- !private ["PSs11CVarArgType", "pushViewController"]
 - !private ["PSs11CVarArgType", "rootViewController"]
 - !private ["PSs11CVarArgType", "save"]
 - ["PSs11CVarArgType", "saveContext"]
+- !private ["PSs11CVarArgType", "scheme"]
 - !private ["PSs11CVarArgType", "setBackgroundImage"]
 - !private ["PSs11CVarArgType", "setStatusBarStyle"]
 - !private ["PSs11CVarArgType", "shadowImage"]
@@ -360,12 +371,14 @@ depends-member:
 - ["PSs23CustomStringConvertible", "applicationWillResignActive"]
 - ["PSs23CustomStringConvertible", "applicationWillTerminate"]
 - !private ["PSs23CustomStringConvertible", "backgroundColor"]
+- ["PSs23CustomStringConvertible", "changeStatusBarColor"]
 - !private ["PSs23CustomStringConvertible", "clearColor"]
 - !private ["PSs23CustomStringConvertible", "count"]
 - !private ["PSs23CustomStringConvertible", "defaultManager"]
 - !private ["PSs23CustomStringConvertible", "fatalError"]
 - !private ["PSs23CustomStringConvertible", "frame"]
 - !private ["PSs23CustomStringConvertible", "hasChanges"]
+- !private ["PSs23CustomStringConvertible", "host"]
 - ["PSs23CustomStringConvertible", "init"]
 - !private ["PSs23CustomStringConvertible", "instantiateViewControllerWithIdentifier"]
 - !private ["PSs23CustomStringConvertible", "loadCountry"]
@@ -376,9 +389,11 @@ depends-member:
 - ["PSs23CustomStringConvertible", "managedObjectModel.storage"]
 - ["PSs23CustomStringConvertible", "persistentStoreCoordinator"]
 - ["PSs23CustomStringConvertible", "persistentStoreCoordinator.storage"]
+- !private ["PSs23CustomStringConvertible", "pushViewController"]
 - !private ["PSs23CustomStringConvertible", "rootViewController"]
 - !private ["PSs23CustomStringConvertible", "save"]
 - ["PSs23CustomStringConvertible", "saveContext"]
+- !private ["PSs23CustomStringConvertible", "scheme"]
 - !private ["PSs23CustomStringConvertible", "setBackgroundImage"]
 - !private ["PSs23CustomStringConvertible", "setStatusBarStyle"]
 - !private ["PSs23CustomStringConvertible", "shadowImage"]
@@ -448,11 +463,13 @@ depends-member:
 - ["PSs9Equatable", "applicationWillResignActive"]
 - ["PSs9Equatable", "applicationWillTerminate"]
 - !private ["PSs9Equatable", "backgroundColor"]
+- ["PSs9Equatable", "changeStatusBarColor"]
 - !private ["PSs9Equatable", "clearColor"]
 - !private ["PSs9Equatable", "defaultManager"]
 - !private ["PSs9Equatable", "fatalError"]
 - !private ["PSs9Equatable", "frame"]
 - !private ["PSs9Equatable", "hasChanges"]
+- !private ["PSs9Equatable", "host"]
 - ["PSs9Equatable", "init"]
 - !private ["PSs9Equatable", "instantiateViewControllerWithIdentifier"]
 - !private ["PSs9Equatable", "loadCountry"]
@@ -463,9 +480,11 @@ depends-member:
 - ["PSs9Equatable", "managedObjectModel.storage"]
 - ["PSs9Equatable", "persistentStoreCoordinator"]
 - ["PSs9Equatable", "persistentStoreCoordinator.storage"]
+- !private ["PSs9Equatable", "pushViewController"]
 - !private ["PSs9Equatable", "rootViewController"]
 - !private ["PSs9Equatable", "save"]
 - ["PSs9Equatable", "saveContext"]
+- !private ["PSs9Equatable", "scheme"]
 - !private ["PSs9Equatable", "setBackgroundImage"]
 - !private ["PSs9Equatable", "setStatusBarStyle"]
 - !private ["PSs9Equatable", "shadowImage"]
@@ -537,11 +556,13 @@ depends-member:
 - ["PSs8Hashable", "applicationWillResignActive"]
 - ["PSs8Hashable", "applicationWillTerminate"]
 - !private ["PSs8Hashable", "backgroundColor"]
+- ["PSs8Hashable", "changeStatusBarColor"]
 - !private ["PSs8Hashable", "clearColor"]
 - !private ["PSs8Hashable", "defaultManager"]
 - !private ["PSs8Hashable", "fatalError"]
 - !private ["PSs8Hashable", "frame"]
 - !private ["PSs8Hashable", "hasChanges"]
+- !private ["PSs8Hashable", "host"]
 - ["PSs8Hashable", "init"]
 - !private ["PSs8Hashable", "instantiateViewControllerWithIdentifier"]
 - !private ["PSs8Hashable", "loadCountry"]
@@ -552,9 +573,11 @@ depends-member:
 - ["PSs8Hashable", "managedObjectModel.storage"]
 - ["PSs8Hashable", "persistentStoreCoordinator"]
 - ["PSs8Hashable", "persistentStoreCoordinator.storage"]
+- !private ["PSs8Hashable", "pushViewController"]
 - !private ["PSs8Hashable", "rootViewController"]
 - !private ["PSs8Hashable", "save"]
 - ["PSs8Hashable", "saveContext"]
+- !private ["PSs8Hashable", "scheme"]
 - !private ["PSs8Hashable", "setBackgroundImage"]
 - !private ["PSs8Hashable", "setStatusBarStyle"]
 - !private ["PSs8Hashable", "shadowImage"]
@@ -615,11 +638,14 @@ depends-member:
 - !private ["PSo8NSCoding", "clearColor"]
 - !private ["PSo8NSCoding", "frame"]
 - !private ["PSo8NSCoding", "hasChanges"]
+- !private ["PSo8NSCoding", "host"]
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "loadCountry"]
 - !private ["PSo8NSCoding", "persistentStoreCoordinator"]
+- !private ["PSo8NSCoding", "pushViewController"]
 - !private ["PSo8NSCoding", "rootViewController"]
 - !private ["PSo8NSCoding", "save"]
+- !private ["PSo8NSCoding", "scheme"]
 - !private ["PSo8NSCoding", "setBackgroundImage"]
 - !private ["PSo8NSCoding", "shadowImage"]
 - !private ["PSo8NSCoding", "sharedInstance"]
@@ -628,14 +654,17 @@ depends-member:
 - !private ["PSo8NSCoding", "view"]
 - !private ["PSo9NSCopying", "URLByAppendingPathComponent"]
 - !private ["PSo9NSCopying", "clearColor"]
+- !private ["PSo9NSCopying", "host"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "loadCountry"]
+- !private ["PSo9NSCopying", "scheme"]
 - !private ["PSo9NSCopying", "sharedInstance"]
 - !private ["PSo9NSCopying", "userInfo"]
 - !private ["CSo6NSData", "loadCountry"]
 - !private ["CSo6NSData", "sharedInstance"]
 - !private ["CSo7NSError", "init"]
 - !private ["CSo7NSError", "userInfo"]
+- !private ["PSo26NSExtensionRequestHandling", "pushViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "view"]
 - !private ["PSo17NSFastEnumeration", "init"]
 - !private ["CSo13NSFileManager", "URLsForDirectory"]
@@ -671,7 +700,7 @@ depends-member:
 - !private ["CSo8NSObject", "NSSQLiteStoreType"]
 - ["CSo8NSObject", "NSURL"]
 - !private ["CSo8NSObject", "NSUnderlyingErrorKey"]
-- !private ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "UIApplication"]
 - !private ["CSo8NSObject", "UIBarMetrics"]
 - !private ["CSo8NSObject", "UIColor"]
@@ -704,11 +733,13 @@ depends-member:
 - ["CSo8NSObject", "applicationWillResignActive"]
 - ["CSo8NSObject", "applicationWillTerminate"]
 - !private ["CSo8NSObject", "backgroundColor"]
+- ["CSo8NSObject", "changeStatusBarColor"]
 - !private ["CSo8NSObject", "clearColor"]
 - !private ["CSo8NSObject", "defaultManager"]
 - !private ["CSo8NSObject", "fatalError"]
 - !private ["CSo8NSObject", "frame"]
 - !private ["CSo8NSObject", "hasChanges"]
+- !private ["CSo8NSObject", "host"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "instantiateViewControllerWithIdentifier"]
 - !private ["CSo8NSObject", "loadCountry"]
@@ -719,9 +750,11 @@ depends-member:
 - ["CSo8NSObject", "managedObjectModel.storage"]
 - ["CSo8NSObject", "persistentStoreCoordinator"]
 - ["CSo8NSObject", "persistentStoreCoordinator.storage"]
+- !private ["CSo8NSObject", "pushViewController"]
 - !private ["CSo8NSObject", "rootViewController"]
 - !private ["CSo8NSObject", "save"]
 - ["CSo8NSObject", "saveContext"]
+- !private ["CSo8NSObject", "scheme"]
 - !private ["CSo8NSObject", "setBackgroundImage"]
 - !private ["CSo8NSObject", "setStatusBarStyle"]
 - !private ["CSo8NSObject", "shadowImage"]
@@ -777,11 +810,13 @@ depends-member:
 - ["PSo16NSObjectProtocol", "applicationWillResignActive"]
 - ["PSo16NSObjectProtocol", "applicationWillTerminate"]
 - !private ["PSo16NSObjectProtocol", "backgroundColor"]
+- ["PSo16NSObjectProtocol", "changeStatusBarColor"]
 - !private ["PSo16NSObjectProtocol", "clearColor"]
 - !private ["PSo16NSObjectProtocol", "defaultManager"]
 - !private ["PSo16NSObjectProtocol", "fatalError"]
 - !private ["PSo16NSObjectProtocol", "frame"]
 - !private ["PSo16NSObjectProtocol", "hasChanges"]
+- !private ["PSo16NSObjectProtocol", "host"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "instantiateViewControllerWithIdentifier"]
 - !private ["PSo16NSObjectProtocol", "loadCountry"]
@@ -792,9 +827,11 @@ depends-member:
 - ["PSo16NSObjectProtocol", "managedObjectModel.storage"]
 - ["PSo16NSObjectProtocol", "persistentStoreCoordinator"]
 - ["PSo16NSObjectProtocol", "persistentStoreCoordinator.storage"]
+- !private ["PSo16NSObjectProtocol", "pushViewController"]
 - !private ["PSo16NSObjectProtocol", "rootViewController"]
 - !private ["PSo16NSObjectProtocol", "save"]
 - ["PSo16NSObjectProtocol", "saveContext"]
+- !private ["PSo16NSObjectProtocol", "scheme"]
 - !private ["PSo16NSObjectProtocol", "setBackgroundImage"]
 - !private ["PSo16NSObjectProtocol", "setStatusBarStyle"]
 - !private ["PSo16NSObjectProtocol", "shadowImage"]
@@ -811,12 +848,16 @@ depends-member:
 - !private ["VSC22NSSearchPathDomainMask", "UserDomainMask"]
 - !private ["PSo14NSSecureCoding", "URLByAppendingPathComponent"]
 - !private ["PSo14NSSecureCoding", "clearColor"]
+- !private ["PSo14NSSecureCoding", "host"]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "loadCountry"]
+- !private ["PSo14NSSecureCoding", "scheme"]
 - !private ["PSo14NSSecureCoding", "sharedInstance"]
 - !private ["PSo14NSSecureCoding", "userInfo"]
 - !private ["CSo8NSString", "init"]
 - !private ["CSo5NSURL", "URLByAppendingPathComponent"]
+- !private ["CSo5NSURL", "host"]
+- !private ["CSo5NSURL", "scheme"]
 - ["PSs21NilLiteralConvertible", "Some"]
 - !private ["PSs13OptionSetType", "UserDomainMask"]
 - ["Sq", "Some"]
@@ -884,6 +925,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "backgroundColor"]
 - !private ["PSo21UIAppearanceContainer", "frame"]
 - !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "pushViewController"]
 - !private ["PSo21UIAppearanceContainer", "rootViewController"]
 - !private ["PSo21UIAppearanceContainer", "setBackgroundImage"]
 - !private ["PSo21UIAppearanceContainer", "shadowImage"]
@@ -929,6 +971,7 @@ depends-member:
 - ["PSo21UIApplicationDelegate", "applicationWillEnterForeground"]
 - ["PSo21UIApplicationDelegate", "applicationWillResignActive"]
 - ["PSo21UIApplicationDelegate", "applicationWillTerminate"]
+- !private ["PSo21UIApplicationDelegate", "changeStatusBarColor"]
 - !private ["PSo21UIApplicationDelegate", "fatalError"]
 - !private ["PSo21UIApplicationDelegate", "managedObjectContext"]
 - !private ["PSo21UIApplicationDelegate", "managedObjectModel"]
@@ -943,6 +986,7 @@ depends-member:
 - !private ["PSo16UIBarPositioning", "shadowImage"]
 - !private ["PSo16UIBarPositioning", "translucent"]
 - !private ["CSo7UIColor", "clearColor"]
+- !private ["PSo18UIContentContainer", "pushViewController"]
 - !private ["PSo18UIContentContainer", "view"]
 - !private ["PSo17UICoordinateSpace", "addSubview"]
 - !private ["PSo17UICoordinateSpace", "appearance"]
@@ -970,6 +1014,7 @@ depends-member:
 - !private ["CSo15UINavigationBar", "setBackgroundImage"]
 - !private ["CSo15UINavigationBar", "shadowImage"]
 - !private ["CSo15UINavigationBar", "translucent"]
+- !private ["CSo22UINavigationController", "pushViewController"]
 - !private ["CSo22UINavigationController", "view"]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
@@ -989,7 +1034,7 @@ depends-member:
 - !private ["CSo11UIResponder", "NSSQLiteStoreType"]
 - ["CSo11UIResponder", "NSURL"]
 - !private ["CSo11UIResponder", "NSUnderlyingErrorKey"]
-- !private ["CSo11UIResponder", "String"]
+- ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "UIApplication"]
 - !private ["CSo11UIResponder", "UIBarMetrics"]
 - !private ["CSo11UIResponder", "UIColor"]
@@ -1018,6 +1063,7 @@ depends-member:
 - ["CSo11UIResponder", "applicationWillResignActive"]
 - ["CSo11UIResponder", "applicationWillTerminate"]
 - !private ["CSo11UIResponder", "backgroundColor"]
+- ["CSo11UIResponder", "changeStatusBarColor"]
 - !private ["CSo11UIResponder", "fatalError"]
 - !private ["CSo11UIResponder", "frame"]
 - ["CSo11UIResponder", "init"]
@@ -1027,6 +1073,7 @@ depends-member:
 - ["CSo11UIResponder", "managedObjectModel.storage"]
 - ["CSo11UIResponder", "persistentStoreCoordinator"]
 - ["CSo11UIResponder", "persistentStoreCoordinator.storage"]
+- !private ["CSo11UIResponder", "pushViewController"]
 - !private ["CSo11UIResponder", "rootViewController"]
 - ["CSo11UIResponder", "saveContext"]
 - !private ["CSo11UIResponder", "setBackgroundImage"]
@@ -1037,6 +1084,7 @@ depends-member:
 - !private ["CSo11UIResponder", "view"]
 - ["CSo11UIResponder", "window"]
 - ["CSo11UIResponder", ""]
+- !private ["PSo16UIStateRestoring", "pushViewController"]
 - !private ["PSo16UIStateRestoring", "view"]
 - !private ["OSC16UIStatusBarStyle", "LightContent"]
 - !private ["CSo12UIStoryboard", "init"]
@@ -1046,6 +1094,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "backgroundColor"]
 - !private ["PSo18UITraitEnvironment", "frame"]
 - !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "pushViewController"]
 - !private ["PSo18UITraitEnvironment", "rootViewController"]
 - !private ["PSo18UITraitEnvironment", "setBackgroundImage"]
 - !private ["PSo18UITraitEnvironment", "shadowImage"]
@@ -1061,6 +1110,7 @@ depends-member:
 - !private ["CSo6UIView", "shadowImage"]
 - !private ["CSo6UIView", "translucent"]
 - !private ["CSo16UIViewController", "deinit"]
+- !private ["CSo16UIViewController", "pushViewController"]
 - !private ["CSo16UIViewController", "view"]
 - !private ["CSo8UIWindow", "backgroundColor"]
 - !private ["CSo8UIWindow", "frame"]
@@ -1121,8 +1171,10 @@ depends-member:
 - !private ["PSs12_Reflectable", "backgroundColor"]
 - !private ["PSs12_Reflectable", "count"]
 - !private ["PSs12_Reflectable", "frame"]
+- !private ["PSs12_Reflectable", "host"]
 - !private ["PSs12_Reflectable", "init"]
 - !private ["PSs12_Reflectable", "rootViewController"]
+- !private ["PSs12_Reflectable", "scheme"]
 - !private ["PSs12_Reflectable", "setBackgroundImage"]
 - !private ["PSs12_Reflectable", "shadowImage"]
 - !private ["PSs12_Reflectable", "size"]
@@ -1269,6 +1321,8 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/ExchangeRate-Bridging-Header.h"
+- "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/MYIntroductionView.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
@@ -1276,9 +1330,10 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/MYIntroductionPanel.h"
 - "/Users/cktalex/Documents/bProject/ExchangeRate/DerivedData/ExchangeRate/Build/Products/Debug-iphoneos/Core.framework/Modules/Core.swiftmodule/arm64.swiftmodule"
 - "/Users/cktalex/Documents/bProject/ExchangeRate/DerivedData/ExchangeRate/Build/Products/Debug-iphoneos/Core.framework/Headers/Core-Swift.h"
 - "/Users/cktalex/Documents/bProject/ExchangeRate/Core/Core.h"
 - "/Users/cktalex/Documents/bProject/ExchangeRate/DerivedData/ExchangeRate/Build/Intermediates/ExchangeRate.build/Debug-iphoneos/Core.build/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
-interface-hash: "18d2ecc7161a8601b55311511df6c767"
+interface-hash: "adb454af8cb7a25d353be6cd767b7778"

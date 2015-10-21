@@ -10,13 +10,20 @@ import Foundation
 
 public class UserDefaultDataService {
 
-    public static let sharedInstance = UserDefaultDataService()
+    public class var sharedInstance: UserDefaultDataService {
+        struct Singleton {
+            static let instance = UserDefaultDataService()
+        }
+        return Singleton.instance
+    }
+
     
     let aDefaults:NSUserDefaults!
     let queryCurrencysData = "queryCurrencysData"
     let majorCurrencysData = "majorCurrencysData"
     let minorCurrencysData = "minorCurrencysData"
     let ExCurrencysData = "ExCurrencysData"
+    let mainCurrencysData = "mainCurrencysData"
     init() {
         aDefaults = NSUserDefaults(suiteName: "group.com.AlexChen.extrmeCurrencyShareData")  
     }
@@ -76,4 +83,28 @@ public class UserDefaultDataService {
         }
     }
 
+    func setMainCurrencysData(aCurrencys: [Currency]) {
+
+        let encodedObject = NSKeyedArchiver.archivedDataWithRootObject(aCurrencys)
+        aDefaults.setObject(encodedObject, forKey: mainCurrencysData)
+        aDefaults.synchronize()
+
+    }
+
+    func getMainCurrencysData() -> [Currency]? {
+
+        aDefaults.synchronize()
+        if let encodedObject = aDefaults.objectForKey(mainCurrencysData) as? NSData {
+            let object: AnyObject? = NSKeyedUnarchiver.unarchiveObjectWithData(encodedObject)
+            aDefaults.synchronize()
+            return (object as? [Currency])
+        } else {
+            return nil
+        }
+    }
+
+    func removeMainCurrencysData() {
+        aDefaults.removeObjectForKey(mainCurrencysData)
+        aDefaults.synchronize()
+    }
 }

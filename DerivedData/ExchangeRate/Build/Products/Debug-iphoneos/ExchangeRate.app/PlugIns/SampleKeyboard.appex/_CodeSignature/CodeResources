@@ -6,51 +6,99 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		QiKcxdGQxgxRMrVrWf3Xylx5dmQ=
+		feMHhsfDp1w2X/tSc60u+DOVqmI=
 		</data>
+		<key>Base.lproj/MainInterface.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0MIPa0qiDjReRwwobTsnJ01z+l0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Base.lproj/MainInterface.storyboardc/M4Y-Lb-cyx-view-S3S-Oj-5AN.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4kw78hG79DxNEC+6YGE9metNz1k=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Base.lproj/MainInterface.storyboardc/UIViewController-M4Y-Lb-cyx.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2HoaiwwmRm6P3ZCGSjp1xIhHnXQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Info.plist</key>
 		<data>
-		FSPfWguVbdMY8E8oM4Y3FzUhjgU=
-		</data>
-		<key>MainInterface.storyboardc/Info.plist</key>
-		<data>
-		0MIPa0qiDjReRwwobTsnJ01z+l0=
-		</data>
-		<key>MainInterface.storyboardc/M4Y-Lb-cyx-view-S3S-Oj-5AN.nib</key>
-		<data>
-		Jeb/EJNnMXv+Dvpdl2bYnDg8Af8=
-		</data>
-		<key>MainInterface.storyboardc/UIViewController-M4Y-Lb-cyx.nib</key>
-		<data>
-		PxjKnzHQA0O3PKeXpilBgOFgcfU=
+		uEUE2baW4e28ZNXS7vPM7PgqABo=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
 		m4SvLiOz5UtJrxmwlBBbYZGa/JI=
 		</data>
+		<key>zh-Hant.lproj/MainInterface.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			G5w9LPbnixklKL2Xu4y7QU6OSLk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		QiKcxdGQxgxRMrVrWf3Xylx5dmQ=
+		feMHhsfDp1w2X/tSc60u+DOVqmI=
 		</data>
-		<key>MainInterface.storyboardc/Info.plist</key>
-		<data>
-		0MIPa0qiDjReRwwobTsnJ01z+l0=
-		</data>
-		<key>MainInterface.storyboardc/M4Y-Lb-cyx-view-S3S-Oj-5AN.nib</key>
-		<data>
-		Jeb/EJNnMXv+Dvpdl2bYnDg8Af8=
-		</data>
-		<key>MainInterface.storyboardc/UIViewController-M4Y-Lb-cyx.nib</key>
-		<data>
-		PxjKnzHQA0O3PKeXpilBgOFgcfU=
-		</data>
+		<key>Base.lproj/MainInterface.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0MIPa0qiDjReRwwobTsnJ01z+l0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Base.lproj/MainInterface.storyboardc/M4Y-Lb-cyx-view-S3S-Oj-5AN.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4kw78hG79DxNEC+6YGE9metNz1k=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Base.lproj/MainInterface.storyboardc/UIViewController-M4Y-Lb-cyx.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2HoaiwwmRm6P3ZCGSjp1xIhHnXQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>embedded.mobileprovision</key>
 		<data>
 		m4SvLiOz5UtJrxmwlBBbYZGa/JI=
 		</data>
+		<key>zh-Hant.lproj/MainInterface.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			G5w9LPbnixklKL2Xu4y7QU6OSLk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 	</dict>
 	<key>rules</key>
 	<dict>

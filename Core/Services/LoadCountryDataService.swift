@@ -17,7 +17,25 @@ public class LoadCountryDataService: NSData {
         return Singleton.instance
     }
 
-    public var currencys: Array<Currency> = Array<Currency>()
+    public var allCurrencys: Array<Currency> = Array<Currency>()
+
+    public var mainCurrencys: Array<Currency> = Array<Currency>()
+
+    override init() {
+        super.init()
+        if let items = UserDefaultDataService.sharedInstance.getMainCurrencysData() {
+            mainCurrencys = items
+        }
+    }
+
+    required public init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)!
+    }
+
+    public func saveMainCountry() {
+        UserDefaultDataService.sharedInstance.removeMainCurrencysData()
+        UserDefaultDataService.sharedInstance.setMainCurrencysData(self.mainCurrencys)
+    }
 
     public func loadCountry() {
         
@@ -28,10 +46,12 @@ public class LoadCountryDataService: NSData {
             
             let imageName = ("\(isoCode)_\(countryName)")
             let currency = Currency()
-            
+            let largeImageName = "\(imageName)_large"
             currency.flagImageName = imageName
+            currency.largeFlagImageName = largeImageName
             currency.flagImage = UIImage(named: imageName)!
-            
+            currency.largeFlagImage = UIImage(named: largeImageName)!
+
             if let symbol = NSLocale.localesCurrencySymbol(country.0) {
                 currency.symbol = symbol
             }
@@ -50,8 +70,8 @@ public class LoadCountryDataService: NSData {
                 currency.isMajor = false
             }
             
-            currencys.append(currency)
+            allCurrencys.append(currency)
         }
-        self.currencys.sortInPlace({ $0.displayName < $1.displayName })
+        allCurrencys.sortInPlace({ $0.displayName < $1.displayName })
     }
 }

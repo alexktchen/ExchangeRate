@@ -6,16 +6,16 @@ provides-nominal:
 provides-member:
 - ["C17ExchangeRateTests17ExchangeRateTests", ""]
 provides-dynamic-lookup:
-- "tearDown"
-- "testExample"
 - "testPerformanceExample"
+- "testExample"
 - "setUp"
+- "tearDown"
 depends-top-level:
 - !private "BooleanLiteralType"
+- !private "XCTAssert"
 - "ExchangeRateTests"
 - !private "StringLiteralType"
 - "XCTestCase"
-- !private "XCTAssert"
 depends-member:
 - !private ["PSs9AnyObject", "XCTAssert"]
 - ["PSs9AnyObject", "init"]

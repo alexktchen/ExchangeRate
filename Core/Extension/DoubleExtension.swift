@@ -11,8 +11,10 @@ import Foundation
 public extension Double {
 
     var toCurrencyStyle: String {
+
         let formatter = NSNumberFormatter()
-        formatter.numberStyle = .CurrencyStyle
+
+        formatter.numberStyle = .DecimalStyle
         
         return formatter.stringFromNumber(self)!.stringByReplacingOccurrencesOfString("$", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
     }
