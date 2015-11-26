@@ -113,8 +113,23 @@ class CountryFetchTableView: UITableViewController, UISearchBarDelegate {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
 
         if(searchActive) {
+
+            if filtered[indexPath.row].isAddToMain {
+                cell.accessoryType = UITableViewCellAccessoryType.Checkmark
+            } else {
+                cell.accessoryType = UITableViewCellAccessoryType.None
+            }
             cell.textLabel?.text = filtered[indexPath.row].displayName
+
         } else {
+
+            if LoadCountryDataService.sharedInstance.allCurrencys[indexPath.row].isAddToMain {
+                cell.accessoryType = UITableViewCellAccessoryType.Checkmark
+            }
+            else {
+                cell.accessoryType = UITableViewCellAccessoryType.None
+            }
+
             cell.textLabel?.text = LoadCountryDataService.sharedInstance.allCurrencys[indexPath.row].displayName
         }
 
@@ -123,13 +138,29 @@ class CountryFetchTableView: UITableViewController, UISearchBarDelegate {
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
 
-        let item = LoadCountryDataService.sharedInstance.allCurrencys[indexPath.row]
+        if(searchActive) {
 
-        LoadCountryDataService.sharedInstance.mainCurrencys.append(item)
-        LoadCountryDataService.sharedInstance.saveMainCountry()
+            if filtered[indexPath.row].isAddToMain {
+                filtered[indexPath.row].isAddToMain = false
+                LoadCountryDataService.sharedInstance.saveMainCountry()
+                self.tableView.reloadData()
+            } else {
+                filtered[indexPath.row].isAddToMain = true
+                LoadCountryDataService.sharedInstance.saveMainCountry()
+                self.navigationController?.popViewControllerAnimated(true)
+            }
+        } else {
 
-        //delegate?.currenctSelected(item)
-        self.navigationController?.popViewControllerAnimated(true)
+            if LoadCountryDataService.sharedInstance.allCurrencys[indexPath.row].isAddToMain {
+                LoadCountryDataService.sharedInstance.allCurrencys[indexPath.row].isAddToMain = false
+                LoadCountryDataService.sharedInstance.saveMainCountry()
+                self.tableView.reloadData()
+            } else {
+                LoadCountryDataService.sharedInstance.allCurrencys[indexPath.row].isAddToMain = true
+                LoadCountryDataService.sharedInstance.saveMainCountry()
+                self.navigationController?.popViewControllerAnimated(true)
+            }
+        }
 
     }
 

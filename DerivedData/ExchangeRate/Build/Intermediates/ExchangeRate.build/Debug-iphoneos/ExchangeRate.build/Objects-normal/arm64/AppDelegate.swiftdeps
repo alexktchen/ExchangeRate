@@ -6,64 +6,62 @@ provides-nominal:
 provides-member:
 - ["C12ExchangeRate11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationDidEnterBackground"
-- "managedObjectContext"
-- "saveContext"
-- "applicationWillResignActive"
-- "window"
 - "applicationDidBecomeActive"
-- "changeStatusBarColor"
-- "application"
-- "application"
-- "applicationWillEnterForeground"
-- "applicationWillTerminate"
-- "managedObjectModel"
 - "applicationDocumentsDirectory"
+- "application"
+- "application"
+- "applicationWillTerminate"
+- "window"
 - "persistentStoreCoordinator"
+- "saveContext"
+- "managedObjectContext"
+- "applicationWillResignActive"
+- "managedObjectModel"
+- "changeStatusBarColor"
+- "applicationDidEnterBackground"
+- "applicationWillEnterForeground"
 depends-top-level:
-- "AnyObject"
-- !private "UIImage"
-- "UIApplicationDelegate"
-- !private "NSFileManager"
-- !private "NSLog"
-- !private "UINavigationController"
-- !private "LoadCountryDataService"
-- !private "UINavigationBar"
-- !private "UIStatusBarStyle"
-- "Bool"
 - "UIWindow"
-- !private "UIColor"
-- "UIResponder"
+- "AnyObject"
+- !private "NSLocalizedFailureReasonErrorKey"
 - !private "-"
 - "String"
-- "NSManagedObjectContext"
-- !private "NSUnderlyingErrorKey"
-- !private "NSLocalizedDescriptionKey"
+- !private "NSSQLiteStoreType"
+- "AppDelegate"
 - "NSError"
+- !private "CustomColors"
+- !private "CGRectMake"
 - !private "fatalError"
 - !private "BooleanLiteralType"
-- !private "NSSQLiteStoreType"
-- !private "UILabel"
-- "NSURL"
-- !private "CGRectMake"
-- !private "UIBarMetrics"
-- !private "NSBundle"
-- "NSManagedObjectModel"
-- !private "=="
-- !private "UIStoryboard"
-- "NSPersistentStoreCoordinator"
-- "StringLiteralType"
-- "NSObject"
-- !private "NSLocalizedFailureReasonErrorKey"
-- !private "abort"
-- !private "CustomColors"
-- "AppDelegate"
+- !private "UIStatusBarStyle"
 - "UIApplication"
+- !private "UINavigationController"
+- "UIResponder"
+- !private "NSLog"
+- !private "UIColor"
+- !private "NSFileManager"
+- !private "NSUnderlyingErrorKey"
+- !private "UIBarMetrics"
+- !private "UINavigationBar"
+- "UIApplicationDelegate"
+- "Bool"
+- "NSManagedObjectContext"
+- !private "=="
+- !private "UIImage"
+- "StringLiteralType"
+- !private "NSLocalizedDescriptionKey"
+- "NSObject"
+- !private "abort"
+- "NSURL"
+- "NSPersistentStoreCoordinator"
+- !private "UIStoryboard"
+- "NSManagedObjectModel"
+- !private "NSBundle"
+- !private "UILabel"
 depends-member:
 - !private ["PSs9AnyObject", "AnyObject"]
 - !private ["PSs9AnyObject", "CGRectMake"]
 - !private ["PSs9AnyObject", "CustomColors"]
-- !private ["PSs9AnyObject", "LoadCountryDataService"]
 - !private ["PSs9AnyObject", "NSBundle"]
 - !private ["PSs9AnyObject", "NSError"]
 - !private ["PSs9AnyObject", "NSFileManager"]
@@ -116,7 +114,6 @@ depends-member:
 - !private ["PSs9AnyObject", "host"]
 - ["PSs9AnyObject", "init"]
 - !private ["PSs9AnyObject", "instantiateViewControllerWithIdentifier"]
-- !private ["PSs9AnyObject", "loadCountry"]
 - !private ["PSs9AnyObject", "mainBundle"]
 - ["PSs9AnyObject", "managedObjectContext"]
 - ["PSs9AnyObject", "managedObjectContext.storage"]
@@ -133,7 +130,6 @@ depends-member:
 - !private ["PSs9AnyObject", "setStatusBarStyle"]
 - !private ["PSs9AnyObject", "shadowImage"]
 - !private ["PSs9AnyObject", "sharedApplication"]
-- !private ["PSs9AnyObject", "sharedInstance"]
 - !private ["PSs9AnyObject", "translucent"]
 - !private ["PSs9AnyObject", "userInfo"]
 - !private ["PSs9AnyObject", "view"]
@@ -143,7 +139,6 @@ depends-member:
 - ["C12ExchangeRate11AppDelegate", "Bool"]
 - !private ["C12ExchangeRate11AppDelegate", "CGRectMake"]
 - !private ["C12ExchangeRate11AppDelegate", "CustomColors"]
-- !private ["C12ExchangeRate11AppDelegate", "LoadCountryDataService"]
 - !private ["C12ExchangeRate11AppDelegate", "NSBundle"]
 - ["C12ExchangeRate11AppDelegate", "NSError"]
 - !private ["C12ExchangeRate11AppDelegate", "NSFileManager"]
@@ -225,7 +220,6 @@ depends-member:
 - !private ["PSs11CVarArgType", "CustomColors"]
 - !private ["PSs11CVarArgType", "Distance"]
 - !private ["PSs11CVarArgType", "IntegerLiteralType"]
-- !private ["PSs11CVarArgType", "LoadCountryDataService"]
 - !private ["PSs11CVarArgType", "NSBundle"]
 - !private ["PSs11CVarArgType", "NSError"]
 - !private ["PSs11CVarArgType", "NSFileManager"]
@@ -277,7 +271,6 @@ depends-member:
 - !private ["PSs11CVarArgType", "host"]
 - ["PSs11CVarArgType", "init"]
 - !private ["PSs11CVarArgType", "instantiateViewControllerWithIdentifier"]
-- !private ["PSs11CVarArgType", "loadCountry"]
 - !private ["PSs11CVarArgType", "mainBundle"]
 - ["PSs11CVarArgType", "managedObjectContext"]
 - ["PSs11CVarArgType", "managedObjectContext.storage"]
@@ -294,7 +287,6 @@ depends-member:
 - !private ["PSs11CVarArgType", "setStatusBarStyle"]
 - !private ["PSs11CVarArgType", "shadowImage"]
 - !private ["PSs11CVarArgType", "sharedApplication"]
-- !private ["PSs11CVarArgType", "sharedInstance"]
 - !private ["PSs11CVarArgType", "translucent"]
 - !private ["PSs11CVarArgType", "userInfo"]
 - !private ["PSs11CVarArgType", "view"]
@@ -326,7 +318,6 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "Generator"]
 - !private ["PSs23CustomStringConvertible", "Index"]
 - !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
-- !private ["PSs23CustomStringConvertible", "LoadCountryDataService"]
 - !private ["PSs23CustomStringConvertible", "NSBundle"]
 - !private ["PSs23CustomStringConvertible", "NSError"]
 - !private ["PSs23CustomStringConvertible", "NSFileManager"]
@@ -381,7 +372,6 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "host"]
 - ["PSs23CustomStringConvertible", "init"]
 - !private ["PSs23CustomStringConvertible", "instantiateViewControllerWithIdentifier"]
-- !private ["PSs23CustomStringConvertible", "loadCountry"]
 - !private ["PSs23CustomStringConvertible", "mainBundle"]
 - ["PSs23CustomStringConvertible", "managedObjectContext"]
 - ["PSs23CustomStringConvertible", "managedObjectContext.storage"]
@@ -398,7 +388,6 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "setStatusBarStyle"]
 - !private ["PSs23CustomStringConvertible", "shadowImage"]
 - !private ["PSs23CustomStringConvertible", "sharedApplication"]
-- !private ["PSs23CustomStringConvertible", "sharedInstance"]
 - !private ["PSs23CustomStringConvertible", "subscript"]
 - !private ["PSs23CustomStringConvertible", "translucent"]
 - !private ["PSs23CustomStringConvertible", "userInfo"]
@@ -418,7 +407,6 @@ depends-member:
 - !private ["PSs9Equatable", "DocumentDirectory"]
 - !private ["PSs9Equatable", "IntegerLiteralType"]
 - !private ["PSs9Equatable", "LightContent"]
-- !private ["PSs9Equatable", "LoadCountryDataService"]
 - !private ["PSs9Equatable", "NSBundle"]
 - !private ["PSs9Equatable", "NSError"]
 - !private ["PSs9Equatable", "NSFileManager"]
@@ -472,7 +460,6 @@ depends-member:
 - !private ["PSs9Equatable", "host"]
 - ["PSs9Equatable", "init"]
 - !private ["PSs9Equatable", "instantiateViewControllerWithIdentifier"]
-- !private ["PSs9Equatable", "loadCountry"]
 - !private ["PSs9Equatable", "mainBundle"]
 - ["PSs9Equatable", "managedObjectContext"]
 - ["PSs9Equatable", "managedObjectContext.storage"]
@@ -489,7 +476,6 @@ depends-member:
 - !private ["PSs9Equatable", "setStatusBarStyle"]
 - !private ["PSs9Equatable", "shadowImage"]
 - !private ["PSs9Equatable", "sharedApplication"]
-- !private ["PSs9Equatable", "sharedInstance"]
 - !private ["PSs9Equatable", "size"]
 - !private ["PSs9Equatable", "translucent"]
 - !private ["PSs9Equatable", "userInfo"]
@@ -512,7 +498,6 @@ depends-member:
 - !private ["PSs8Hashable", "DocumentDirectory"]
 - !private ["PSs8Hashable", "IntegerLiteralType"]
 - !private ["PSs8Hashable", "LightContent"]
-- !private ["PSs8Hashable", "LoadCountryDataService"]
 - !private ["PSs8Hashable", "NSBundle"]
 - !private ["PSs8Hashable", "NSError"]
 - !private ["PSs8Hashable", "NSFileManager"]
@@ -565,7 +550,6 @@ depends-member:
 - !private ["PSs8Hashable", "host"]
 - ["PSs8Hashable", "init"]
 - !private ["PSs8Hashable", "instantiateViewControllerWithIdentifier"]
-- !private ["PSs8Hashable", "loadCountry"]
 - !private ["PSs8Hashable", "mainBundle"]
 - ["PSs8Hashable", "managedObjectContext"]
 - ["PSs8Hashable", "managedObjectContext.storage"]
@@ -582,7 +566,6 @@ depends-member:
 - !private ["PSs8Hashable", "setStatusBarStyle"]
 - !private ["PSs8Hashable", "shadowImage"]
 - !private ["PSs8Hashable", "sharedApplication"]
-- !private ["PSs8Hashable", "sharedInstance"]
 - !private ["PSs8Hashable", "translucent"]
 - !private ["PSs8Hashable", "userInfo"]
 - !private ["PSs8Hashable", "view"]
@@ -609,8 +592,6 @@ depends-member:
 - !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
 - !private ["PSs11IntegerType", "Distance"]
 - !private ["PSs11IntegerType", "IntegerLiteralType"]
-- !private ["C4Core22LoadCountryDataService", "loadCountry"]
-- !private ["C4Core22LoadCountryDataService", "sharedInstance"]
 - !private ["PSs14MirrorPathType", "Distance"]
 - !private ["PSs14MirrorPathType", "IntegerLiteralType"]
 - !private ["PSs14MirrorPathType", "init"]
@@ -640,7 +621,6 @@ depends-member:
 - !private ["PSo8NSCoding", "hasChanges"]
 - !private ["PSo8NSCoding", "host"]
 - !private ["PSo8NSCoding", "init"]
-- !private ["PSo8NSCoding", "loadCountry"]
 - !private ["PSo8NSCoding", "persistentStoreCoordinator"]
 - !private ["PSo8NSCoding", "pushViewController"]
 - !private ["PSo8NSCoding", "rootViewController"]
@@ -648,7 +628,6 @@ depends-member:
 - !private ["PSo8NSCoding", "scheme"]
 - !private ["PSo8NSCoding", "setBackgroundImage"]
 - !private ["PSo8NSCoding", "shadowImage"]
-- !private ["PSo8NSCoding", "sharedInstance"]
 - !private ["PSo8NSCoding", "translucent"]
 - !private ["PSo8NSCoding", "userInfo"]
 - !private ["PSo8NSCoding", "view"]
@@ -656,12 +635,8 @@ depends-member:
 - !private ["PSo9NSCopying", "clearColor"]
 - !private ["PSo9NSCopying", "host"]
 - !private ["PSo9NSCopying", "init"]
-- !private ["PSo9NSCopying", "loadCountry"]
 - !private ["PSo9NSCopying", "scheme"]
-- !private ["PSo9NSCopying", "sharedInstance"]
 - !private ["PSo9NSCopying", "userInfo"]
-- !private ["CSo6NSData", "loadCountry"]
-- !private ["CSo6NSData", "sharedInstance"]
 - !private ["CSo7NSError", "init"]
 - !private ["CSo7NSError", "userInfo"]
 - !private ["PSo26NSExtensionRequestHandling", "pushViewController"]
@@ -680,13 +655,10 @@ depends-member:
 - !private ["CSo22NSManagedObjectContext", "save"]
 - !private ["CSo20NSManagedObjectModel", "init"]
 - !private ["PSo16NSMutableCopying", "init"]
-- !private ["PSo16NSMutableCopying", "loadCountry"]
-- !private ["PSo16NSMutableCopying", "sharedInstance"]
 - ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "CGRectMake"]
 - !private ["CSo8NSObject", "CustomColors"]
-- !private ["CSo8NSObject", "LoadCountryDataService"]
 - !private ["CSo8NSObject", "NSBundle"]
 - ["CSo8NSObject", "NSError"]
 - !private ["CSo8NSObject", "NSFileManager"]
@@ -742,7 +714,6 @@ depends-member:
 - !private ["CSo8NSObject", "host"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "instantiateViewControllerWithIdentifier"]
-- !private ["CSo8NSObject", "loadCountry"]
 - !private ["CSo8NSObject", "mainBundle"]
 - ["CSo8NSObject", "managedObjectContext"]
 - ["CSo8NSObject", "managedObjectContext.storage"]
@@ -759,7 +730,6 @@ depends-member:
 - !private ["CSo8NSObject", "setStatusBarStyle"]
 - !private ["CSo8NSObject", "shadowImage"]
 - !private ["CSo8NSObject", "sharedApplication"]
-- !private ["CSo8NSObject", "sharedInstance"]
 - !private ["CSo8NSObject", "translucent"]
 - !private ["CSo8NSObject", "userInfo"]
 - !private ["CSo8NSObject", "view"]
@@ -767,7 +737,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "AnyObject"]
 - !private ["PSo16NSObjectProtocol", "CGRectMake"]
 - !private ["PSo16NSObjectProtocol", "CustomColors"]
-- !private ["PSo16NSObjectProtocol", "LoadCountryDataService"]
 - !private ["PSo16NSObjectProtocol", "NSBundle"]
 - !private ["PSo16NSObjectProtocol", "NSError"]
 - !private ["PSo16NSObjectProtocol", "NSFileManager"]
@@ -819,7 +788,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "host"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "instantiateViewControllerWithIdentifier"]
-- !private ["PSo16NSObjectProtocol", "loadCountry"]
 - !private ["PSo16NSObjectProtocol", "mainBundle"]
 - ["PSo16NSObjectProtocol", "managedObjectContext"]
 - ["PSo16NSObjectProtocol", "managedObjectContext.storage"]
@@ -836,7 +804,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "setStatusBarStyle"]
 - !private ["PSo16NSObjectProtocol", "shadowImage"]
 - !private ["PSo16NSObjectProtocol", "sharedApplication"]
-- !private ["PSo16NSObjectProtocol", "sharedInstance"]
 - !private ["PSo16NSObjectProtocol", "translucent"]
 - !private ["PSo16NSObjectProtocol", "userInfo"]
 - !private ["PSo16NSObjectProtocol", "view"]
@@ -850,9 +817,7 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "clearColor"]
 - !private ["PSo14NSSecureCoding", "host"]
 - !private ["PSo14NSSecureCoding", "init"]
-- !private ["PSo14NSSecureCoding", "loadCountry"]
 - !private ["PSo14NSSecureCoding", "scheme"]
-- !private ["PSo14NSSecureCoding", "sharedInstance"]
 - !private ["PSo14NSSecureCoding", "userInfo"]
 - !private ["CSo8NSString", "init"]
 - !private ["CSo5NSURL", "URLByAppendingPathComponent"]
@@ -936,7 +901,6 @@ depends-member:
 - !private ["PSo21UIApplicationDelegate", "AnyObject"]
 - !private ["PSo21UIApplicationDelegate", "CGRectMake"]
 - !private ["PSo21UIApplicationDelegate", "CustomColors"]
-- !private ["PSo21UIApplicationDelegate", "LoadCountryDataService"]
 - !private ["PSo21UIApplicationDelegate", "NSBundle"]
 - !private ["PSo21UIApplicationDelegate", "NSError"]
 - !private ["PSo21UIApplicationDelegate", "NSFileManager"]
@@ -1006,6 +970,17 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "setBackgroundImage"]
 - !private ["PSo13UIDynamicItem", "shadowImage"]
 - !private ["PSo13UIDynamicItem", "translucent"]
+- !private ["PSo18UIFocusEnvironment", "addSubview"]
+- !private ["PSo18UIFocusEnvironment", "appearance"]
+- !private ["PSo18UIFocusEnvironment", "backgroundColor"]
+- !private ["PSo18UIFocusEnvironment", "frame"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "pushViewController"]
+- !private ["PSo18UIFocusEnvironment", "rootViewController"]
+- !private ["PSo18UIFocusEnvironment", "setBackgroundImage"]
+- !private ["PSo18UIFocusEnvironment", "shadowImage"]
+- !private ["PSo18UIFocusEnvironment", "translucent"]
+- !private ["PSo18UIFocusEnvironment", "view"]
 - !private ["CSo7UIImage", "init"]
 - !private ["CSo7UILabel", "backgroundColor"]
 - !private ["CSo7UILabel", "init"]
@@ -1020,7 +995,6 @@ depends-member:
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "CGRectMake"]
 - !private ["CSo11UIResponder", "CustomColors"]
-- !private ["CSo11UIResponder", "LoadCountryDataService"]
 - !private ["CSo11UIResponder", "NSBundle"]
 - ["CSo11UIResponder", "NSError"]
 - !private ["CSo11UIResponder", "NSFileManager"]
@@ -1135,11 +1109,16 @@ depends-member:
 - !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "init"]
 - !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
 - !private ["PSs16_CocoaStringType", "init"]
+- !private ["PSs24_ColorLiteralConvertible", "clearColor"]
 - !private ["PSs24_DestructorSafeContainer", "Generator"]
 - !private ["PSs24_DestructorSafeContainer", "Index"]
 - !private ["PSs24_DestructorSafeContainer", "SubSequence"]
 - !private ["PSs24_DestructorSafeContainer", "count"]
 - !private ["PSs24_DestructorSafeContainer", "subscript"]
+- !private ["PSs32_FileReferenceLiteralConvertible", "URLByAppendingPathComponent"]
+- !private ["PSs32_FileReferenceLiteralConvertible", "host"]
+- !private ["PSs32_FileReferenceLiteralConvertible", "scheme"]
+- !private ["PSs24_ImageLiteralConvertible", "init"]
 - !private ["PSs14_Incrementable", "Distance"]
 - !private ["PSs14_Incrementable", "IntegerLiteralType"]
 - !private ["PSs22_IntegerArithmeticType", "Distance"]
@@ -1226,7 +1205,6 @@ depends-nominal:
 - !private "PSs21IntegerArithmeticType"
 - !private "PSs25IntegerLiteralConvertible"
 - !private "PSs11IntegerType"
-- !private "C4Core22LoadCountryDataService"
 - !private "PSs14MirrorPathType"
 - !private "PSs21MutableCollectionType"
 - !private "PSs16MutableIndexable"
@@ -1234,7 +1212,6 @@ depends-nominal:
 - !private "CSo8NSBundle"
 - !private "PSo8NSCoding"
 - !private "PSo9NSCopying"
-- !private "CSo6NSData"
 - !private "CSo7NSError"
 - !private "PSo26NSExtensionRequestHandling"
 - !private "PSo17NSFastEnumeration"
@@ -1281,6 +1258,7 @@ depends-nominal:
 - !private "PSo18UIContentContainer"
 - !private "PSo17UICoordinateSpace"
 - !private "PSo13UIDynamicItem"
+- !private "PSo18UIFocusEnvironment"
 - !private "CSo7UIImage"
 - !private "CSo7UILabel"
 - !private "CSo15UINavigationBar"
@@ -1308,7 +1286,10 @@ depends-nominal:
 - !private "PSs37_BuiltinUTF16StringLiteralConvertible"
 - !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
 - !private "PSs16_CocoaStringType"
+- !private "PSs24_ColorLiteralConvertible"
 - !private "PSs24_DestructorSafeContainer"
+- !private "PSs32_FileReferenceLiteralConvertible"
+- !private "PSs24_ImageLiteralConvertible"
 - !private "PSs14_Incrementable"
 - !private "PSs22_IntegerArithmeticType"
 - !private "PSs12_IntegerType"
@@ -1331,6 +1312,9 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/MYIntroductionPanel.h"
+- "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/XHPathCover.h"
+- "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/XHSoundManager.h"
+- "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/XHWaterDropRefresh.h"
 - "/Users/cktalex/Documents/bProject/ExchangeRate/DerivedData/ExchangeRate/Build/Products/Debug-iphoneos/Core.framework/Modules/Core.swiftmodule/arm64.swiftmodule"
 - "/Users/cktalex/Documents/bProject/ExchangeRate/DerivedData/ExchangeRate/Build/Products/Debug-iphoneos/Core.framework/Headers/Core-Swift.h"
 - "/Users/cktalex/Documents/bProject/ExchangeRate/Core/Core.h"

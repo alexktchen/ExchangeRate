@@ -8,11 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		72001AB21BBE484400F3D1A8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 72001AB41BBE484400F3D1A8 /* Localizable.strings */; };
+		720922801BD87E1900386974 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7209227F1BD87E1900386974 /* ArrayExtension.swift */; };
+		7209986F1BDBEF300007026F /* KTTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7209986E1BDBEF300007026F /* KTTableViewHeader.swift */; };
 		7210A6C41BD3382700EE26CE /* MYIntroductionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7210A6C11BD3382700EE26CE /* MYIntroductionView.m */; };
 		7210A6C51BD3382700EE26CE /* MYIntroductionPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7210A6C31BD3382700EE26CE /* MYIntroductionPanel.m */; };
-		7210A6C71BD340A800EE26CE /* SampleBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 7210A6C61BD340A800EE26CE /* SampleBackground.png */; };
 		7210A6CA1BD3413900EE26CE /* SampleImage1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7210A6C81BD3413900EE26CE /* SampleImage1.png */; };
 		7210A6CB1BD3413900EE26CE /* SampleImage2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7210A6C91BD3413900EE26CE /* SampleImage2.png */; };
+		72126D1C1BD9D0C500D89B35 /* XHPathCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 72126D171BD9D0C500D89B35 /* XHPathCover.m */; };
+		72126D1D1BD9D0C500D89B35 /* XHSoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 72126D191BD9D0C500D89B35 /* XHSoundManager.m */; };
+		72126D1E1BD9D0C500D89B35 /* XHWaterDropRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 72126D1B1BD9D0C500D89B35 /* XHWaterDropRefresh.m */; };
+		7289FE591BDC09CB00BEB3E2 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7289FE581BDC09CB00BEB3E2 /* UIImageExtension.swift */; };
+		729BBC4D1BE3185000F18F1C /* CircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729BBC4C1BE3185000F18F1C /* CircleProgressView.swift */; };
 		72A0C1EE1BBD9E780007B0E2 /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = 72A0C1ED1BBD9E780007B0E2 /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		72A0C1F51BBD9E790007B0E2 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A0C1EB1BBD9E780007B0E2 /* Core.framework */; };
 		72A0C1FC1BBD9E790007B0E2 /* CoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A0C1FB1BBD9E790007B0E2 /* CoreTests.swift */; };
@@ -124,16 +130,25 @@
 /* Begin PBXFileReference section */
 		72001AB31BBE484400F3D1A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		72001AB51BBE485A00F3D1A8 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		7209227F1BD87E1900386974 /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		7209986E1BDBEF300007026F /* KTTableViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KTTableViewHeader.swift; sourceTree = "<group>"; };
 		7210A6BF1BD3382600EE26CE /* ExchangeRate-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExchangeRate-Bridging-Header.h"; sourceTree = "<group>"; };
 		7210A6C01BD3382700EE26CE /* MYIntroductionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYIntroductionView.h; sourceTree = "<group>"; };
 		7210A6C11BD3382700EE26CE /* MYIntroductionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYIntroductionView.m; sourceTree = "<group>"; };
 		7210A6C21BD3382700EE26CE /* MYIntroductionPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYIntroductionPanel.h; sourceTree = "<group>"; };
 		7210A6C31BD3382700EE26CE /* MYIntroductionPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYIntroductionPanel.m; sourceTree = "<group>"; };
-		7210A6C61BD340A800EE26CE /* SampleBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SampleBackground.png; sourceTree = "<group>"; };
 		7210A6C81BD3413900EE26CE /* SampleImage1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SampleImage1.png; sourceTree = "<group>"; };
 		7210A6C91BD3413900EE26CE /* SampleImage2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SampleImage2.png; sourceTree = "<group>"; };
+		72126D161BD9D0C500D89B35 /* XHPathCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHPathCover.h; sourceTree = "<group>"; };
+		72126D171BD9D0C500D89B35 /* XHPathCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHPathCover.m; sourceTree = "<group>"; };
+		72126D181BD9D0C500D89B35 /* XHSoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHSoundManager.h; sourceTree = "<group>"; };
+		72126D191BD9D0C500D89B35 /* XHSoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHSoundManager.m; sourceTree = "<group>"; };
+		72126D1A1BD9D0C500D89B35 /* XHWaterDropRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHWaterDropRefresh.h; sourceTree = "<group>"; };
+		72126D1B1BD9D0C500D89B35 /* XHWaterDropRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHWaterDropRefresh.m; sourceTree = "<group>"; };
+		7289FE581BDC09CB00BEB3E2 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		729B13F91BBD8F7A000BDEE6 /* SampleKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SampleKeyboard.entitlements; sourceTree = "<group>"; };
 		729B13FA1BBD8F90000BDEE6 /* ExchangeRate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ExchangeRate.entitlements; sourceTree = "<group>"; };
+		729BBC4C1BE3185000F18F1C /* CircleProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleProgressView.swift; sourceTree = "<group>"; };
 		72A0C1EB1BBD9E780007B0E2 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A0C1ED1BBD9E780007B0E2 /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
 		72A0C1EF1BBD9E780007B0E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -261,6 +276,8 @@
 				72A0C2121BBD9FDF0007B0E2 /* StringExtension.swift */,
 				72A0C2131BBD9FDF0007B0E2 /* UIColorExtension.swift */,
 				72B3F8101BCEA27C005B8705 /* NSDateExtension.swift */,
+				7209227F1BD87E1900386974 /* ArrayExtension.swift */,
+				7289FE581BDC09CB00BEB3E2 /* UIImageExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -404,7 +421,12 @@
 		72E322FB1BBA827400759392 /* Controls */ = {
 			isa = PBXGroup;
 			children = (
-				7210A6C61BD340A800EE26CE /* SampleBackground.png */,
+				72126D161BD9D0C500D89B35 /* XHPathCover.h */,
+				72126D171BD9D0C500D89B35 /* XHPathCover.m */,
+				72126D181BD9D0C500D89B35 /* XHSoundManager.h */,
+				72126D191BD9D0C500D89B35 /* XHSoundManager.m */,
+				72126D1A1BD9D0C500D89B35 /* XHWaterDropRefresh.h */,
+				72126D1B1BD9D0C500D89B35 /* XHWaterDropRefresh.m */,
 				7210A6C01BD3382700EE26CE /* MYIntroductionView.h */,
 				7210A6C11BD3382700EE26CE /* MYIntroductionView.m */,
 				7210A6C21BD3382700EE26CE /* MYIntroductionPanel.h */,
@@ -415,6 +437,8 @@
 				7210A6C81BD3413900EE26CE /* SampleImage1.png */,
 				7210A6C91BD3413900EE26CE /* SampleImage2.png */,
 				7210A6BF1BD3382600EE26CE /* ExchangeRate-Bridging-Header.h */,
+				7209986E1BDBEF300007026F /* KTTableViewHeader.swift */,
+				729BBC4C1BE3185000F18F1C /* CircleProgressView.swift */,
 			);
 			name = Controls;
 			sourceTree = "<group>";
@@ -614,7 +638,6 @@
 				72C5152B1BA5E588003A2A97 /* LaunchScreen.xib in Resources */,
 				7210A6CB1BD3413900EE26CE /* SampleImage2.png in Resources */,
 				72E323071BBA82A500759392 /* Images.xcassets in Resources */,
-				7210A6C71BD340A800EE26CE /* SampleBackground.png in Resources */,
 				7210A6CA1BD3413900EE26CE /* SampleImage1.png in Resources */,
 				72E323001BBA827B00759392 /* MainTableViewCell.xib in Resources */,
 				72E323051BBA829900759392 /* Main.storyboard in Resources */,
@@ -645,9 +668,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				72BE1DBF1BC13E330052F8EF /* DoubleExtension.swift in Sources */,
+				720922801BD87E1900386974 /* ArrayExtension.swift in Sources */,
 				72A0C2161BBD9FDF0007B0E2 /* StringExtension.swift in Sources */,
 				72A0C2141BBD9FDF0007B0E2 /* FloatExtension.swift in Sources */,
 				72A0C21B1BBD9FE40007B0E2 /* BaseRequest.swift in Sources */,
+				7289FE591BDC09CB00BEB3E2 /* UIImageExtension.swift in Sources */,
 				72A0C2261BBDA0230007B0E2 /* SwiftyJSON.swift in Sources */,
 				72A0C2171BBD9FDF0007B0E2 /* UIColorExtension.swift in Sources */,
 				72A0C2221BBD9FEF0007B0E2 /* UserDefaultDataService.swift in Sources */,
@@ -677,14 +702,19 @@
 			files = (
 				72BE1DB61BC02AA20052F8EF /* TTableViewController.swift in Sources */,
 				72E323011BBA827B00759392 /* MainTableViewCell.swift in Sources */,
+				72126D1C1BD9D0C500D89B35 /* XHPathCover.m in Sources */,
 				7210A6C51BD3382700EE26CE /* MYIntroductionPanel.m in Sources */,
 				72BE1DB81BC02B800052F8EF /* CountryFetchTableView.swift in Sources */,
+				72126D1E1BD9D0C500D89B35 /* XHWaterDropRefresh.m in Sources */,
+				729BBC4D1BE3185000F18F1C /* CircleProgressView.swift in Sources */,
 				72BE1DB21BC023E90052F8EF /* TodaySettingViewController.swift in Sources */,
+				72126D1D1BD9D0C500D89B35 /* XHSoundManager.m in Sources */,
 				7210A6C41BD3382700EE26CE /* MYIntroductionView.m in Sources */,
 				72E322FF1BBA827B00759392 /* BackgroundHighlightedButton.swift in Sources */,
 				72C515211BA5E588003A2A97 /* ExchangeRate.xcdatamodeld in Sources */,
 				72E323031BBA828D00759392 /* MainViewController.swift in Sources */,
 				72C5151E1BA5E588003A2A97 /* AppDelegate.swift in Sources */,
+				7209986F1BDBEF300007026F /* KTTableViewHeader.swift in Sources */,
 				72CD4FA51BD3E79800335A56 /* IntroductionView.swift in Sources */,
 				72ADFBB11BBEECBB00236EBE /* SettingViewController.swift in Sources */,
 			);

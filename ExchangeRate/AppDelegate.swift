@@ -17,12 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
-        LoadCountryDataService.sharedInstance.loadCountry()
-
-
+        //LoadCountryDataService.sharedInstance.loadCountry()
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        // let navigationController = storyboard.instantiateViewControllerWithIdentifier("NavigationController") as! UINavigationController
-        let navigationController = storyboard.instantiateViewControllerWithIdentifier("IntroductionViewNavigationController") as! UINavigationController
+        let navigationController = storyboard.instantiateViewControllerWithIdentifier("NavigationController") as! UINavigationController
+        //let navigationController = storyboard.instantiateViewControllerWithIdentifier("IntroductionViewNavigationController") as! UINavigationController
         navigationController.view.backgroundColor = UIColor.clearColor()
         self.window!.rootViewController = navigationController
         let navigationBar = UINavigationBar.appearance()

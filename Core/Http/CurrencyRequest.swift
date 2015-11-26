@@ -118,7 +118,7 @@ public class CurrencyRequest: NSObject, NSXMLParserDelegate {
 
                 for rate in rates {
 
-                    if let id = rate.attributes["id"] {
+                    if let _ = rate.attributes["id"] {
 
                         let currency: Currency = Currency()
                         currency.dollarsName = rate["Name"].stringValue

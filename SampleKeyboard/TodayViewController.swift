@@ -75,12 +75,8 @@ class TodayViewController: UIViewController, NCWidgetProviding {
 
     func loadAnimation() {
         let duration = 1.0
-        let delay = 0.0
         let options = UIViewKeyframeAnimationOptions.Repeat
-
         let fullRotation = CGFloat(2*M_PI)
-
-        
         UIView.animateKeyframesWithDuration(duration, delay: 0.0, options: options, animations: {
             // note that we've set relativeStartTime and relativeDuration to zero.
             // Because we're using `CalculationModePaced` these values are ignored

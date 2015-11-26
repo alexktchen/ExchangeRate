@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		rMswSWmcsP+/dWaw68SGYJIL4zY=
+		Bhcx91izxXLgN0Ch9fBrgezTrzI=
 		</data>
 		<key>ExchangeRate.momd/ExchangeRate.mom</key>
 		<data>
@@ -22,63 +22,79 @@
 		</data>
 		<key>Frameworks/Core.framework/Core</key>
 		<data>
-		W+/6/lbAAz7c/GJ2bEEu5OI2wvM=
+		m8ufGomNoZ6+MibS57V8CPGsiP8=
 		</data>
 		<key>Frameworks/Core.framework/Info.plist</key>
 		<data>
-		kSCP4DSo8tx6VHfOIOzun4/zZog=
+		qDUvTuZ32Nf6AlOuvmBjFzgzCJM=
+		</data>
+		<key>Frameworks/Core.framework/_CodeSignature/CodeDirectory</key>
+		<data>
+		HKm1ReiHDrMbUzHvv4gpmeuZmNI=
+		</data>
+		<key>Frameworks/Core.framework/_CodeSignature/CodeRequirements</key>
+		<data>
+		avbmnKD6h24f6EkDSvmi5fRUc/Y=
 		</data>
 		<key>Frameworks/Core.framework/_CodeSignature/CodeResources</key>
 		<data>
-		EBSjNHLkLtHYGtY0xXKg/mGeGWg=
+		zeDyxXR7pil4PByHMZEcwRyzPoQ=
+		</data>
+		<key>Frameworks/Core.framework/_CodeSignature/CodeSignature</key>
+		<data>
+		RdF6ITWukq/WFxmIYgyqBWbhHns=
+		</data>
+		<key>Frameworks/libswiftContacts.dylib</key>
+		<data>
+		ZpRJC6tQjvennEl1aEtbgQX+GKI=
 		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
-		5PBJtiArQByk2qw1+xc9jhVF4ek=
+		Y7WNgxMgN51bU3LnkaaNooSnTz4=
 		</data>
 		<key>Frameworks/libswiftCoreData.dylib</key>
 		<data>
-		h/C3QHqKzEtMWE8VNWpsLz2EuqA=
+		pR3nCQtpk3bAzh+JPGOXWCoBUFc=
 		</data>
 		<key>Frameworks/libswiftCoreGraphics.dylib</key>
 		<data>
-		FF+uz/frIRDeBuEAxG8UgiprFcE=
+		FMW6UsAqx3p0+gCSZ3DLt6fZMwo=
 		</data>
 		<key>Frameworks/libswiftCoreImage.dylib</key>
 		<data>
-		AAc5ah+EYM2Ngm3lF3DMnVTQxeE=
+		4maAKoyEjePQVDyXNX6IXY8E2xo=
 		</data>
 		<key>Frameworks/libswiftDarwin.dylib</key>
 		<data>
-		6BRWhCFpKH9ImhNwIOKxwZeC3JM=
+		3taUJ56HzV9PBgbJAmkg8rWVXnQ=
 		</data>
 		<key>Frameworks/libswiftDispatch.dylib</key>
 		<data>
-		g1jHp559TlOtN6AV6b7v06Ta6wU=
+		Pdc9IZdtEJ3fJ0E8WQ/oQJr1Wr0=
 		</data>
 		<key>Frameworks/libswiftFoundation.dylib</key>
 		<data>
-		qsW3cyg5rfcwi1U63jzHtNJqQ9g=
+		4aWR1K5p611XzzhND/iU7Cal6EU=
 		</data>
 		<key>Frameworks/libswiftObjectiveC.dylib</key>
 		<data>
-		GK/AMhomZz/bJ3W6GYymzLMDfFI=
+		ysLg2MGRDkw/KZRvBXCxGDdwQHA=
 		</data>
 		<key>Frameworks/libswiftUIKit.dylib</key>
 		<data>
-		fd3yJtqMSa1JaaYlWMsONMPoFgA=
+		VHERXWf0xg6S8lE2zke2PvtGxxc=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		aGc8N5f9vyz64lWOJr2wAd/f5GE=
+		2tGwOfpRcUOfB+78f0NK19rc5SM=
 		</data>
 		<key>Main.storyboardc/0UA-MU-xb6-view-dBg-gZ-6l2.nib</key>
 		<data>
-		eehTqGVEA9kKVoexB16+K8HS+MU=
+		KIHgo7CGDd2APLKkzYkb9PRNJdE=
 		</data>
 		<key>Main.storyboardc/CountryFetchTableView.nib</key>
 		<data>
-		phTmzKKxD3Kp06/dMhgHDTjZwLc=
+		PWNEk5t9Fj3uVZgwNyRZHxVM+6g=
 		</data>
 		<key>Main.storyboardc/Info.plist</key>
 		<data>
@@ -86,47 +102,47 @@
 		</data>
 		<key>Main.storyboardc/IntroductionView.nib</key>
 		<data>
-		8BJ8yjxgK6wiHooqTbIbK3y+KuE=
+		H3IAzzlpFMXGha3OYGk7qX9PiEQ=
 		</data>
 		<key>Main.storyboardc/IntroductionViewNavigationController.nib</key>
 		<data>
-		X8gSX1sYMWjet9OPM9cELFIv/5o=
+		j5ExNLlSDi6ut0ySr8CfZ0ZN1ho=
 		</data>
 		<key>Main.storyboardc/MainViewController.nib</key>
 		<data>
-		Kzbu9p9RlbXFEgIKhxslV0X3EYU=
+		ApnPyJKAiu/nu4FGj9r7FYt94ug=
 		</data>
 		<key>Main.storyboardc/NavigationController.nib</key>
 		<data>
-		xvtaYLBql+JuaqgmotugManatlE=
+		0d4yZA8wjSCfxqQER9RTWAVxAdc=
+		</data>
+		<key>Main.storyboardc/PdE-2K-Yz8-view-1mj-8l-lDH.nib</key>
+		<data>
+		Yzk9Xn2Nk58zrKCWXZKhPZLzgCs=
 		</data>
 		<key>Main.storyboardc/Reb-hU-YcE-view-0AF-ds-UCy.nib</key>
 		<data>
-		rKwgzTLbyvFExzoK2akCaCVLSZI=
+		sppG9dkswjAkVmFM7VJGQfi7lb8=
 		</data>
 		<key>Main.storyboardc/SettingView.nib</key>
 		<data>
-		Nls7gHmnAW1xskY+u6w5UIARmlY=
+		j31q/OGPbbH7Pz9Vjs0BYO7FWOc=
 		</data>
 		<key>Main.storyboardc/TodayView.nib</key>
 		<data>
-		3K+BBgdrQoye461TZrhDPgkBerY=
+		ZtJ+XiTtUZrw5HikLWVcMazkreM=
 		</data>
 		<key>Main.storyboardc/bbQ-Rr-IKT-view-n9K-ls-zgj.nib</key>
 		<data>
-		2PMTjM9+errXlAdyKMumywlcmyQ=
+		VSpfLzngZIdQt5LOohHIN7gclS4=
 		</data>
 		<key>Main.storyboardc/nMn-gX-rMv-view-P65-YI-ZE3.nib</key>
 		<data>
-		29MHHpv0olzzinZegRk9XEzziOw=
-		</data>
-		<key>Main.storyboardc/vXZ-lx-hvc-view-kh9-bI-dsS.nib</key>
-		<data>
-		AUxkV5PcSq5vN0uAEUI3MX8q1lo=
+		pROR9iK7nf4j343BdTl7NRIo3c4=
 		</data>
 		<key>MainTableViewCell.nib</key>
 		<data>
-		/tWSVZ++60ZhK5ZmSc0SYT/Or/o=
+		MPiqNpBJN/Nq/xXEBicwYJcme50=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -134,7 +150,7 @@
 		</data>
 		<key>PlugIns/SampleKeyboard.appex/Assets.car</key>
 		<data>
-		feMHhsfDp1w2X/tSc60u+DOVqmI=
+		vY6fu4d4ZEg1dcOyVWw4C8tryHg=
 		</data>
 		<key>PlugIns/SampleKeyboard.appex/Base.lproj/MainInterface.storyboardc/Info.plist</key>
 		<dict>
@@ -149,7 +165,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4kw78hG79DxNEC+6YGE9metNz1k=
+			wyaQ8q4h1OOgklu975BnPpV3L0k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -158,26 +174,42 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2HoaiwwmRm6P3ZCGSjp1xIhHnXQ=
+			QSdmhP25B4Laj/CDpCdkyACDnvA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>PlugIns/SampleKeyboard.appex/Info.plist</key>
 		<data>
-		uEUE2baW4e28ZNXS7vPM7PgqABo=
+		8kLLv+cjuC/ZUDLdYu6FJEL2Q9U=
 		</data>
 		<key>PlugIns/SampleKeyboard.appex/SampleKeyboard</key>
 		<data>
-		mN+em2C6lVhYyeWAJdHwmksDQlk=
+		vVIs0BPoD1NU4oxDjS13+BD7Lkg=
+		</data>
+		<key>PlugIns/SampleKeyboard.appex/_CodeSignature/CodeDirectory</key>
+		<data>
+		LmEskjlJYaIveOjMAyOI4vp4e+M=
+		</data>
+		<key>PlugIns/SampleKeyboard.appex/_CodeSignature/CodeEntitlements</key>
+		<data>
+		SmRI4pgggUpBvk/uCxUq2xyPNJE=
+		</data>
+		<key>PlugIns/SampleKeyboard.appex/_CodeSignature/CodeRequirements</key>
+		<data>
+		GbpgEWf7fsL4gxbkYGps0MZVDtE=
 		</data>
 		<key>PlugIns/SampleKeyboard.appex/_CodeSignature/CodeResources</key>
 		<data>
-		CSZHXdMqzPXtJ5FjBOnDrEWrSBE=
+		zNHkxnQOs9F3LlqajJLvQAFi5po=
+		</data>
+		<key>PlugIns/SampleKeyboard.appex/_CodeSignature/CodeSignature</key>
+		<data>
+		lZo2kzVNP8yKGbprhvCfLA88dEo=
 		</data>
 		<key>PlugIns/SampleKeyboard.appex/embedded.mobileprovision</key>
 		<data>
-		m4SvLiOz5UtJrxmwlBBbYZGa/JI=
+		GX+ikeJkScdGTt9WOrl5iyjJnRo=
 		</data>
 		<key>PlugIns/SampleKeyboard.appex/zh-Hant.lproj/MainInterface.strings</key>
 		<dict>
@@ -188,10 +220,6 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>SampleBackground.png</key>
-		<data>
-		aX9xE4taDXKvGymAzjTsgyt5EEk=
-		</data>
 		<key>SampleImage1.png</key>
 		<data>
 		uaqiAEUm2UL5fRJdOAlhPNw6vNk=
@@ -202,7 +230,7 @@
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		ovbWhSkBpItoQIeBmePNL0jZiqE=
+		DHAkhBNCx7lJtAUE1zqIZVt6/xE=
 		</data>
 		<key>en.lproj/Localizable.strings</key>
 		<dict>
@@ -217,7 +245,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ftLkrM6fDt32721+ec7rH+8SWgI=
+			kdt5PLg7ADBi0omkA+fygdfXm+s=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -236,7 +264,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		rMswSWmcsP+/dWaw68SGYJIL4zY=
+		Bhcx91izxXLgN0Ch9fBrgezTrzI=
 		</data>
 		<key>ExchangeRate.momd/ExchangeRate.mom</key>
 		<data>
@@ -252,59 +280,75 @@
 		</data>
 		<key>Frameworks/Core.framework/Core</key>
 		<data>
-		W+/6/lbAAz7c/GJ2bEEu5OI2wvM=
+		m8ufGomNoZ6+MibS57V8CPGsiP8=
 		</data>
 		<key>Frameworks/Core.framework/Info.plist</key>
 		<data>
-		kSCP4DSo8tx6VHfOIOzun4/zZog=
+		qDUvTuZ32Nf6AlOuvmBjFzgzCJM=
+		</data>
+		<key>Frameworks/Core.framework/_CodeSignature/CodeDirectory</key>
+		<data>
+		HKm1ReiHDrMbUzHvv4gpmeuZmNI=
+		</data>
+		<key>Frameworks/Core.framework/_CodeSignature/CodeRequirements</key>
+		<data>
+		avbmnKD6h24f6EkDSvmi5fRUc/Y=
 		</data>
 		<key>Frameworks/Core.framework/_CodeSignature/CodeResources</key>
 		<data>
-		EBSjNHLkLtHYGtY0xXKg/mGeGWg=
+		zeDyxXR7pil4PByHMZEcwRyzPoQ=
+		</data>
+		<key>Frameworks/Core.framework/_CodeSignature/CodeSignature</key>
+		<data>
+		RdF6ITWukq/WFxmIYgyqBWbhHns=
+		</data>
+		<key>Frameworks/libswiftContacts.dylib</key>
+		<data>
+		ZpRJC6tQjvennEl1aEtbgQX+GKI=
 		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
-		5PBJtiArQByk2qw1+xc9jhVF4ek=
+		Y7WNgxMgN51bU3LnkaaNooSnTz4=
 		</data>
 		<key>Frameworks/libswiftCoreData.dylib</key>
 		<data>
-		h/C3QHqKzEtMWE8VNWpsLz2EuqA=
+		pR3nCQtpk3bAzh+JPGOXWCoBUFc=
 		</data>
 		<key>Frameworks/libswiftCoreGraphics.dylib</key>
 		<data>
-		FF+uz/frIRDeBuEAxG8UgiprFcE=
+		FMW6UsAqx3p0+gCSZ3DLt6fZMwo=
 		</data>
 		<key>Frameworks/libswiftCoreImage.dylib</key>
 		<data>
-		AAc5ah+EYM2Ngm3lF3DMnVTQxeE=
+		4maAKoyEjePQVDyXNX6IXY8E2xo=
 		</data>
 		<key>Frameworks/libswiftDarwin.dylib</key>
 		<data>
-		6BRWhCFpKH9ImhNwIOKxwZeC3JM=
+		3taUJ56HzV9PBgbJAmkg8rWVXnQ=
 		</data>
 		<key>Frameworks/libswiftDispatch.dylib</key>
 		<data>
-		g1jHp559TlOtN6AV6b7v06Ta6wU=
+		Pdc9IZdtEJ3fJ0E8WQ/oQJr1Wr0=
 		</data>
 		<key>Frameworks/libswiftFoundation.dylib</key>
 		<data>
-		qsW3cyg5rfcwi1U63jzHtNJqQ9g=
+		4aWR1K5p611XzzhND/iU7Cal6EU=
 		</data>
 		<key>Frameworks/libswiftObjectiveC.dylib</key>
 		<data>
-		GK/AMhomZz/bJ3W6GYymzLMDfFI=
+		ysLg2MGRDkw/KZRvBXCxGDdwQHA=
 		</data>
 		<key>Frameworks/libswiftUIKit.dylib</key>
 		<data>
-		fd3yJtqMSa1JaaYlWMsONMPoFgA=
+		VHERXWf0xg6S8lE2zke2PvtGxxc=
 		</data>
 		<key>Main.storyboardc/0UA-MU-xb6-view-dBg-gZ-6l2.nib</key>
 		<data>
-		eehTqGVEA9kKVoexB16+K8HS+MU=
+		KIHgo7CGDd2APLKkzYkb9PRNJdE=
 		</data>
 		<key>Main.storyboardc/CountryFetchTableView.nib</key>
 		<data>
-		phTmzKKxD3Kp06/dMhgHDTjZwLc=
+		PWNEk5t9Fj3uVZgwNyRZHxVM+6g=
 		</data>
 		<key>Main.storyboardc/Info.plist</key>
 		<data>
@@ -312,51 +356,51 @@
 		</data>
 		<key>Main.storyboardc/IntroductionView.nib</key>
 		<data>
-		8BJ8yjxgK6wiHooqTbIbK3y+KuE=
+		H3IAzzlpFMXGha3OYGk7qX9PiEQ=
 		</data>
 		<key>Main.storyboardc/IntroductionViewNavigationController.nib</key>
 		<data>
-		X8gSX1sYMWjet9OPM9cELFIv/5o=
+		j5ExNLlSDi6ut0ySr8CfZ0ZN1ho=
 		</data>
 		<key>Main.storyboardc/MainViewController.nib</key>
 		<data>
-		Kzbu9p9RlbXFEgIKhxslV0X3EYU=
+		ApnPyJKAiu/nu4FGj9r7FYt94ug=
 		</data>
 		<key>Main.storyboardc/NavigationController.nib</key>
 		<data>
-		xvtaYLBql+JuaqgmotugManatlE=
+		0d4yZA8wjSCfxqQER9RTWAVxAdc=
+		</data>
+		<key>Main.storyboardc/PdE-2K-Yz8-view-1mj-8l-lDH.nib</key>
+		<data>
+		Yzk9Xn2Nk58zrKCWXZKhPZLzgCs=
 		</data>
 		<key>Main.storyboardc/Reb-hU-YcE-view-0AF-ds-UCy.nib</key>
 		<data>
-		rKwgzTLbyvFExzoK2akCaCVLSZI=
+		sppG9dkswjAkVmFM7VJGQfi7lb8=
 		</data>
 		<key>Main.storyboardc/SettingView.nib</key>
 		<data>
-		Nls7gHmnAW1xskY+u6w5UIARmlY=
+		j31q/OGPbbH7Pz9Vjs0BYO7FWOc=
 		</data>
 		<key>Main.storyboardc/TodayView.nib</key>
 		<data>
-		3K+BBgdrQoye461TZrhDPgkBerY=
+		ZtJ+XiTtUZrw5HikLWVcMazkreM=
 		</data>
 		<key>Main.storyboardc/bbQ-Rr-IKT-view-n9K-ls-zgj.nib</key>
 		<data>
-		2PMTjM9+errXlAdyKMumywlcmyQ=
+		VSpfLzngZIdQt5LOohHIN7gclS4=
 		</data>
 		<key>Main.storyboardc/nMn-gX-rMv-view-P65-YI-ZE3.nib</key>
 		<data>
-		29MHHpv0olzzinZegRk9XEzziOw=
-		</data>
-		<key>Main.storyboardc/vXZ-lx-hvc-view-kh9-bI-dsS.nib</key>
-		<data>
-		AUxkV5PcSq5vN0uAEUI3MX8q1lo=
+		pROR9iK7nf4j343BdTl7NRIo3c4=
 		</data>
 		<key>MainTableViewCell.nib</key>
 		<data>
-		/tWSVZ++60ZhK5ZmSc0SYT/Or/o=
+		MPiqNpBJN/Nq/xXEBicwYJcme50=
 		</data>
 		<key>PlugIns/SampleKeyboard.appex/Assets.car</key>
 		<data>
-		feMHhsfDp1w2X/tSc60u+DOVqmI=
+		vY6fu4d4ZEg1dcOyVWw4C8tryHg=
 		</data>
 		<key>PlugIns/SampleKeyboard.appex/Base.lproj/MainInterface.storyboardc/Info.plist</key>
 		<dict>
@@ -371,7 +415,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4kw78hG79DxNEC+6YGE9metNz1k=
+			wyaQ8q4h1OOgklu975BnPpV3L0k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -380,26 +424,42 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2HoaiwwmRm6P3ZCGSjp1xIhHnXQ=
+			QSdmhP25B4Laj/CDpCdkyACDnvA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>PlugIns/SampleKeyboard.appex/Info.plist</key>
 		<data>
-		uEUE2baW4e28ZNXS7vPM7PgqABo=
+		8kLLv+cjuC/ZUDLdYu6FJEL2Q9U=
 		</data>
 		<key>PlugIns/SampleKeyboard.appex/SampleKeyboard</key>
 		<data>
-		mN+em2C6lVhYyeWAJdHwmksDQlk=
+		vVIs0BPoD1NU4oxDjS13+BD7Lkg=
+		</data>
+		<key>PlugIns/SampleKeyboard.appex/_CodeSignature/CodeDirectory</key>
+		<data>
+		LmEskjlJYaIveOjMAyOI4vp4e+M=
+		</data>
+		<key>PlugIns/SampleKeyboard.appex/_CodeSignature/CodeEntitlements</key>
+		<data>
+		SmRI4pgggUpBvk/uCxUq2xyPNJE=
+		</data>
+		<key>PlugIns/SampleKeyboard.appex/_CodeSignature/CodeRequirements</key>
+		<data>
+		GbpgEWf7fsL4gxbkYGps0MZVDtE=
 		</data>
 		<key>PlugIns/SampleKeyboard.appex/_CodeSignature/CodeResources</key>
 		<data>
-		CSZHXdMqzPXtJ5FjBOnDrEWrSBE=
+		zNHkxnQOs9F3LlqajJLvQAFi5po=
+		</data>
+		<key>PlugIns/SampleKeyboard.appex/_CodeSignature/CodeSignature</key>
+		<data>
+		lZo2kzVNP8yKGbprhvCfLA88dEo=
 		</data>
 		<key>PlugIns/SampleKeyboard.appex/embedded.mobileprovision</key>
 		<data>
-		m4SvLiOz5UtJrxmwlBBbYZGa/JI=
+		GX+ikeJkScdGTt9WOrl5iyjJnRo=
 		</data>
 		<key>PlugIns/SampleKeyboard.appex/zh-Hant.lproj/MainInterface.strings</key>
 		<dict>
@@ -410,10 +470,6 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>SampleBackground.png</key>
-		<data>
-		aX9xE4taDXKvGymAzjTsgyt5EEk=
-		</data>
 		<key>SampleImage1.png</key>
 		<data>
 		uaqiAEUm2UL5fRJdOAlhPNw6vNk=
@@ -424,7 +480,7 @@
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		ovbWhSkBpItoQIeBmePNL0jZiqE=
+		DHAkhBNCx7lJtAUE1zqIZVt6/xE=
 		</data>
 		<key>en.lproj/Localizable.strings</key>
 		<dict>
@@ -439,7 +495,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ftLkrM6fDt32721+ec7rH+8SWgI=
+			kdt5PLg7ADBi0omkA+fygdfXm+s=
 			</data>
 			<key>optional</key>
 			<true/>

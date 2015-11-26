@@ -6,89 +6,89 @@ provides-nominal:
 provides-member:
 - ["C14SampleKeyboard19TodayViewController", ""]
 provides-dynamic-lookup:
-- "addButtonUpInside"
-- "widgetMarginInsetsForProposedMarginInsets"
-- "majorCurrencySymbol"
-- "loadAnimation"
-- "rightView"
-- "widgetPerformUpdateWithCompletionHandler"
-- "addButton"
 - "viewDidLoad"
-- "clear"
-- "loadData"
+- "widgetMarginInsetsForProposedMarginInsets"
+- "rightView"
+- "didReceiveMemoryWarning"
+- "majorView"
+- "minorCurrencySymbol"
+- "majorCurrency"
+- "loadAnimation"
+- "majorCurrencySymbol"
+- "delay"
+- "refreshButton"
+- "addButtonUpInside"
+- "updateTimeLabel"
 - "majorCurrencyCode"
+- "currencys"
+- "minorCurrencyCode"
+- "adjustUi"
+- "majorImage"
+- "minorLabel"
+- "updatePreferredContentSize"
+- "getCenterViewCGRect"
+- "numberTouchUp"
+- "keyboardView"
+- "clear"
+- "viewWillAppear"
+- "numberString"
+- "refreshButtonUpInside"
+- "viewDidAppear"
 - "centerView"
 - "addCurrencyView"
-- "didReceiveMemoryWarning"
-- "numberString"
-- "getRightViewCGRect"
-- "keyboardView"
-- "updatePreferredContentSize"
-- "minorLabel"
-- "majorLabel"
-- "refreshButtonUpInside"
-- "currencys"
-- "majorImage"
-- "adjustUi"
-- "getCenterViewCGRect"
 - "minorImage"
-- "updateTimeLabel"
-- "minorCurrencyCode"
-- "delay"
-- "majorView"
-- "refreshButton"
-- "majorCurrency"
-- "minorCurrencySymbol"
-- "numberTouchUp"
-- "viewDidAppear"
-- "viewWillAppear"
+- "getRightViewCGRect"
+- "loadData"
+- "widgetPerformUpdateWithCompletionHandler"
+- "addButton"
+- "majorLabel"
 depends-top-level:
-- !private "UIEdgeInsetsZero"
-- !private "UIViewKeyframeAnimationOptions"
-- "UILabel"
-- "NCUpdateResult"
-- !private "dispatch_get_main_queue"
-- !private "CGSizeMake"
-- "UIButton"
-- "CGRect"
-- "UIImageView"
-- "Void"
-- "StringLiteralType"
-- "String"
-- "Bool"
-- "Double"
-- !private "dispatch_after"
-- !private "=="
-- !private "/"
-- !private "NSString"
-- "AnyObject"
-- !private "~="
+- !private "NSDate"
 - !private "CGFloat"
-- !private "CurrencyRequest"
-- !private ">"
-- !private "-"
-- !private "BooleanLiteralType"
-- "UIView"
+- !private "||"
+- !private "Int64"
+- !private "UIEdgeInsetsZero"
+- "Void"
+- !private "/"
+- "String"
 - !private "*"
 - !private "UnicodeScalarType"
-- "NCWidgetProviding"
-- "Currency"
-- !private "M_PI"
-- !private "CustomColors"
-- !private "NSURL"
-- !private "NSEC_PER_SEC"
-- !private "||"
-- !private "dispatch_time"
-- !private "UserDefaultDataService"
-- !private "DISPATCH_TIME_NOW"
-- !private "+="
-- "UIViewController"
-- !private "NSDate"
+- "StringLiteralType"
+- "NCUpdateResult"
+- "UIButton"
+- !private "~="
 - "UIEdgeInsets"
-- !private "CGAffineTransformMakeRotation"
-- "TodayViewController"
-- !private "Int64"
+- "CGRect"
+- "UIViewController"
+- "Bool"
+- !private "NSEC_PER_SEC"
+- !private "NSString"
+- "NCWidgetProviding"
+- !private "CustomColors"
+- !private "=="
 - !private "CGRectMake"
+- !private "BooleanLiteralType"
+- !private "CGAffineTransformMakeRotation"
+- !private "UserDefaultDataService"
+- !private "UIViewKeyframeAnimationOptions"
+- !private "-"
+- "UILabel"
+- "UIImageView"
+- "AnyObject"
+- "Currency"
+- !private "CurrencyRequest"
+- !private "dispatch_get_main_queue"
+- !private "CGSizeMake"
+- "Double"
+- !private "M_PI"
+- !private "dispatch_after"
+- "UIView"
+- !private "DISPATCH_TIME_NOW"
+- "TodayViewController"
+- !private ">"
+- !private "dispatch_time"
+- !private "NSURL"
+- !private "+="
 depends-member:
 - !private ["PSs16AbsoluteValuable", "init"]
 - !private ["PSs16AbsoluteValuable", "toCurrencyStyle"]
@@ -1464,6 +1464,80 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "titleLabel"]
 - !private ["PSo13UIDynamicItem", "transform"]
+- !private ["PSo18UIFocusEnvironment", "CGAffineTransformMakeRotation"]
+- !private ["PSo18UIFocusEnvironment", "CGFloat"]
+- !private ["PSo18UIFocusEnvironment", "CGRectMake"]
+- !private ["PSo18UIFocusEnvironment", "CGSizeMake"]
+- ["PSo18UIFocusEnvironment", "Currency"]
+- !private ["PSo18UIFocusEnvironment", "CurrencyRequest"]
+- !private ["PSo18UIFocusEnvironment", "CustomColors"]
+- !private ["PSo18UIFocusEnvironment", "DISPATCH_TIME_NOW"]
+- !private ["PSo18UIFocusEnvironment", "Double"]
+- !private ["PSo18UIFocusEnvironment", "Int64"]
+- !private ["PSo18UIFocusEnvironment", "M_PI"]
+- !private ["PSo18UIFocusEnvironment", "NCUpdateResult"]
+- !private ["PSo18UIFocusEnvironment", "NSDate"]
+- !private ["PSo18UIFocusEnvironment", "NSEC_PER_SEC"]
+- !private ["PSo18UIFocusEnvironment", "NSString"]
+- !private ["PSo18UIFocusEnvironment", "NSURL"]
+- !private ["PSo18UIFocusEnvironment", "UIEdgeInsetsZero"]
+- !private ["PSo18UIFocusEnvironment", "UIView"]
+- !private ["PSo18UIFocusEnvironment", "UIViewKeyframeAnimationOptions"]
+- !private ["PSo18UIFocusEnvironment", "UserDefaultDataService"]
+- ["PSo18UIFocusEnvironment", "addButton"]
+- ["PSo18UIFocusEnvironment", "addButtonUpInside"]
+- ["PSo18UIFocusEnvironment", "addCurrencyView"]
+- !private ["PSo18UIFocusEnvironment", "addKeyframeWithRelativeStartTime"]
+- ["PSo18UIFocusEnvironment", "adjustUi"]
+- !private ["PSo18UIFocusEnvironment", "animateKeyframesWithDuration"]
+- ["PSo18UIFocusEnvironment", "centerView"]
+- ["PSo18UIFocusEnvironment", "clear"]
+- !private ["PSo18UIFocusEnvironment", "clipsToBounds"]
+- ["PSo18UIFocusEnvironment", "currencys"]
+- ["PSo18UIFocusEnvironment", "delay"]
+- ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UIFocusEnvironment", "dispatch_after"]
+- !private ["PSo18UIFocusEnvironment", "dispatch_get_main_queue"]
+- !private ["PSo18UIFocusEnvironment", "dispatch_time"]
+- !private ["PSo18UIFocusEnvironment", "extensionContext"]
+- !private ["PSo18UIFocusEnvironment", "frame"]
+- ["PSo18UIFocusEnvironment", "getCenterViewCGRect"]
+- ["PSo18UIFocusEnvironment", "getRightViewCGRect"]
+- !private ["PSo18UIFocusEnvironment", "hidden"]
+- !private ["PSo18UIFocusEnvironment", "image"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "keyboardView"]
+- !private ["PSo18UIFocusEnvironment", "layer"]
+- ["PSo18UIFocusEnvironment", "loadAnimation"]
+- ["PSo18UIFocusEnvironment", "loadData"]
+- ["PSo18UIFocusEnvironment", "majorCurrency"]
+- ["PSo18UIFocusEnvironment", "majorCurrencyCode"]
+- ["PSo18UIFocusEnvironment", "majorCurrencySymbol"]
+- ["PSo18UIFocusEnvironment", "majorImage"]
+- ["PSo18UIFocusEnvironment", "majorLabel"]
+- ["PSo18UIFocusEnvironment", "majorView"]
+- ["PSo18UIFocusEnvironment", "minorCurrencyCode"]
+- ["PSo18UIFocusEnvironment", "minorCurrencySymbol"]
+- ["PSo18UIFocusEnvironment", "minorImage"]
+- ["PSo18UIFocusEnvironment", "minorLabel"]
+- ["PSo18UIFocusEnvironment", "numberString"]
+- ["PSo18UIFocusEnvironment", "numberTouchUp"]
+- !private ["PSo18UIFocusEnvironment", "preferredContentSize"]
+- ["PSo18UIFocusEnvironment", "refreshButton"]
+- ["PSo18UIFocusEnvironment", "refreshButtonUpInside"]
+- ["PSo18UIFocusEnvironment", "rightView"]
+- !private ["PSo18UIFocusEnvironment", "text"]
+- !private ["PSo18UIFocusEnvironment", "titleLabel"]
+- !private ["PSo18UIFocusEnvironment", "transform"]
+- ["PSo18UIFocusEnvironment", "updatePreferredContentSize"]
+- ["PSo18UIFocusEnvironment", "updateTimeLabel"]
+- !private ["PSo18UIFocusEnvironment", "view"]
+- ["PSo18UIFocusEnvironment", "viewDidAppear"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", "viewWillAppear"]
+- ["PSo18UIFocusEnvironment", "widgetMarginInsetsForProposedMarginInsets"]
+- ["PSo18UIFocusEnvironment", "widgetPerformUpdateWithCompletionHandler"]
+- ["PSo18UIFocusEnvironment", ""]
 - !private ["CSo11UIImageView", "image"]
 - !private ["CSo7UILabel", "frame"]
 - !private ["CSo7UILabel", "hidden"]
@@ -1820,6 +1894,7 @@ depends-member:
 - !private ["PSs16_CocoaStringType", "containsString"]
 - !private ["PSs16_CocoaStringType", "doubleValue"]
 - !private ["PSs16_CocoaStringType", "init"]
+- !private ["PSs24_ColorLiteralConvertible", "CGColor"]
 - !private ["PSs24_DestructorSafeContainer", "Generator"]
 - !private ["PSs24_DestructorSafeContainer", "Index"]
 - !private ["PSs24_DestructorSafeContainer", "SubSequence"]
@@ -1828,6 +1903,7 @@ depends-member:
 - !private ["PSs24_DestructorSafeContainer", "count"]
 - ["PSs24_DestructorSafeContainer", "init"]
 - !private ["PSs24_DestructorSafeContainer", "subscript"]
+- !private ["PSs32_FileReferenceLiteralConvertible", "init"]
 - !private ["PSs14_Incrementable", "Distance"]
 - !private ["PSs14_Incrementable", "IntegerLiteralType"]
 - !private ["PSs14_Incrementable", "init"]
@@ -1989,6 +2065,7 @@ depends-nominal:
 - !private "CSo9UIControl"
 - !private "PSo17UICoordinateSpace"
 - !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
 - !private "CSo11UIImageView"
 - !private "CSo7UILabel"
 - "CSo11UIResponder"
@@ -2016,7 +2093,9 @@ depends-nominal:
 - !private "PSs19_CVarArgAlignedType"
 - !private "PSs22_CVarArgPassedAsDouble"
 - !private "PSs16_CocoaStringType"
+- !private "PSs24_ColorLiteralConvertible"
 - "PSs24_DestructorSafeContainer"
+- !private "PSs32_FileReferenceLiteralConvertible"
 - !private "PSs14_Incrementable"
 - !private "PSs22_IntegerArithmeticType"
 - !private "PSs12_IntegerType"

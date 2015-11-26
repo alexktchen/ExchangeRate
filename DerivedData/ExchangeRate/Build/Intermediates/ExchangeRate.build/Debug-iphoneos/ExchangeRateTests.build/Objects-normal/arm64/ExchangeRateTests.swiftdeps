@@ -6,15 +6,15 @@ provides-nominal:
 provides-member:
 - ["C17ExchangeRateTests17ExchangeRateTests", ""]
 provides-dynamic-lookup:
+- "setUp"
 - "testPerformanceExample"
 - "testExample"
-- "setUp"
 - "tearDown"
 depends-top-level:
 - !private "BooleanLiteralType"
-- !private "XCTAssert"
 - "ExchangeRateTests"
 - !private "StringLiteralType"
+- !private "XCTAssert"
 - "XCTestCase"
 depends-member:
 - !private ["PSs9AnyObject", "XCTAssert"]
@@ -119,6 +119,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/XCTest.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCUIRemote.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCUIKeyboardKeys.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCUIElementQuery.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCUICoordinate.h"

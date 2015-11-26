@@ -204,6 +204,11 @@ NSString *const XHBirthdayKey = @"XHBirthday";
 // avatar
 - (void)setAvatarImage:(UIImage *)avatarImage {
     if (avatarImage) {
+
+        _avatarButton.layer.cornerRadius = _avatarButton.frame.size.width / 2;
+        _avatarButton.clipsToBounds = YES;
+        _avatarButton.layer.borderWidth = 2.0f;
+        _avatarButton.layer.borderColor = [[UIColor whiteColor] CGColor];
         [_avatarButton setImage:avatarImage forState:UIControlStateNormal];
     }
 }
@@ -264,6 +269,9 @@ NSString *const XHBirthdayKey = @"XHBirthday";
 }
 
 - (void)setOffsetY:(CGFloat)y {
+
+    NSLog (@"%f", y);
+
     CGFloat fixAdaptorPadding = 0;
     if ([[[UIDevice currentDevice] systemVersion] integerValue] >= 7.0) {
         fixAdaptorPadding = 64;
@@ -271,7 +279,11 @@ NSString *const XHBirthdayKey = @"XHBirthday";
     y += fixAdaptorPadding;
     _offsetY = y;
     CGRect frame = _showView.frame;
+
     if(y < 0) {
+
+        // TODO: change style, when scroll dropdown the showView will drop down with scroll
+        /*
         if((_waterDropRefresh.isRefreshing) || hasStop) {
             if(normal && paste == NO) {
                 frame.origin.y = self.showUserInfoViewOffsetHeight + y;
@@ -285,12 +297,17 @@ NSString *const XHBirthdayKey = @"XHBirthday";
         } else {
             frame.origin.y = self.showUserInfoViewOffsetHeight + y;
             _showView.frame = frame;
-        }
+        }*/
+
+        frame.origin.y = self.showUserInfoViewOffsetHeight;
+        _showView.frame = frame;
+
     } else {
         if(normal && _touching && isrefreshed) {
             paste = YES;
         }
         if(frame.origin.y != self.showUserInfoViewOffsetHeight) {
+
             frame.origin.y = self.showUserInfoViewOffsetHeight;
             _showView.frame = frame;
         }
@@ -302,6 +319,7 @@ NSString *const XHBirthdayKey = @"XHBirthday";
     UIView *bannerSuper = _bannerImageView.superview;
     CGRect bframe = bannerSuper.frame;
     if(y < 0) {
+
         bframe.origin.y = y;
         bframe.size.height = -y + bannerSuper.superview.frame.size.height;
         bannerSuper.frame = bframe;
@@ -313,7 +331,7 @@ NSString *const XHBirthdayKey = @"XHBirthday";
         if (self.isZoomingEffect) {
             _bannerImageView.center = center;
             CGFloat scale = fabsf(y) / self.parallaxHeight;
-            _bannerImageView.transform = CGAffineTransformMakeScale(1+scale, 1+scale);
+            _bannerImageView.transform = CGAffineTransformMakeScale(1+scale, 1 + scale);
         }
     } else {
         if(bframe.origin.y != 0) {
@@ -327,7 +345,6 @@ NSString *const XHBirthdayKey = @"XHBirthday";
             _bannerImageView.center = center;
         }
     }
-    
     if (self.isLightEffect) {
         if(y < 0 && y >= -self.lightEffectPadding) {
             float percent = (-y / (self.lightEffectPadding * self.lightEffectAlpha));
@@ -364,12 +381,14 @@ NSString *const XHBirthdayKey = @"XHBirthday";
 - (void)_setup {
     self.parallaxHeight = 170;
     self.isLightEffect = YES;
-    self.lightEffectPadding = 80;
+    self.lightEffectPadding = 200;
     self.lightEffectAlpha = 1.15;
     
     _bannerView = [[UIView alloc] initWithFrame:self.bounds];
     _bannerView.clipsToBounds = YES;
+
     UITapGestureRecognizer *tapGestureRecongnizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGestureRecongnizerHandle:)];
+
     [_bannerView addGestureRecognizer:tapGestureRecongnizer];
     
     _bannerImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, -self.parallaxHeight, CGRectGetWidth(_bannerView.frame), CGRectGetHeight(_bannerView.frame) + self.parallaxHeight * 2)];
@@ -387,28 +406,23 @@ NSString *const XHBirthdayKey = @"XHBirthday";
     _waterDropRefresh = [[XHWaterDropRefresh alloc] initWithFrame:CGRectMake(33, CGRectGetHeight(self.bounds) - waterDropRefreshHeight, waterDropRefreshWidth, waterDropRefreshHeight)];
     _waterDropRefresh.refreshCircleImage = [UIImage imageNamed:@"circle"];
     _waterDropRefresh.offsetHeight = 20; // 线条的长度
-    [self addSubview:self.waterDropRefresh];
+    //[self addSubview:self.waterDropRefresh];
     
-    CGFloat avatarButtonHeight = 66;
+    CGFloat avatarButtonHeight = 100;
     self.showUserInfoViewOffsetHeight = CGRectGetHeight(self.frame) - waterDropRefreshHeight / 3 - avatarButtonHeight;
     _showView = [[UIView alloc] initWithFrame:CGRectMake(0, self.showUserInfoViewOffsetHeight, CGRectGetWidth(self.bounds), waterDropRefreshHeight)];
     _showView.backgroundColor = [UIColor clearColor];
     
     _avatarButton = [[UIButton alloc] initWithFrame:CGRectMake(15, 0, avatarButtonHeight, avatarButtonHeight)];
     
-    _userNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(93, 0, 207, 34)];
+    _userNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(_avatarButton.frame.size.width + 20, 0, 207, 34)];
     _userNameLabel.textColor = [UIColor whiteColor];
     _userNameLabel.backgroundColor = [UIColor clearColor];
-    _userNameLabel.shadowColor = [UIColor blackColor];
-    _userNameLabel.shadowOffset = CGSizeMake(0, 2);
     _userNameLabel.font = [UIFont boldSystemFontOfSize:28.0f];
-    
-    
-    _birthdayLabel = [[UILabel alloc] initWithFrame:CGRectMake(93, 42, 207, 24)];
+
+    _birthdayLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, _avatarButton.frame.size.height + 5, self.frame.size.width, 24)];
     _birthdayLabel.textColor = [UIColor whiteColor];
     _birthdayLabel.backgroundColor = [UIColor clearColor];
-    _birthdayLabel.shadowColor = [UIColor blackColor];
-    _birthdayLabel.shadowOffset = CGSizeMake(0, 2);
     _birthdayLabel.font = [UIFont systemFontOfSize:14.0f];
     
     [_showView addSubview:self.avatarButton];

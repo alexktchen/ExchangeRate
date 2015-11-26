@@ -18,6 +18,8 @@ public class Currency: NSObject, NSCoding {
     public var ask: Double = 0.0
     public var bid: Double = 0.0
     public var isMajor: Bool = false
+    public var isAddToMain: Bool = false
+    public var isAddToMainDefault: Bool = false
     public var symbol: String = ""
     public var dateTime: NSDate?
     public var currencyCode: String = ""
@@ -57,7 +59,16 @@ public class Currency: NSObject, NSCoding {
         if let isMajor = (decoder.decodeObjectForKey("isMajor") as? Bool) {
             self.isMajor = isMajor
         }
-        
+
+        if let isAddToMain = (decoder.decodeObjectForKey("isAddToMain") as? Bool) {
+            self.isAddToMain = isAddToMain
+        }
+
+        if let isAddToMainDefault = (decoder.decodeObjectForKey("isAddToMainDefault") as? Bool) {
+            self.isAddToMainDefault = isAddToMainDefault
+        }
+
+
         if let symbol = (decoder.decodeObjectForKey("symbol") as? String) {
             self.symbol = symbol
         }
@@ -81,6 +92,15 @@ public class Currency: NSObject, NSCoding {
         if let flagImage = (decoder.decodeObjectForKey("flagImage") as? UIImage) {
             self.flagImage = flagImage
         }
+
+        if let largeFlagImageName = (decoder.decodeObjectForKey("largeFlagImageName") as? String) {
+            self.largeFlagImageName = largeFlagImageName
+        }
+
+        if let largeFlagImage = (decoder.decodeObjectForKey("largeFlagImage") as? UIImage) {
+            self.largeFlagImage = largeFlagImage
+        }
+
     }
     
     public func encodeWithCoder(aCoder: NSCoder) {
@@ -91,12 +111,16 @@ public class Currency: NSObject, NSCoding {
         aCoder.encodeObject(self.ask, forKey: "ask")
         aCoder.encodeObject(self.bid, forKey: "bid")
         aCoder.encodeObject(self.isMajor, forKey: "isMajor")
+        aCoder.encodeObject(self.isAddToMain, forKey: "isAddToMain")
+        aCoder.encodeObject(self.isAddToMainDefault, forKey: "isAddToMainDefault")
         aCoder.encodeObject(self.symbol, forKey: "symbol")
         aCoder.encodeObject(self.currencyCode, forKey: "currencyCode")
         aCoder.encodeObject(self.dateTime, forKey: "dateTime")
         aCoder.encodeObject(self.country, forKey: "country")
         aCoder.encodeObject(self.flagImageName, forKey: "flagImageName")
         aCoder.encodeObject(self.flagImage, forKey: "flagImage")
+        aCoder.encodeObject(self.largeFlagImageName, forKey: "largeFlagImageName")
+        aCoder.encodeObject(self.largeFlagImage, forKey: "largeFlagImage")
     }
     
 }

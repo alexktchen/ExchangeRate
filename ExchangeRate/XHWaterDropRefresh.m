@@ -63,9 +63,9 @@
 
 - (void)_setup {
     self.deformationLength = 0.4;
-    self.maxOffset = 70; // 改变最大拉断距离
-    self.radius = 5.; // 改变圆圈的半径
-    self.offsetHeight = 20; // 改变线条的长度
+    self.maxOffset = 100; // 改变最大拉断距离
+    self.radius = 10.; // 改变圆圈的半径
+    self.offsetHeight = 100; // 改变线条的长度
     
     CGRect frame = self.frame;
     frame.size = CGSizeMake(30, 100);  //固定 30 * 100 为什么要固定本身的大小呢？
@@ -202,7 +202,7 @@
         self.timer = nil;
         
         // play refresh stop sound
-        [[XHSoundManager sharedInstance] playRefreshSound];
+        //[[XHSoundManager sharedInstance] playRefreshSound];
         
         if(self.handleRefreshEvent != nil) {
             self.handleRefreshEvent();

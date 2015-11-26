@@ -4,3 +4,6 @@
 
 #import "MYIntroductionView.h"
 #import "MYIntroductionPanel.h"
+#import "XHPathCover.h"
+#import "XHSoundManager.h"
+#import "XHWaterDropRefresh.h"

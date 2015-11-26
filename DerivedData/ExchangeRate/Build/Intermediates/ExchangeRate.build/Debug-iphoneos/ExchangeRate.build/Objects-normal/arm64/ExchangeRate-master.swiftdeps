@@ -1,13 +1,15 @@
-version: "Apple Swift version 2.0 (swiftlang-700.0.59 clang-700.0.72)"
-options: "405e93f061daca5932ef3f70927c23bd"
-build_time: [498761088, 481676000]
-inputs: 
-	"/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/TodaySettingViewController.swift": [498236047, 0]
-	"/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/AppDelegate.swift": [498583711, 0]
-	"/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/MainTableViewCell.swift": [497290020, 0]
-	"/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/CountryFetchTableView.swift": [498760758, 0]
-	"/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/SettingViewController.swift": [498414124, 0]
-	"/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/MainViewController.swift": [498760874, 0]
-	"/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/TTableViewController.swift": [497290020, 0]
-	"/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/IntroductionView.swift": [498583873, 0]
-	"/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/BackgroundHighlightedButton.swift": [497290020, 0]
+version: "Apple Swift version 2.1 (swiftlang-700.1.101.6 clang-700.1.76)"
+options: "efe41f898f718d9e9f0990026367ca8a"
+build_time: [499511534, 747773000]
+inputs:
+  "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/IntroductionView.swift": [498583873, 0]
+  "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/MainTableViewCell.swift": [497290020, 0]
+  "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/TodaySettingViewController.swift": [498236047, 0]
+  "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/TTableViewController.swift": [497290020, 0]
+  "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/AppDelegate.swift": [498886404, 0]
+  "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/CircleProgressView.swift": [499509200, 0]
+  "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/CountryFetchTableView.swift": [498809788, 0]
+  "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/BackgroundHighlightedButton.swift": [497290020, 0]
+  "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/KTTableViewHeader.swift": [499511261, 0]
+  "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/SettingViewController.swift": [498414124, 0]
+  "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/MainViewController.swift": [499508565, 0]
