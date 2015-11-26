@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+//*
 public class CurrencyRequest: NSObject, NSXMLParserDelegate {
 
     //var currenyAPI = "http://query.yahooapis.com/v1/public/yql?q="
