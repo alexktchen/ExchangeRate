@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   AirshipConfig.plist
+   ExchangeRate
+
+   Created by Alex Chen on 2016/1/13.
+   Copyright (c) 2016年 AlexChen. All rights reserved.
+-->
+<plist version="1.0">
+   <dict>
+    <key>detectProvisioningMode</key>
+    <true/>
+    <key>developmentAppKey</key>
+    <string>alOoe0dvRkuMFpudGZY3cA</string>
+    <key>developmentAppSecret</key>
+    <string>aD9co_X4QIyAPa8R6Xszcw</string>
+    <key>productionAppKey</key>
+    <string>Your Production App Key</string>
+    <key>productionAppSecret</key>
+    <string>Your Production App Secret</string>
+    
+</dict>
+</plist>

@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 import Core
+import AirshipKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+
+
+        //UAConfig *config = [UAConfig defaultConfig];
+
+        // You can also programmatically override the plist values:
+        //config.inProduction = true;
+        //config.developmentAppKey = @"wwgwJYJm...yFQ ";
+        //config.developmentAppSecret = @"_C5nN...j4gA";
+
+        let config: UAConfig = UAConfig.defaultConfig()
+
+        // You can also programmatically override the plist values:
+        config.inProduction = true
+        config.developmentAppKey = "alOoe0dvRkuMFpudGZY3cA"
+        config.developmentAppSecret = "aD9co_X4QIyAPa8R6Xszcw"
+
+        UAirship.takeOff(config)
+
+        //let channelID = UAirship.push().channelID
+        //print("My Application Channel ID: \(channelID)")
+
+        let push =  UAirship.push()
+        UAirship.push().userPushNotificationsEnabled = true
 
         //LoadCountryDataService.sharedInstance.loadCountry()
         let storyboard = UIStoryboard(name: "Main", bundle: nil)

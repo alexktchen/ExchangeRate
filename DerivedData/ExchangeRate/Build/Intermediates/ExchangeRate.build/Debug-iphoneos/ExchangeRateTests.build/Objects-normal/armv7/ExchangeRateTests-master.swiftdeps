@@ -1,5 +1,5 @@
-version: "Apple Swift version 2.1 (swiftlang-700.1.101.6 clang-700.1.76)"
-options: "65ce0a74e0a4d5e0286ccb07c2607b98"
-build_time: [499508073, 666694000]
+version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
+options: "cde6dab646d059693f860de80c6802c3"
+build_time: [503375982, 776424000]
 inputs:
   "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRateTests/ExchangeRateTests.swift": [497290020, 0]

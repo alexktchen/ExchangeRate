@@ -6,90 +6,90 @@
 	<dict>
 		<key>Frameworks/libswiftContacts.dylib</key>
 		<data>
-		bARgREJoETICOPzMu9Wh4V7tLL8=
+		xf8jYrl9L8iFibyOoPkeAdpJayM=
 		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
-		FEUFrofra1Yw9T5kVWVuDNBn/mA=
+		tXbQWT1aSxeKP11nKFcvlaGBo8M=
 		</data>
 		<key>Frameworks/libswiftCoreGraphics.dylib</key>
 		<data>
-		88DDpL/i0CVKkgjku9rnhCQilmY=
+		bS1EtFb/q9dYBev6VLRf3P0KZMQ=
 		</data>
 		<key>Frameworks/libswiftCoreImage.dylib</key>
 		<data>
-		cgmg1Fda/3AjyjPPd/cMVMKCcxY=
+		pJy4u8YYr9FheMEP27DSETY+BLU=
 		</data>
 		<key>Frameworks/libswiftDarwin.dylib</key>
 		<data>
-		hNOjhbIG7A67CK4+3Tky3QchMZA=
+		L476JJddus42hegKO9yw11e+3Oo=
 		</data>
 		<key>Frameworks/libswiftDispatch.dylib</key>
 		<data>
-		UXNkrO7SOyUcI8grzM/nEIY1+Gk=
+		BAO/3yudHLShCS8180We3B6QJGU=
 		</data>
 		<key>Frameworks/libswiftFoundation.dylib</key>
 		<data>
-		ruUBMU5qXjO3TwqwQsDtVXds3LM=
+		abXFvgw6eJD5T5iMV6rWTl/7/q8=
 		</data>
 		<key>Frameworks/libswiftObjectiveC.dylib</key>
 		<data>
-		npBqnkLJvD8A7VN0mtVlYGhWcCo=
+		wUxwnM9GtwkZksz5ODYoD+yTVZw=
 		</data>
 		<key>Frameworks/libswiftUIKit.dylib</key>
 		<data>
-		0752QttzUtTjrpdfJSc9Jj7+6CA=
+		8ylCVCdZMmXq2pXZHvGJJiFELUU=
 		</data>
 		<key>Frameworks/libswiftXCTest.dylib</key>
 		<data>
-		BxNpxEZyFOJ28PS4r1w0Jjh+yeM=
+		ICWF4Rwp1/aGabNfPIOvnz6z9ns=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/J3h6NMZZMAVhinlN6CSetQtWyU=
+		h8LCPfAR16dkKfjCmIInYrhJq94=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>Frameworks/libswiftContacts.dylib</key>
 		<data>
-		bARgREJoETICOPzMu9Wh4V7tLL8=
+		xf8jYrl9L8iFibyOoPkeAdpJayM=
 		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
-		FEUFrofra1Yw9T5kVWVuDNBn/mA=
+		tXbQWT1aSxeKP11nKFcvlaGBo8M=
 		</data>
 		<key>Frameworks/libswiftCoreGraphics.dylib</key>
 		<data>
-		88DDpL/i0CVKkgjku9rnhCQilmY=
+		bS1EtFb/q9dYBev6VLRf3P0KZMQ=
 		</data>
 		<key>Frameworks/libswiftCoreImage.dylib</key>
 		<data>
-		cgmg1Fda/3AjyjPPd/cMVMKCcxY=
+		pJy4u8YYr9FheMEP27DSETY+BLU=
 		</data>
 		<key>Frameworks/libswiftDarwin.dylib</key>
 		<data>
-		hNOjhbIG7A67CK4+3Tky3QchMZA=
+		L476JJddus42hegKO9yw11e+3Oo=
 		</data>
 		<key>Frameworks/libswiftDispatch.dylib</key>
 		<data>
-		UXNkrO7SOyUcI8grzM/nEIY1+Gk=
+		BAO/3yudHLShCS8180We3B6QJGU=
 		</data>
 		<key>Frameworks/libswiftFoundation.dylib</key>
 		<data>
-		ruUBMU5qXjO3TwqwQsDtVXds3LM=
+		abXFvgw6eJD5T5iMV6rWTl/7/q8=
 		</data>
 		<key>Frameworks/libswiftObjectiveC.dylib</key>
 		<data>
-		npBqnkLJvD8A7VN0mtVlYGhWcCo=
+		wUxwnM9GtwkZksz5ODYoD+yTVZw=
 		</data>
 		<key>Frameworks/libswiftUIKit.dylib</key>
 		<data>
-		0752QttzUtTjrpdfJSc9Jj7+6CA=
+		8ylCVCdZMmXq2pXZHvGJJiFELUU=
 		</data>
 		<key>Frameworks/libswiftXCTest.dylib</key>
 		<data>
-		BxNpxEZyFOJ28PS4r1w0Jjh+yeM=
+		ICWF4Rwp1/aGabNfPIOvnz6z9ns=
 		</data>
 	</dict>
 	<key>rules</key>

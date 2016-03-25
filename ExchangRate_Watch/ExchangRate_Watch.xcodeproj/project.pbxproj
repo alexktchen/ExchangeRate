@@ -1,0 +1,799 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		72FBD77E1C1E621900CC7C75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FBD77D1C1E621900CC7C75 /* AppDelegate.swift */; };
+		72FBD7801C1E621900CC7C75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FBD77F1C1E621900CC7C75 /* ViewController.swift */; };
+		72FBD7831C1E621900CC7C75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72FBD7811C1E621900CC7C75 /* Main.storyboard */; };
+		72FBD7851C1E621900CC7C75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72FBD7841C1E621900CC7C75 /* Assets.xcassets */; };
+		72FBD7881C1E621900CC7C75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72FBD7861C1E621900CC7C75 /* LaunchScreen.storyboard */; };
+		72FBD7931C1E621900CC7C75 /* ExchangRate_WatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FBD7921C1E621900CC7C75 /* ExchangRate_WatchTests.swift */; };
+		72FBD79E1C1E621900CC7C75 /* ExchangRate_WatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FBD79D1C1E621900CC7C75 /* ExchangRate_WatchUITests.swift */; };
+		72FBD7A31C1E621900CC7C75 /* ExchangRate_Watch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 72FBD7A21C1E621900CC7C75 /* ExchangRate_Watch WatchKit App.app */; };
+		72FBD7A91C1E621900CC7C75 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72FBD7A71C1E621900CC7C75 /* Interface.storyboard */; };
+		72FBD7AB1C1E621900CC7C75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72FBD7AA1C1E621900CC7C75 /* Assets.xcassets */; };
+		72FBD7B21C1E621900CC7C75 /* ExchangRate_Watch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 72FBD7B11C1E621900CC7C75 /* ExchangRate_Watch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		72FBD7B91C1E621900CC7C75 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FBD7B81C1E621900CC7C75 /* InterfaceController.swift */; };
+		72FBD7BB1C1E621900CC7C75 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FBD7BA1C1E621900CC7C75 /* ExtensionDelegate.swift */; };
+		72FBD7BD1C1E621900CC7C75 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FBD7BC1C1E621900CC7C75 /* NotificationController.swift */; };
+		72FBD7BF1C1E621900CC7C75 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FBD7BE1C1E621900CC7C75 /* GlanceController.swift */; };
+		72FBD7C11C1E621900CC7C75 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FBD7C01C1E621900CC7C75 /* ComplicationController.swift */; };
+		72FBD7C31C1E621900CC7C75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72FBD7C21C1E621900CC7C75 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		72FBD78F1C1E621900CC7C75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72FBD7721C1E621900CC7C75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72FBD7791C1E621900CC7C75;
+			remoteInfo = ExchangRate_Watch;
+		};
+		72FBD79A1C1E621900CC7C75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72FBD7721C1E621900CC7C75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72FBD7791C1E621900CC7C75;
+			remoteInfo = ExchangRate_Watch;
+		};
+		72FBD7A41C1E621900CC7C75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72FBD7721C1E621900CC7C75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72FBD7A11C1E621900CC7C75;
+			remoteInfo = "ExchangRate_Watch WatchKit App";
+		};
+		72FBD7B31C1E621900CC7C75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72FBD7721C1E621900CC7C75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72FBD7B01C1E621900CC7C75;
+			remoteInfo = "ExchangRate_Watch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		72FBD7CA1C1E621900CC7C75 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				72FBD7B21C1E621900CC7C75 /* ExchangRate_Watch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72FBD7CE1C1E621900CC7C75 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				72FBD7A31C1E621900CC7C75 /* ExchangRate_Watch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		72FBD77A1C1E621900CC7C75 /* ExchangRate_Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExchangRate_Watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		72FBD77D1C1E621900CC7C75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		72FBD77F1C1E621900CC7C75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		72FBD7821C1E621900CC7C75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		72FBD7841C1E621900CC7C75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		72FBD7871C1E621900CC7C75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		72FBD7891C1E621900CC7C75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72FBD78E1C1E621900CC7C75 /* ExchangRate_WatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExchangRate_WatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		72FBD7921C1E621900CC7C75 /* ExchangRate_WatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangRate_WatchTests.swift; sourceTree = "<group>"; };
+		72FBD7941C1E621900CC7C75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72FBD7991C1E621900CC7C75 /* ExchangRate_WatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExchangRate_WatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		72FBD79D1C1E621900CC7C75 /* ExchangRate_WatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangRate_WatchUITests.swift; sourceTree = "<group>"; };
+		72FBD79F1C1E621900CC7C75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72FBD7A21C1E621900CC7C75 /* ExchangRate_Watch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ExchangRate_Watch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		72FBD7A81C1E621900CC7C75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		72FBD7AA1C1E621900CC7C75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		72FBD7AC1C1E621900CC7C75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72FBD7B11C1E621900CC7C75 /* ExchangRate_Watch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ExchangRate_Watch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		72FBD7B71C1E621900CC7C75 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		72FBD7B81C1E621900CC7C75 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		72FBD7BA1C1E621900CC7C75 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		72FBD7BC1C1E621900CC7C75 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		72FBD7BE1C1E621900CC7C75 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		72FBD7C01C1E621900CC7C75 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		72FBD7C21C1E621900CC7C75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		72FBD7C41C1E621900CC7C75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		72FBD7771C1E621900CC7C75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72FBD78B1C1E621900CC7C75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72FBD7961C1E621900CC7C75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72FBD7AE1C1E621900CC7C75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		72FBD7711C1E621900CC7C75 = {
+			isa = PBXGroup;
+			children = (
+				72FBD77C1C1E621900CC7C75 /* ExchangRate_Watch */,
+				72FBD7911C1E621900CC7C75 /* ExchangRate_WatchTests */,
+				72FBD79C1C1E621900CC7C75 /* ExchangRate_WatchUITests */,
+				72FBD7A61C1E621900CC7C75 /* ExchangRate_Watch WatchKit App */,
+				72FBD7B51C1E621900CC7C75 /* ExchangRate_Watch WatchKit Extension */,
+				72FBD77B1C1E621900CC7C75 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		72FBD77B1C1E621900CC7C75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				72FBD77A1C1E621900CC7C75 /* ExchangRate_Watch.app */,
+				72FBD78E1C1E621900CC7C75 /* ExchangRate_WatchTests.xctest */,
+				72FBD7991C1E621900CC7C75 /* ExchangRate_WatchUITests.xctest */,
+				72FBD7A21C1E621900CC7C75 /* ExchangRate_Watch WatchKit App.app */,
+				72FBD7B11C1E621900CC7C75 /* ExchangRate_Watch WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		72FBD77C1C1E621900CC7C75 /* ExchangRate_Watch */ = {
+			isa = PBXGroup;
+			children = (
+				72FBD77D1C1E621900CC7C75 /* AppDelegate.swift */,
+				72FBD77F1C1E621900CC7C75 /* ViewController.swift */,
+				72FBD7811C1E621900CC7C75 /* Main.storyboard */,
+				72FBD7841C1E621900CC7C75 /* Assets.xcassets */,
+				72FBD7861C1E621900CC7C75 /* LaunchScreen.storyboard */,
+				72FBD7891C1E621900CC7C75 /* Info.plist */,
+			);
+			path = ExchangRate_Watch;
+			sourceTree = "<group>";
+		};
+		72FBD7911C1E621900CC7C75 /* ExchangRate_WatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				72FBD7921C1E621900CC7C75 /* ExchangRate_WatchTests.swift */,
+				72FBD7941C1E621900CC7C75 /* Info.plist */,
+			);
+			path = ExchangRate_WatchTests;
+			sourceTree = "<group>";
+		};
+		72FBD79C1C1E621900CC7C75 /* ExchangRate_WatchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				72FBD79D1C1E621900CC7C75 /* ExchangRate_WatchUITests.swift */,
+				72FBD79F1C1E621900CC7C75 /* Info.plist */,
+			);
+			path = ExchangRate_WatchUITests;
+			sourceTree = "<group>";
+		};
+		72FBD7A61C1E621900CC7C75 /* ExchangRate_Watch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				72FBD7A71C1E621900CC7C75 /* Interface.storyboard */,
+				72FBD7AA1C1E621900CC7C75 /* Assets.xcassets */,
+				72FBD7AC1C1E621900CC7C75 /* Info.plist */,
+			);
+			path = "ExchangRate_Watch WatchKit App";
+			sourceTree = "<group>";
+		};
+		72FBD7B51C1E621900CC7C75 /* ExchangRate_Watch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				72FBD7B81C1E621900CC7C75 /* InterfaceController.swift */,
+				72FBD7BA1C1E621900CC7C75 /* ExtensionDelegate.swift */,
+				72FBD7BC1C1E621900CC7C75 /* NotificationController.swift */,
+				72FBD7BE1C1E621900CC7C75 /* GlanceController.swift */,
+				72FBD7C01C1E621900CC7C75 /* ComplicationController.swift */,
+				72FBD7C21C1E621900CC7C75 /* Assets.xcassets */,
+				72FBD7C41C1E621900CC7C75 /* Info.plist */,
+				72FBD7B61C1E621900CC7C75 /* Supporting Files */,
+			);
+			path = "ExchangRate_Watch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		72FBD7B61C1E621900CC7C75 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				72FBD7B71C1E621900CC7C75 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		72FBD7791C1E621900CC7C75 /* ExchangRate_Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72FBD7CF1C1E621900CC7C75 /* Build configuration list for PBXNativeTarget "ExchangRate_Watch" */;
+			buildPhases = (
+				72FBD7761C1E621900CC7C75 /* Sources */,
+				72FBD7771C1E621900CC7C75 /* Frameworks */,
+				72FBD7781C1E621900CC7C75 /* Resources */,
+				72FBD7CE1C1E621900CC7C75 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72FBD7A51C1E621900CC7C75 /* PBXTargetDependency */,
+			);
+			name = ExchangRate_Watch;
+			productName = ExchangRate_Watch;
+			productReference = 72FBD77A1C1E621900CC7C75 /* ExchangRate_Watch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		72FBD78D1C1E621900CC7C75 /* ExchangRate_WatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72FBD7D21C1E621900CC7C75 /* Build configuration list for PBXNativeTarget "ExchangRate_WatchTests" */;
+			buildPhases = (
+				72FBD78A1C1E621900CC7C75 /* Sources */,
+				72FBD78B1C1E621900CC7C75 /* Frameworks */,
+				72FBD78C1C1E621900CC7C75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72FBD7901C1E621900CC7C75 /* PBXTargetDependency */,
+			);
+			name = ExchangRate_WatchTests;
+			productName = ExchangRate_WatchTests;
+			productReference = 72FBD78E1C1E621900CC7C75 /* ExchangRate_WatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		72FBD7981C1E621900CC7C75 /* ExchangRate_WatchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72FBD7D51C1E621900CC7C75 /* Build configuration list for PBXNativeTarget "ExchangRate_WatchUITests" */;
+			buildPhases = (
+				72FBD7951C1E621900CC7C75 /* Sources */,
+				72FBD7961C1E621900CC7C75 /* Frameworks */,
+				72FBD7971C1E621900CC7C75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72FBD79B1C1E621900CC7C75 /* PBXTargetDependency */,
+			);
+			name = ExchangRate_WatchUITests;
+			productName = ExchangRate_WatchUITests;
+			productReference = 72FBD7991C1E621900CC7C75 /* ExchangRate_WatchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		72FBD7A11C1E621900CC7C75 /* ExchangRate_Watch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72FBD7CB1C1E621900CC7C75 /* Build configuration list for PBXNativeTarget "ExchangRate_Watch WatchKit App" */;
+			buildPhases = (
+				72FBD7A01C1E621900CC7C75 /* Resources */,
+				72FBD7CA1C1E621900CC7C75 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72FBD7B41C1E621900CC7C75 /* PBXTargetDependency */,
+			);
+			name = "ExchangRate_Watch WatchKit App";
+			productName = "ExchangRate_Watch WatchKit App";
+			productReference = 72FBD7A21C1E621900CC7C75 /* ExchangRate_Watch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		72FBD7B01C1E621900CC7C75 /* ExchangRate_Watch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72FBD7C71C1E621900CC7C75 /* Build configuration list for PBXNativeTarget "ExchangRate_Watch WatchKit Extension" */;
+			buildPhases = (
+				72FBD7AD1C1E621900CC7C75 /* Sources */,
+				72FBD7AE1C1E621900CC7C75 /* Frameworks */,
+				72FBD7AF1C1E621900CC7C75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ExchangRate_Watch WatchKit Extension";
+			productName = "ExchangRate_Watch WatchKit Extension";
+			productReference = 72FBD7B11C1E621900CC7C75 /* ExchangRate_Watch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		72FBD7721C1E621900CC7C75 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = AlexChen;
+				TargetAttributes = {
+					72FBD7791C1E621900CC7C75 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					72FBD78D1C1E621900CC7C75 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 72FBD7791C1E621900CC7C75;
+					};
+					72FBD7981C1E621900CC7C75 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 72FBD7791C1E621900CC7C75;
+					};
+					72FBD7A11C1E621900CC7C75 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = H9SXKCFCZM;
+					};
+					72FBD7B01C1E621900CC7C75 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = H9SXKCFCZM;
+					};
+				};
+			};
+			buildConfigurationList = 72FBD7751C1E621900CC7C75 /* Build configuration list for PBXProject "ExchangRate_Watch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 72FBD7711C1E621900CC7C75;
+			productRefGroup = 72FBD77B1C1E621900CC7C75 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				72FBD7791C1E621900CC7C75 /* ExchangRate_Watch */,
+				72FBD78D1C1E621900CC7C75 /* ExchangRate_WatchTests */,
+				72FBD7981C1E621900CC7C75 /* ExchangRate_WatchUITests */,
+				72FBD7A11C1E621900CC7C75 /* ExchangRate_Watch WatchKit App */,
+				72FBD7B01C1E621900CC7C75 /* ExchangRate_Watch WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		72FBD7781C1E621900CC7C75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72FBD7881C1E621900CC7C75 /* LaunchScreen.storyboard in Resources */,
+				72FBD7851C1E621900CC7C75 /* Assets.xcassets in Resources */,
+				72FBD7831C1E621900CC7C75 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72FBD78C1C1E621900CC7C75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72FBD7971C1E621900CC7C75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72FBD7A01C1E621900CC7C75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72FBD7AB1C1E621900CC7C75 /* Assets.xcassets in Resources */,
+				72FBD7A91C1E621900CC7C75 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72FBD7AF1C1E621900CC7C75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72FBD7C31C1E621900CC7C75 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		72FBD7761C1E621900CC7C75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72FBD7801C1E621900CC7C75 /* ViewController.swift in Sources */,
+				72FBD77E1C1E621900CC7C75 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72FBD78A1C1E621900CC7C75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72FBD7931C1E621900CC7C75 /* ExchangRate_WatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72FBD7951C1E621900CC7C75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72FBD79E1C1E621900CC7C75 /* ExchangRate_WatchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72FBD7AD1C1E621900CC7C75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72FBD7BD1C1E621900CC7C75 /* NotificationController.swift in Sources */,
+				72FBD7BB1C1E621900CC7C75 /* ExtensionDelegate.swift in Sources */,
+				72FBD7C11C1E621900CC7C75 /* ComplicationController.swift in Sources */,
+				72FBD7B91C1E621900CC7C75 /* InterfaceController.swift in Sources */,
+				72FBD7BF1C1E621900CC7C75 /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		72FBD7901C1E621900CC7C75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72FBD7791C1E621900CC7C75 /* ExchangRate_Watch */;
+			targetProxy = 72FBD78F1C1E621900CC7C75 /* PBXContainerItemProxy */;
+		};
+		72FBD79B1C1E621900CC7C75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72FBD7791C1E621900CC7C75 /* ExchangRate_Watch */;
+			targetProxy = 72FBD79A1C1E621900CC7C75 /* PBXContainerItemProxy */;
+		};
+		72FBD7A51C1E621900CC7C75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72FBD7A11C1E621900CC7C75 /* ExchangRate_Watch WatchKit App */;
+			targetProxy = 72FBD7A41C1E621900CC7C75 /* PBXContainerItemProxy */;
+		};
+		72FBD7B41C1E621900CC7C75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72FBD7B01C1E621900CC7C75 /* ExchangRate_Watch WatchKit Extension */;
+			targetProxy = 72FBD7B31C1E621900CC7C75 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		72FBD7811C1E621900CC7C75 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72FBD7821C1E621900CC7C75 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		72FBD7861C1E621900CC7C75 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72FBD7871C1E621900CC7C75 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		72FBD7A71C1E621900CC7C75 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72FBD7A81C1E621900CC7C75 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		72FBD7C51C1E621900CC7C75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		72FBD7C61C1E621900CC7C75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		72FBD7C81C1E621900CC7C75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "ExchangRate_Watch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "AlexChen.ExchangRate-Watch.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		72FBD7C91C1E621900CC7C75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "ExchangRate_Watch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "AlexChen.ExchangRate-Watch.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		72FBD7CC1C1E621900CC7C75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = ExchangRate_Watch_WatchKit_Extension;
+				INFOPLIST_FILE = "ExchangRate_Watch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "AlexChen.ExchangRate-Watch.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		72FBD7CD1C1E621900CC7C75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = ExchangRate_Watch_WatchKit_Extension;
+				INFOPLIST_FILE = "ExchangRate_Watch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "AlexChen.ExchangRate-Watch.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		72FBD7D01C1E621900CC7C75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ExchangRate_Watch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "AlexChen.ExchangRate-Watch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		72FBD7D11C1E621900CC7C75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ExchangRate_Watch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "AlexChen.ExchangRate-Watch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		72FBD7D31C1E621900CC7C75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ExchangRate_WatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "AlexChen.ExchangRate-WatchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExchangRate_Watch.app/ExchangRate_Watch";
+			};
+			name = Debug;
+		};
+		72FBD7D41C1E621900CC7C75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ExchangRate_WatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "AlexChen.ExchangRate-WatchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExchangRate_Watch.app/ExchangRate_Watch";
+			};
+			name = Release;
+		};
+		72FBD7D61C1E621900CC7C75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ExchangRate_WatchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "AlexChen.ExchangRate-WatchUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ExchangRate_Watch;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		72FBD7D71C1E621900CC7C75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ExchangRate_WatchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "AlexChen.ExchangRate-WatchUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ExchangRate_Watch;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		72FBD7751C1E621900CC7C75 /* Build configuration list for PBXProject "ExchangRate_Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72FBD7C51C1E621900CC7C75 /* Debug */,
+				72FBD7C61C1E621900CC7C75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72FBD7C71C1E621900CC7C75 /* Build configuration list for PBXNativeTarget "ExchangRate_Watch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72FBD7C81C1E621900CC7C75 /* Debug */,
+				72FBD7C91C1E621900CC7C75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72FBD7CB1C1E621900CC7C75 /* Build configuration list for PBXNativeTarget "ExchangRate_Watch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72FBD7CC1C1E621900CC7C75 /* Debug */,
+				72FBD7CD1C1E621900CC7C75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72FBD7CF1C1E621900CC7C75 /* Build configuration list for PBXNativeTarget "ExchangRate_Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72FBD7D01C1E621900CC7C75 /* Debug */,
+				72FBD7D11C1E621900CC7C75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72FBD7D21C1E621900CC7C75 /* Build configuration list for PBXNativeTarget "ExchangRate_WatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72FBD7D31C1E621900CC7C75 /* Debug */,
+				72FBD7D41C1E621900CC7C75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72FBD7D51C1E621900CC7C75 /* Build configuration list for PBXNativeTarget "ExchangRate_WatchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72FBD7D61C1E621900CC7C75 /* Debug */,
+				72FBD7D71C1E621900CC7C75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 72FBD7721C1E621900CC7C75 /* Project object */;
+}

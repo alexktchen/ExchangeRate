@@ -7,15 +7,15 @@ provides-member:
 - ["C17ExchangeRateTests17ExchangeRateTests", ""]
 provides-dynamic-lookup:
 - "setUp"
-- "testPerformanceExample"
-- "testExample"
 - "tearDown"
+- "testExample"
+- "testPerformanceExample"
 depends-top-level:
-- !private "BooleanLiteralType"
-- "ExchangeRateTests"
-- !private "StringLiteralType"
 - !private "XCTAssert"
 - "XCTestCase"
+- !private "StringLiteralType"
+- !private "BooleanLiteralType"
+- "ExchangeRateTests"
 depends-member:
 - !private ["PSs9AnyObject", "XCTAssert"]
 - ["PSs9AnyObject", "init"]
