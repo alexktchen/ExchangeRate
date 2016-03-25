@@ -1,15 +1,15 @@
 version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
 options: "865727dc13f3690fe6681f8eb5c75f98"
-build_time: [512186580, 888356000]
+build_time: [512186716, 698581000]
 inputs:
-  "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/KTTableViewHeader.swift": [503121246, 0]
-  "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/CountryFetchTableView.swift": [498809788, 0]
   "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/MainTableViewCell.swift": [497290020, 0]
-  "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/MainViewController.swift": [499508565, 0]
-  "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/IntroductionView.swift": [498583873, 0]
-  "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/CircleProgressView.swift": [501849069, 0]
-  "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/TodaySettingViewController.swift": [498236047, 0]
-  "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/AppDelegate.swift": [506012899, 0]
   "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/SettingViewController.swift": [498414124, 0]
   "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/BackgroundHighlightedButton.swift": [497290020, 0]
+  "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/CircleProgressView.swift": [501849069, 0]
+  "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/TodaySettingViewController.swift": [498236047, 0]
+  "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/KTTableViewHeader.swift": [503121246, 0]
+  "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/MainViewController.swift": [499508565, 0]
   "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/TTableViewController.swift": [497290020, 0]
+  "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/IntroductionView.swift": [498583873, 0]
+  "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/CountryFetchTableView.swift": [498809788, 0]
+  "/Users/cktalex/Documents/bProject/ExchangeRate/ExchangeRate/AppDelegate.swift": [506012899, 0]
